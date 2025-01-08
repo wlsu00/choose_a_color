@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose A Color</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="icon" type="image/png" href="./img/icons/apple-icon-57x57.png" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="con">
+          <!-- logo -->
+          <h1>
+            <a href="/index.html">
+              <img src="./img/logo.png" alt="logo" />
+            </a>
+          </h1>
+          <!-- gnb -->
+          <nav id="gnb">
+            <!-- 1차메뉴 -->
+            <ul>
+              <li>
+                <a href="#">MAKE UP</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li>
+                    <a href="#">베스트</a>
+                  </li>
+                  <li>
+                    <a href="#">유형별</a>
+                  </li>
+                  <li>
+                    <a href="#">추천제품</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">STYLING</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#">베스트</a>
+                  </li>
+                  <li>
+                    <a href="#">유형별</a>
+                  </li>
+                  <li>
+                    <a href="#">추천스타일링</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">COMMUNITY</a>
+              </li>
+              <li>
+                <a href="#">NEWS</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#">공지사항</a>
+                  </li>
+                  <li>
+                    <a href="#">이벤트</a>
+                  </li>
+                  <li>
+                    <a href="#">QnA</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- icons -->
+          <div class="icons">
+            <a href="#">
+              <img src="./img/icons/login.png" alt="로그인" />
+            </a>
+            <a href="#">
+              <img src="./img/icons/search.png" alt="검색" />
+            </a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- 로그인폼 -->
+        <div class="login">
+          <form action="#" method="post">
+            <h2>login</h2>
+            <!-- 아이디 -->
+            <span>id</span>
+            <div class="input_box">
+              <label for="user_id">
+                <input
+                  type="text"
+                  id="user_id"
+                  name="user_id"
+                  required
+                  placeholder="아이디를 입력해주세요."
+                  autofocus
+                />
+              </label>
+            </div>
+            <!-- 비밀번호 -->
+            <span>password</span>
+            <div class="input_box">
+              <label for="user_pw">
+                <input
+                  type="password"
+                  id="user_pw"
+                  name="user_pw"
+                  required
+                  placeholder="비밀번호를 입력해주세요."
+                />
+              </label>
+            </div>
+            <div class="keep">
+              <div>
+                <label for="keep_text" class="keep_text">
+                  <input type="checkbox" id="keep_text" name="keep_text" />
+                  <span>아이디 저장</span>
+                </label>
+              </div>
+              <div class="search">
+                <span>아이디찾기</span>
+                <span>비밀번호찾기</span>
+              </div>
+            </div>
+            <!-- 로그인버튼 -->
+            <div class="btn">LOGIN</div>
+            <div class="btn">
+              <img src="./img/icons/kakao.png" alt="카카오톡" />
+              <span>카카오톡으로 간편로그인</span>
+            </div>
+          </form>
+          <span>회원이 아니십니까?</span>
+          <a href="#">
+            <h3>회원가입 바로가기</h3>
+          </a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

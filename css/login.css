@@ -1,0 +1,214 @@
+@charset "utf-8";
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* 공통영역 */
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-family: "Inter", sans-serif;
+    color: #111;
+    background-color: #FFF3EE;
+    height: 1036px;
+  }
+.con {
+  width: 1600px;
+  height: auto;
+  margin: 0 auto;
+}
+  /* header */
+header {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background-color: #fff;
+    z-index: 999;
+    /* border-bottom: 1px solid #f5f4f4; */
+  }
+header .con {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 209px;
+  }
+  /* logo */
+h1 {
+    width: 212px;
+  }
+  /* gnb */
+#gnb {
+    width: fit-content;
+    height: 80px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  /* 1차메뉴 */
+#gnb > ul {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 26px 0;
+    box-sizing: border-box;
+    line-height: 25px;
+    /* background-color: gold; */
+  }
+#gnb > ul > li {
+    width: 164px;
+    text-align: center;
+    transition: 0.3s;
+  }
+#gnb > ul > li > a {
+    line-height: 25px;
+    display: block;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+#gnb > ul > li:hover > a {
+    color: #ff834f;
+    text-decoration: underline;
+  }
+  /* 2차메뉴 */
+#gnb .submenu {
+    background-color: #ffffffad;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 0;
+    overflow: hidden;
+  }
+#gnb .submenu li {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 48px;
+    transition: 0.3s;
+  }
+#gnb:hover > ul > li .submenu {
+    height: 194px;
+    padding-top: 30px;
+  }
+.submenu > li > a:hover {
+    color: #ff834f;
+    font-weight: 500;
+  }
+.icons {
+    display: flex;
+    gap: 80px;
+  }
+  /* 로그인폼 */
+.login{
+    margin: 140px 610px;    
+    width: 388px;
+}
+form{
+    margin-bottom: 28px;
+}
+.login h2{
+    font-family: "Aboreto", serif;
+    font-size: 40px;
+    /* font-weight: 600; */
+    line-height: 46px;
+    margin-bottom: 28px;
+}
+.input_box {
+    background-color: #fff;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #b4b4b4;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 28px;
+  }
+
+  form > span{
+    font-family: "Aboreto", serif;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  form > div:nth-child(2) {
+    margin-bottom: 26px;
+  }
+  .input_box input {
+    background-color: #fff;
+    border: none;
+    width: 100%;
+    height: 23px;
+    /* margin-bottom: 26px; */
+    font-size: 16px;
+  }
+  .input_box input:focus{
+    outline: none;
+    border: none;
+    color: #ff834f;
+  }
+  form .keep_text span{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #4d4d4d;
+  }
+  form .search span{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #4d4d4d;
+    text-align: center;
+  }
+  form .keep{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  form .keep .search > span:first-child::after{
+    content: "line";
+    font-size: 0;
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background-color: #d6d6d6;
+    margin: 0 16px;
+    text-align: center;
+  }
+.btn{
+    width: 100%;
+    color: #fff;
+    background-color: #ff834f;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-top: 28px;
+    cursor: pointer;
+    font-family: "inter", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+.btn:last-child{
+    background-color: #FAE100;
+    color: #111;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+}
+.btn:last-child > img{
+    display: inline-block;
+}
+.login > span{
+    font-size: 14px;
+    color: #4d4d4d;
+    line-height: 16px;
+}
+.login h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff834f;
+    line-height: 24px;
+    margin-top: 4px;
+    transition: 0.3s;
+}
+.login h3:hover{
+    text-decoration: underline;
+}
