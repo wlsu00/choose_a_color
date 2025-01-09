@@ -4,14 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
 
 body {
-  font-family: "Inter", sans-serif;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Inter", "Noto Sans KR", sans-serif;
   color: #111;
-}
-/* 영어랑 한글 폰트 같이 적용하는거 물어보기 (노토산스 아래 인터라 한글도 인터로 적용됐음) */
-
-:root {
-  --point-color: #ff834f;
 }
 
 /* 공통영역 */
@@ -33,8 +27,7 @@ h4 {
   line-height: 29px;
 }
 a {
-  font-family: "Inter", sans-serif;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Inter", "Noto Sans KR", sans-serif;
 }
 /* chips 공통 */
 .chips {
@@ -71,7 +64,7 @@ header {
   width: 100%;
   height: 80px;
   position: relative;
-  /* background-color: #ffb7b7; */
+  background-color: #fff;
   z-index: 999;
   /* border-bottom: 1px solid #f5f4f4; */
 }
@@ -107,6 +100,7 @@ h1 {
   width: 164px;
   text-align: center;
   transition: 0.3s;
+  position: relative;
 }
 #gnb > ul > li > a {
   line-height: 25px;
@@ -114,18 +108,21 @@ h1 {
   padding: 0 24px;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  transition: 0.3s;
 }
 #gnb > ul > li:hover > a {
-  color: var(--point-color);
+  color: #ff834f;
   text-decoration: underline;
 }
 /* 2차메뉴 */
 #gnb .submenu {
-  background-color: #ffffffad;
-  border-radius: 8px;
-  box-sizing: border-box;
+  width: 100%;
   height: 0;
   overflow: hidden;
+  transition: 0.5s;
+  position: absolute; /* 포지션때문에 브라우저에서 떨어져있어서 당장은 안보임_긁어보면나옴 */
+  top: 80px;
+  z-index: 1000;
 }
 #gnb .submenu li {
   width: 100%;
@@ -133,15 +130,34 @@ h1 {
   font-weight: 400;
   text-align: center;
   line-height: 48px;
-  transition: 0.3s;
 }
-#gnb:hover > ul > li .submenu {
-  height: 194px;
-  padding-top: 30px;
+#gnb .submenu li a {
+  transition: 0.3s;
+  display: block;
+  width: 100%;
+}
+#gnb:hover .submenu {
+  height: 110px;
 }
 .submenu > li > a:hover {
-  color: var(--point-color);
+  color: #ff834f;
   font-weight: 500;
+}
+#gnb::after {
+  content: "header-background";
+  font-size: 0;
+  position: absolute; /* 0점 헤더기준_gnb기준이면 그거 시작지점부터 100vw */
+  top: 80px; /* 헤더아래부터 */
+  left: 0;
+  width: 100vw;
+  height: 0; /*마우스올리면 그때보여야해서*/
+  transition: 0.5s;
+  backdrop-filter: blur(10px); /* 배경 블러처리 △뒤에 단색이면 블러 안먹음 */
+}
+#gnb:hover::after {
+  height: 200px;
+  background-color: #ffffff4b;
+  border-bottom: 1px solid #ddd;
 }
 .icons {
   display: flex;
@@ -206,10 +222,11 @@ section {
 .btn a {
   display: flex;
   gap: 4px;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .btn a:hover {
-  color: var(--point-color);
+  color: #ff834f;
+  text-decoration: underline;
 }
 /* sec1 best */
 .sec_txt > p {
@@ -231,7 +248,7 @@ section {
   margin-left: auto;
 }
 .chips:hover {
-  background-color: var(--point-color);
+  background-color: #ff834f;
   color: #fff;
 }
 /* sec1 컨텐츠 */
@@ -458,6 +475,8 @@ section {
 .coupon2,
 .coupon3 {
   position: relative;
+  left: 0;
+  top: 0;
 }
 .sec3_btn {
   border: 1px solid #ff834f;
@@ -479,6 +498,8 @@ section {
 .coupon_text {
   z-index: 20;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 .coupon1 .coupon_text {
   left: 78px;
@@ -617,6 +638,8 @@ section {
 }
 .sec5 .card1 {
   position: relative;
+  top: 0;
+  left: 0;
   border-radius: 8px;
   box-sizing: border-box;
   overflow: hidden;
@@ -641,12 +664,7 @@ section {
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
-  /* position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 50; */
 }
-
 .sec5 .card1 .chips:hover {
   color: #4d4d4d;
 }
