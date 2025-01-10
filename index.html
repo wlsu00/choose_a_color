@@ -28,7 +28,7 @@
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
                   <li>
-                    <a href="#">베스트</a>
+                    <a href="./sub/makeup1.html">베스트</a>
                   </li>
                   <li>
                     <a href="./sub/makeup2.html">추천메이크업</a>
@@ -53,7 +53,7 @@
                 <a href="#">NEWS</a>
                 <ul class="submenu">
                   <li>
-                    <a href="#">이벤트</a>
+                    <a href="./sub/news1.html">이벤트</a>
                   </li>
                   <li>
                     <a href="#">QnA</a>
@@ -65,10 +65,13 @@
           <!-- icons -->
           <div class="icons">
             <a href="./sub/login.html">
-              <img src="./img/icons/login.png" alt="로그인" />
+              <img src="./img/icons/login.svg" alt="로그인" />
             </a>
             <a href="#">
-              <img src="./img/icons/search.png" alt="검색" />
+              <img src="./img/icons/search.svg" alt="검색" />
+            </a>
+            <a href="#" class="menu_icon">
+              <img src="./img/icons/menu.svg" alt="메뉴" />
             </a>
           </div>
         </div>
@@ -390,9 +393,9 @@
             <div class="coupon_wrap">
               <!-- 쿠폰1 -->
               <a href="#">
-                <div class="coupon1">
+                <div class="coupon">
                   <div class="sec3_btn">올리브영</div>
-                  <img src="./img/sec3_event/coupon_fill.svg" alt="coupon" />
+                  <img src="./img/sec3_event/coupon.svg" alt="coupon" />
                   <div class="coupon_text">
                     <p>CAC와 올리브영이 함께하는</p>
                     <h4>5,000원 할인쿠폰</h4>
@@ -402,8 +405,8 @@
               </a>
               <!-- 쿠폰2 -->
               <a href="#">
-                <div class="coupon2">
-                  <div class="sec3_btn">신규 가입 쿠폰</div>
+                <div class="coupon">
+                  <div class="sec3_btn">웰컴쿠폰</div>
                   <img src="./img/sec3_event/coupon.svg" alt="coupon" />
                   <div class="coupon_text">
                     <p>CAC 신규 가입 회원전용</p>
@@ -414,7 +417,7 @@
               </a>
               <!-- 쿠폰3 -->
               <a href="#">
-                <div class="coupon3">
+                <div class="coupon">
                   <div class="sec3_btn">ZIGZAG</div>
                   <img src="./img/sec3_event/coupon.svg" alt="coupon" />
                   <div class="coupon_text">
@@ -462,35 +465,93 @@
             <!-- sec4 컨텐츠 -->
             <div class="card_wrap">
               <!-- 카드1 -->
-              <div class="card1">
-                <div>
-                  <h4>여름 라이트</h4>
-                  <div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
+              <div class="flip">
+                <div class="card1">
+                  <!-- 카드앞면 -->
+                  <div class="card_front">
+                    <img src="./img/sec4_styling/1.jpg" alt="clothes" />
                   </div>
-                  <div>
-                    <span class="maintext">😊 Best : 화이트 & 파스텔톤</span
-                    ><br />
-                    <span class="subtext"
-                      >맑고 투명한 느낌을 극대화시켜줘요</span
-                    >
-                  </div>
-                  <div>
-                    <span class="maintext">😑 Worst : 강한 채도와 대비감</span
-                    ><br />
-                    <span class="subtext">얼굴이 묻혀보일 수 있어요</span>
+                  <!-- 카드뒷면 -->
+                  <div class="card_back">
+                    <h4>여름 쿨 라이트</h4>
+                    <div class="circle1">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                    <div>
+                      <span class="maintext">😊 Best : 화이트 & 파스텔톤</span
+                      ><br />
+                      <span class="subtext"
+                        >맑고 투명한 느낌을 극대화시켜줘요</span
+                      >
+                    </div>
+                    <div>
+                      <span class="maintext">😑 Worst : 강한 채도와 대비감</span
+                      ><br />
+                      <span class="subtext">얼굴이 묻혀보일 수 있어요</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- 카드2 -->
-              <div class="card1">
-                <img src="./img/sec4_styling/2.jpg" alt="clothes" />
+              <div class="flip">
+                <div class="card1">
+                  <!-- 카드앞면 -->
+                  <div class="card_front">
+                    <img src="./img/sec4_styling/2.jpg" alt="clothes" />
+                  </div>
+                  <!-- 카드뒷면 -->
+                  <div class="card_back">
+                    <h4>여름 쿨 트루</h4>
+                    <div class="circle2">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                    <div>
+                      <span class="maintext"
+                        >😊 Best : 쨍한 블루 &amp; 대비감</span
+                      ><br />
+                      <span class="subtext">인상이 또렷해보여요</span>
+                    </div>
+                    <div>
+                      <span class="maintext"
+                        >😑 Worst : 옐로우 &amp; 오렌지</span
+                      ><br />
+                      <span class="subtext">인상이 어두워보여요</span>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- 카드3 -->
-              <div class="card1">
-                <img src="./img/sec4_styling/3.jpg" alt="clothes" />
+              <div class="flip">
+                <div class="card1">
+                  <!-- 카드앞면 -->
+                  <div class="card_front">
+                    <img src="./img/sec4_styling/3.jpg" alt="clothes" />
+                  </div>
+                  <!-- 카드뒷면 -->
+                  <div class="card_back">
+                    <h4>여름 쿨 뮤트</h4>
+                    <div class="circle3">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                    <div>
+                      <span class="maintext">😊 Best : 그레이</span><br />
+                      <span class="subtext"
+                        >우아하고 도회적인 이미지를 완성해줘요</span
+                      >
+                    </div>
+                    <div>
+                      <span class="maintext">😑 Worst : 강한 채도와 대비감</span
+                      ><br />
+                      <span class="subtext">얼굴이 묻혀보일 수 있어요</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

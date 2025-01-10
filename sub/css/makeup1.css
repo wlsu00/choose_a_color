@@ -40,9 +40,6 @@ a {
   padding: 8px 16px;
   border-radius: 24px;
 }
-.chips:first-child {
-  width: 62px;
-}
 .chips_plus {
   width: fit-content;
   height: fit-content;
@@ -56,6 +53,9 @@ a {
   border-radius: 24px;
   transition: 0.3s;
   margin-left: auto;
+}
+.chips:first-child {
+  width: 62px;
 }
 .chips_plus:hover {
   background-color: #ff834f;
@@ -186,80 +186,4 @@ h1 {
   display: flex;
   gap: 12px;
   margin: 32px 0;
-}
-/* 두번째섹션 - 컨텐츠영역 */
-.content .con .con1 {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
-  box-sizing: border-box;
-  padding-bottom: 100px;
-  border-bottom: 1px solid #d6d6d6;
-}
-/* ★★★★★★★★★이미지 수정★★★★★★★★★★★★★★ */
-.left_con {
-  width: 487px;
-  height: 580px;
-  box-sizing: border-box;
-  padding: 20px;
-  border: 1px solid #d6d6d6;
-  border-radius: 8px;
-  overflow: hidden;
-}
-.left_con > img {
-  object-fit: cover;
-  transform: scale(0.8);
-  transform-origin: top;
-  border-radius: 8px;
-}
-/* ★★★★★★★★★★★★★★★★★★★★★★★ */
-.ringt_con {
-  width: 766px;
-}
-.ringt_con > h3 {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 29px;
-}
-.ringt_con > p {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 29px;
-  margin: 32px 0;
-}
-.img_wrap {
-  display: flex;
-  justify-content: space-between;
-}
-.img_wrap .card {
-  width: 200px;
-  height: 200px;
-  box-sizing: border-box;
-  border: 1px solid #d6d6d6;
-  border-radius: 8px;
-  padding: 8px;
-  overflow: hidden;
-  cursor: pointer;
-}
-.img_wrap .card:hover {
-  box-sizing: border-box;
-  border: 1px solid #ff834f;
-  border-radius: 8px;
-}
-.img_wrap .card > img {
-  object-fit: cover;
-  border-radius: 8px;
-}
-.content .con .con1:nth-child(2) .ringt_con {
-  order: -1;
-}
-.content .con .con1:nth-child(1) .card:nth-of-type(1) img {
-  margin-top: 20px;
-  transform: scale(1.2);
-}
-.content .con .con1:nth-child(2) .card:nth-of-type(1) img {
-  transform: scale(0.6);
-  transform-origin: top;
 }

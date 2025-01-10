@@ -83,7 +83,7 @@ h1 {
 #gnb {
   width: fit-content;
   height: 80px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 300;
 }
 /* 1차메뉴 */
@@ -120,7 +120,7 @@ h1 {
   height: 0;
   overflow: hidden;
   transition: 0.5s;
-  position: absolute; /* 포지션때문에 브라우저에서 떨어져있어서 당장은 안보임_긁어보면나옴 */
+  position: absolute;
   top: 80px;
   z-index: 1000;
 }
@@ -161,7 +161,19 @@ h1 {
 }
 .icons {
   display: flex;
-  gap: 80px;
+  gap: 50px;
+}
+.icons a {
+  display: block;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.icons img {
+  width: 24px;
+  height: 24px;
+}
+.icons .menu_icon {
+  display: none;
 }
 /* main */
 main {
@@ -222,11 +234,12 @@ section {
 .btn a {
   display: flex;
   gap: 4px;
-  transition: 0.3s;
+  transition: 0.4s;
+  padding-bottom: 4px;
 }
 .btn a:hover {
   color: #ff834f;
-  text-decoration: underline;
+  border-bottom: 1px solid #ff834f;
 }
 /* sec1 best */
 .sec_txt > p {
@@ -471,67 +484,41 @@ section {
 .sec3 .con > a > h3 {
   margin-bottom: 28px;
 }
-.coupon1,
-.coupon2,
-.coupon3 {
+.sec3 .coupon {
   position: relative;
-  left: 0;
   top: 0;
+  left: 0;
 }
-.sec3_btn {
-  border: 1px solid #ff834f;
-  border-radius: 24px;
-  box-sizing: border-box;
+.sec3 .sec3_btn {
   width: fit-content;
   height: fit-content;
   font-size: 16px;
   text-align: center;
   padding: 8px 16px;
-}
-.coupon1 > .sec3_btn {
   background-color: #fff;
-  color: #ff834f;
+  border: 1px solid #ff834f;
+  border-radius: 24px;
+  box-sizing: border-box;
   position: absolute;
-  top: -16px;
-  left: 210px;
-}
-.coupon_text {
+  top: -13px;
+  left: 204px;
   z-index: 20;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
-.coupon1 .coupon_text {
-  left: 78px;
+.sec3 .sec3_btn:hover {
+  background-color: #ff834f;
+  border: 1px solid #ff834f;
+}
+/* ★★★★★★쿠폰 마우스오버 이미지 바꾸기★★★★★ */
+
+.coupon_text {
+  position: absolute;
   top: 84px;
-  color: #fff;
+  left: 78px;
+  z-index: 20;
 }
 .coupon_text > h4 {
   margin: 10px 0;
-}
-.coupon2 > div:first-of-type {
-  background-color: #ff834f;
-  color: #fff;
-  position: absolute;
-  top: -16px;
-  left: 190px;
-}
-.coupon3 > div:first-of-type {
-  background-color: #ff834f;
-  color: #fff;
-  position: absolute;
-  top: -16px;
-  left: 210px;
-}
-.coupon2 .coupon_text {
-  left: 78px;
-  top: 84px;
-  color: #111;
-}
-.coupon3 .coupon_text {
-  left: 78px;
-  top: 84px;
-  color: #111;
+  color: #4d4d4d;
 }
 
 /* sec4 styling */
@@ -552,38 +539,62 @@ section {
   display: flex;
   justify-content: space-between;
 }
+/* sec4 카드뒤집기 */
+.flip {
+  width: calc(33% - 28px);
+}
+.sec4 .card1 {
+  display: inline-block;
+  transition: transform 1.5s;
+  transform: perspective(800px) rotateY(0deg);
+  transform-style: preserve-3d;
+}
+.sec4 .card1:hover {
+  transform: perspective(800px) rotateY(180deg);
+}
+
+.sec4 .card_front,
+.sec4 .card_back {
+  backface-visibility: hidden;
+}
+.sec4 .card_front {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.sec4 .card_back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 109px;
+  left: 122px;
+}
 /* sec4 컨텐츠 */
 .sec4 .card1 {
-  width: 514px;
-  height: 540px;
+  width: 100%;
+  height: 100%;
   margin: 0;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
   box-sizing: border-box;
   position: static;
   transition: 0.4s;
-  overflow: hidden;
+  /* overflow: hidden; */
   cursor: pointer;
+  position: relative;
+}
+.card_front img {
+  transform: scale(0.9);
 }
 .sec4 .card1:hover {
   border: 1px solid #ff834f;
 }
-.sec4 > .con > .card_wrap > .card1 > div {
-  margin-top: 112px;
-}
-.sec4 > .con > .card_wrap > .card1 > div > div:nth-of-type(2) {
-  margin-left: 131px;
-}
-.sec4 > .con > .card_wrap > .card1 > div > div:nth-of-type(3) {
-  margin-left: 131px;
-}
+
 .card1 > div > h4 {
   color: #ff834f;
   font-size: 24px;
   font-weight: 600;
   line-height: 35px;
   text-align: center;
-  text-decoration: underline;
   margin-bottom: 32px;
 }
 .card1 > div > div:first-of-type {
@@ -598,15 +609,34 @@ section {
   border: 1px solid #d6d6d6;
   border-radius: 40px;
 }
-.card1 > div > div > .circle:nth-child(1) {
+.circle1 > .circle:nth-child(1) {
   background-color: #fff;
 }
-.card1 > div > div > .circle:nth-child(2) {
+.circle1 > .circle:nth-child(2) {
   background-color: #ffdada;
 }
-.card1 > div > div > .circle:nth-child(3) {
+.circle1 > .circle:nth-child(3) {
   background-color: #dff2ff;
 }
+.circle2 > .circle:nth-child(1) {
+  background-color: #fff;
+}
+.circle2 > .circle:nth-child(2) {
+  background-color: #005cd4;
+}
+.circle2 > .circle:nth-child(3) {
+  background-color: #1b2f6f;
+}
+.circle3 > .circle:nth-child(1) {
+  background-color: #d6d6d6;
+}
+.circle3 > .circle:nth-child(2) {
+  background-color: #ecd6d6;
+}
+.circle3 > .circle:nth-child(3) {
+  background-color: #e3d6ed;
+}
+
 .sec4 .maintext {
   font-size: 20px;
   font-weight: 500;
