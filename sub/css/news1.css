@@ -53,7 +53,7 @@ h1 {
 #gnb {
   width: fit-content;
   height: 80px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 300;
 }
 /* 1차메뉴 */
@@ -90,7 +90,7 @@ h1 {
   height: 0;
   overflow: hidden;
   transition: 0.5s;
-  position: absolute; /* 포지션때문에 브라우저에서 떨어져있어서 당장은 안보임_긁어보면나옴 */
+  position: absolute;
   top: 80px;
   z-index: 1000;
 }
@@ -131,7 +131,19 @@ h1 {
 }
 .icons {
   display: flex;
-  gap: 80px;
+  gap: 50px;
+}
+.icons a {
+  display: block;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.icons img {
+  width: 24px;
+  height: 24px;
+}
+.icons .menu_icon {
+  display: none;
 }
 /* 메인 */
 /* 첫번째섹션 */

@@ -239,7 +239,6 @@ section {
 }
 .btn a:hover {
   color: #ff834f;
-  border-bottom: 1px solid #ff834f;
 }
 /* sec1 best */
 .sec_txt > p {
@@ -306,11 +305,22 @@ section {
   object-fit: scale-down;
   transform: translateY(-50px) scale(1.2);
 }
-.con_wrap > a:first-child .card_img > img {
+#sec1_s > a:first-child .card_img > img {
   transform: translateY(-100px) scale(1.2);
 }
-.con_wrap > a:nth-child(2) .card_img > img {
+#sec1_s > a:nth-child(2) .card_img > img {
   transform: translateY(-140px) scale(1.2);
+}
+#sec1_m > a:nth-child(1) .card_img > img {
+  transform: translate(0px, -30px);
+  transform-origin: top;
+}
+#sec1_m > a:nth-child(4) .card_img > img {
+  transform: translate(0px, -30px);
+  transform-origin: top;
+}
+#sec1_m .card_img > img{
+  transform: scale(1);
 }
 .card1_con {
   width: 319px;
@@ -380,15 +390,21 @@ section {
   text-align: center;
   line-height: 17px;
 }
+#sec1_m{
+  display: none; /* 나중에 칩 클릭하면 보여줄꺼임 */
+}
 /* sec2 community */
+#sec2_s{
+  display: none; /* 나중에 칩 클릭하면 보여줄꺼임*/
+}
 .sec2 > .con {
   display: flex;
 }
 /* 왼쪽텍스트 */
 .left_txt {
   width: 40%;
-  margin: auto;
-  /* background-color: yellowgreen; */
+  margin: auto; /**/
+  margin: 308px auto;
 }
 .sec2 p {
   font-size: 15px;
@@ -495,21 +511,48 @@ section {
   font-size: 16px;
   text-align: center;
   padding: 8px 16px;
-  background-color: #fff;
+  color: #fff;
+  background-color: #ff834f;
   border: 1px solid #ff834f;
   border-radius: 24px;
   box-sizing: border-box;
   position: absolute;
-  top: -13px;
-  left: 204px;
+  top: -14px;
+  left: 210px;
   z-index: 20;
 }
 .sec3 .sec3_btn:hover {
   background-color: #ff834f;
   border: 1px solid #ff834f;
 }
-/* ★★★★★★쿠폰 마우스오버 이미지 바꾸기★★★★★ */
-
+.sec3 .coupon img{
+  transition: 0.5s;
+}
+.hover_img{
+  position: relative;
+}
+.hover_img2{
+  position: absolute;
+  transform: translateY(-247px);
+  will-change: transform, opacity, color;
+}
+.hover_img2{
+  opacity: 0;
+}
+.coupon:hover .hover_img2{
+  opacity: 1;
+}
+.coupon:hover .coupon_text{
+  color: #fff;
+} 
+.coupon:hover .coupon_text h4{
+  color: #fff;
+} 
+.coupon:hover .sec3_btn{
+  background-color: #fff;
+  color: #ff834f;
+  border: 1px solid #ff834f;
+}
 .coupon_text {
   position: absolute;
   top: 84px;
@@ -518,7 +561,6 @@ section {
 }
 .coupon_text > h4 {
   margin: 10px 0;
-  color: #4d4d4d;
 }
 
 /* sec4 styling */
@@ -545,14 +587,13 @@ section {
 }
 .sec4 .card1 {
   display: inline-block;
-  transition: transform 1.5s;
+  transition: transform 0.8s;
   transform: perspective(800px) rotateY(0deg);
   transform-style: preserve-3d;
 }
 .sec4 .card1:hover {
   transform: perspective(800px) rotateY(180deg);
 }
-
 .sec4 .card_front,
 .sec4 .card_back {
   backface-visibility: hidden;
@@ -577,8 +618,6 @@ section {
   border-radius: 8px;
   box-sizing: border-box;
   position: static;
-  transition: 0.4s;
-  /* overflow: hidden; */
   cursor: pointer;
   position: relative;
 }
@@ -588,7 +627,6 @@ section {
 .sec4 .card1:hover {
   border: 1px solid #ff834f;
 }
-
 .card1 > div > h4 {
   color: #ff834f;
   font-size: 24px;
