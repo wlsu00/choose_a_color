@@ -319,7 +319,7 @@ section {
   transform: translate(0px, -30px);
   transform-origin: top;
 }
-#sec1_m .card_img > img{
+#sec1_m .card_img > img {
   transform: scale(1);
 }
 .card1_con {
@@ -331,7 +331,7 @@ section {
   text-align: center;
 }
 /* 해시태그 */
-.card1 > div > span {
+.sec1 .card1 > div > span {
   text-align: center;
   font-size: 15px;
   display: block;
@@ -390,11 +390,11 @@ section {
   text-align: center;
   line-height: 17px;
 }
-#sec1_m{
+#sec1_m {
   display: none; /* 나중에 칩 클릭하면 보여줄꺼임 */
 }
 /* sec2 community */
-#sec2_s{
+#sec2_s {
   display: none; /* 나중에 칩 클릭하면 보여줄꺼임*/
 }
 .sec2 > .con {
@@ -525,30 +525,30 @@ section {
   background-color: #ff834f;
   border: 1px solid #ff834f;
 }
-.sec3 .coupon img{
+.sec3 .coupon img {
   transition: 0.5s;
 }
-.hover_img{
+.hover_img {
   position: relative;
 }
-.hover_img2{
+.hover_img2 {
   position: absolute;
   transform: translateY(-247px);
   will-change: transform, opacity, color;
 }
-.hover_img2{
+.hover_img2 {
   opacity: 0;
 }
-.coupon:hover .hover_img2{
+.coupon:hover .hover_img2 {
   opacity: 1;
 }
-.coupon:hover .coupon_text{
+.coupon:hover .coupon_text {
   color: #fff;
-} 
-.coupon:hover .coupon_text h4{
+}
+.coupon:hover .coupon_text h4 {
   color: #fff;
-} 
-.coupon:hover .sec3_btn{
+}
+.coupon:hover .sec3_btn {
   background-color: #fff;
   color: #ff834f;
   border: 1px solid #ff834f;
@@ -564,6 +564,12 @@ section {
 }
 
 /* sec4 styling */
+/* 다른계절 숨겨두기 + 글자 정렬방법 💥💥💥💥💥💥💥*/
+#sec4_spring,
+#sec4_fall,
+#sec4_winter {
+  display: none;
+}
 .sec4 .card_wrap {
   display: flex;
   gap: 28px;
@@ -577,6 +583,7 @@ section {
 .chips_seoson .chips {
   width: 62px;
 }
+/* 계절칩 */
 .sec4 > .con > div:nth-child(2) {
   display: flex;
   justify-content: space-between;
@@ -603,12 +610,7 @@ section {
   top: 0;
   left: 0;
 }
-.sec4 .card_back {
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 109px;
-  left: 122px;
-}
+
 /* sec4 컨텐츠 */
 .sec4 .card1 {
   width: 100%;
@@ -621,11 +623,66 @@ section {
   cursor: pointer;
   position: relative;
 }
+/* 카드앞면 이미지사이즈 */
 .card_front img {
   transform: scale(0.9);
 }
+.sec4 #sec4_winter #winter1 img {
+  transform: translate(36px, 33px) scale(1.05);
+}
+
 .sec4 .card1:hover {
   border: 1px solid #ff834f;
+}
+/* 카드뒷면 글씨 위치맞추기 */
+.sec4 #sec4_spring .card_back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 109px;
+  left: 100px;
+}
+.sec4 #sec4_spring .card_back:nth-of-type(1) {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 109px;
+  left: 122px;
+}
+.sec4 #sec4_summer .card_back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 109px;
+  left: 122px;
+}
+.sec4 #sec4_fall .card_back:nth-of-type(2) {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 109px;
+  left: 90px;
+}
+.sec4 #sec4_fall .card_back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 109px;
+  left: 100px;
+}
+.sec4 #sec4_winter #winter3_txt1 {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 109px;
+  left: 128px;
+}
+
+.sec4 #sec4_winter .card_back:nth-of-type(2) {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 109px;
+  left: 120px;
+}
+.sec4 #sec4_winter #winter3_txt3 {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 109px;
+  left: 115px;
 }
 .card1 > div > h4 {
   color: #ff834f;
@@ -635,7 +692,7 @@ section {
   text-align: center;
   margin-bottom: 32px;
 }
-.card1 > div > div:first-of-type {
+.sec4 .card1 > div > div:first-of-type {
   display: flex;
   gap: 28px;
   justify-content: center;
@@ -647,32 +704,118 @@ section {
   border: 1px solid #d6d6d6;
   border-radius: 40px;
 }
-.circle1 > .circle:nth-child(1) {
+/* 봄 컬러칩 */
+#sec4_spring .circle1 > .circle:nth-child(1) {
+  background-color: #ffe3e2;
+}
+#sec4_spring .circle1 > .circle:nth-child(2) {
+  background-color: #fef2a6;
+}
+#sec4_spring .circle1 > .circle:nth-child(3) {
+  background-color: #e7edaf;
+}
+#sec4_spring .circle2 > .circle:nth-child(1) {
+  background-color: #dc2236;
+}
+#sec4_spring .circle2 > .circle:nth-child(2) {
+  background-color: #d0da45;
+}
+#sec4_spring .circle2 > .circle:nth-child(3) {
+  background-color: #094ac8;
+}
+#sec4_spring .circle3 > .circle:nth-child(1) {
+  background-color: #e25589;
+}
+#sec4sec4_spring_sping .circle3 > .circle:nth-child(2) {
+  background-color: #f2a348;
+}
+#sec4_spring .circle3 > .circle:nth-child(3) {
+  background-color: #6bac58;
+}
+
+/* 여름 컬러칩 */
+#sec4_summer .circle1 > .circle:nth-child(1) {
   background-color: #fff;
 }
-.circle1 > .circle:nth-child(2) {
+#sec4_summer .circle1 > .circle:nth-child(2) {
   background-color: #ffdada;
 }
-.circle1 > .circle:nth-child(3) {
+#sec4_summer .circle1 > .circle:nth-child(3) {
   background-color: #dff2ff;
 }
-.circle2 > .circle:nth-child(1) {
+#sec4_summer .circle2 > .circle:nth-child(1) {
   background-color: #fff;
 }
-.circle2 > .circle:nth-child(2) {
+#sec4_summer .circle2 > .circle:nth-child(2) {
   background-color: #005cd4;
 }
-.circle2 > .circle:nth-child(3) {
+#sec4_summer .circle2 > .circle:nth-child(3) {
   background-color: #1b2f6f;
 }
-.circle3 > .circle:nth-child(1) {
+#sec4_summer .circle3 > .circle:nth-child(1) {
   background-color: #d6d6d6;
 }
-.circle3 > .circle:nth-child(2) {
+#sec4_summer .circle3 > .circle:nth-child(2) {
   background-color: #ecd6d6;
 }
-.circle3 > .circle:nth-child(3) {
+#sec4_summer .circle3 > .circle:nth-child(3) {
   background-color: #e3d6ed;
+}
+/* 가을 컬러칩 */
+#sec4_fall .circle1 > .circle:nth-child(1) {
+  background-color: #e0dac7;
+}
+#sec4_fall .circle2 > .circle:nth-child(1) {
+  background-color: #ffa99c;
+}
+#sec4_fall .circle3 > .circle:nth-child(1) {
+  background-color: #6b695e;
+}
+#sec4_fall .circle1 > .circle:nth-child(2) {
+  background-color: #f0ddac;
+}
+#sec4_fall .circle2 > .circle:nth-child(2) {
+  background-color: #cfa987;
+}
+#sec4_fall .circle3 > .circle:nth-child(2) {
+  background-color: #ec7c7f;
+}
+#sec4_fall .circle1 > .circle:nth-child(3) {
+  background-color: #dcbc53;
+}
+#sec4_fall .circle2 > .circle:nth-child(3) {
+  background-color: #9d5076;
+}
+#sec4_fall .circle3 > .circle:nth-child(3) {
+  background-color: #9f2b42;
+}
+/* 겨울 컬러칩 */
+#sec4_winter .circle1 > .circle:nth-child(1) {
+  background-color: #fff;
+}
+#sec4_winter .circle1 > .circle:nth-child(2) {
+  background-color: #ee0757;
+}
+#sec4_winter .circle1 > .circle:nth-child(3) {
+  background-color: #4d00ff;
+}
+#sec4_winter .circle2 > .circle:nth-child(1) {
+  background-color: #ff1395;
+}
+#sec4_winter .circle2 > .circle:nth-child(2) {
+  background-color: #1e3754;
+}
+#sec4_winter .circle2 > .circle:nth-child(3) {
+  background-color: #111111;
+}
+#sec4_winter .circle3 > .circle:nth-child(1) {
+  background-color: #890943;
+}
+#sec4_winter .circle3 > .circle:nth-child(2) {
+  background-color: #182561;
+}
+#sec4_winter .circle3 > .circle:nth-child(3) {
+  background-color: #94046f;
 }
 
 .sec4 .maintext {
@@ -686,7 +829,9 @@ section {
   font-weight: 300;
   line-height: 31px;
 }
-
+.card_back > div:nth-of-type(2) {
+  margin: 0 auto;
+}
 /* sec5 product */
 .sec5 > .con > div:nth-child(2) {
   display: flex;
@@ -766,6 +911,17 @@ section {
   height: 1px;
   background-color: #d6d6d6;
   margin: 16px 0;
+}
+.sec5 .cardtext > div {
+  display: flex;
+  justify-content: flex-start;
+}
+.sec5 .cardtext > div > img {
+  margin-left: auto;
+  /* margin-bottom: 32px; */
+}
+.sec5 .cardtext h4 {
+  margin: 8px 0;
 }
 
 /* footer */
