@@ -97,22 +97,27 @@ h1 {
   /* background-color: gold; */
 }
 #gnb > ul > li {
-  width: 164px;
+  /* width: 164px; */
+  width: fit-content;
   text-align: center;
   transition: 0.3s;
   position: relative;
+  border-bottom: 1px solid #fff;
+  transition: 0.3s;
 }
 #gnb > ul > li > a {
   line-height: 25px;
   display: block;
-  padding: 0 24px;
+  padding: 0 20px;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   transition: 0.3s;
 }
+#gnb > ul > li:hover {
+  border-bottom: 1px solid #ff834f;
+}
 #gnb > ul > li:hover > a {
   color: #ff834f;
-  text-decoration: underline;
 }
 /* 2차메뉴 */
 #gnb .submenu {
@@ -126,7 +131,7 @@ h1 {
 }
 #gnb .submenu li {
   width: 100%;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   text-align: center;
   line-height: 48px;
@@ -141,7 +146,7 @@ h1 {
 }
 .submenu > li > a:hover {
   color: #ff834f;
-  font-weight: 500;
+  font-weight: 400;
 }
 #gnb::after {
   content: "header-background";
@@ -228,6 +233,7 @@ section {
 }
 /* 버튼2개 */
 .btn {
+  width: fit-content;
   display: flex;
   gap: 18px;
 }
@@ -236,9 +242,13 @@ section {
   gap: 4px;
   transition: 0.4s;
   padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
 }
 .btn a:hover {
   color: #ff834f;
+  border-bottom: 1px solid #ff834f;
+  font-weight: 400;
+  font-size: 17px;
 }
 /* sec1 best */
 .sec_txt > p {
@@ -264,6 +274,9 @@ section {
   color: #fff;
 }
 /* sec1 컨텐츠 */
+#sec1_m {
+  display: none; /* 나중에 칩 클릭하면 보여줄꺼임 */
+}
 .sec1 .con_wrap {
   width: 1600px;
   height: auto;
@@ -337,6 +350,7 @@ section {
   display: block;
   margin-bottom: 24px;
 }
+/* 프로필아이콘 */
 .user_profile {
   font-size: 12px;
   font-weight: 300;
@@ -390,9 +404,7 @@ section {
   text-align: center;
   line-height: 17px;
 }
-#sec1_m {
-  display: none; /* 나중에 칩 클릭하면 보여줄꺼임 */
-}
+
 /* sec2 community */
 #sec2_s {
   display: none; /* 나중에 칩 클릭하면 보여줄꺼임*/
@@ -833,6 +845,11 @@ section {
   margin: 0 auto;
 }
 /* sec5 product */
+#sec5_summer,
+#sec5_fall,
+#sec5_winter {
+  display: none;
+}
 .sec5 > .con > div:nth-child(2) {
   display: flex;
   justify-content: space-between;
