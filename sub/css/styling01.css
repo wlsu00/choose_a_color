@@ -31,6 +31,9 @@ a {
 section {
   margin: 32px 0;
 }
+.user_profile img {
+  width: 20px;
+}
 /* chips 공통 */
 .chips {
   width: fit-content;
@@ -318,6 +321,10 @@ h1 {
   font-size: 14px;
   line-height: 20px;
 }
+.text_wrap .icons {
+  margin-top: 32px;
+  gap: 28px;
+}
 /* 오른쪽 이미지 */
 .right_con {
   margin-right: 40px;
@@ -356,9 +363,9 @@ h1 {
 }
 .imgbox + span {
   font-size: 10px;
-  float: right;
+  /* float: right; */
 }
-.imgbox + span::before {
+/* .imgbox + span::before {
   content: "icon";
   font-size: 0;
   background: url("../img/icon/neck.png") no-repeat;
@@ -367,7 +374,7 @@ h1 {
   height: 16px;
   float: left;
   margin-right: 4px;
-}
+} */
 
 /* 아래컨텐츠 */
 .content {
@@ -411,6 +418,9 @@ h1 {
   justify-content: flex-start;
   gap: 8px;
   margin-bottom: 20px;
+}
+.content .icons img {
+  width: 20px;
 }
 .card_wrap p {
   font-size: 14px;

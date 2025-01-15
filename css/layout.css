@@ -28,6 +28,9 @@ h4 {
 a {
   font-family: "Inter", "Noto Sans KR", sans-serif;
 }
+.user_profile img {
+  width: 20px;
+}
 /* chips 공통 */
 .chips {
   width: fit-content;
