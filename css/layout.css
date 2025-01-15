@@ -576,10 +576,11 @@ section {
 
 /* sec4 styling */
 /* 다른계절 숨겨두기 + 글자 정렬방법 💥💥💥💥💥💥💥*/
-/* #sec4_fall,
+#sec4_summer,
+#sec4_fall,
 #sec4_winter {
   display: none;
-} */
+}
 .sec4 .card_wrap {
   display: flex;
   gap: 28px;
@@ -652,7 +653,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgb(255, 226, 201);
+  /* background-color: rgb(255, 226, 201); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -670,8 +671,8 @@ section {
   height: fit-content;
   display: flex;
   margin: 0 auto;
-  gap: 8px;
-  margin-bottom: 28px;
+  gap: 28px;
+  margin-bottom: 32px;
 }
 .circle {
   width: 40px;

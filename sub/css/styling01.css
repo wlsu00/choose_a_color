@@ -241,7 +241,21 @@ h1 {
   position: absolute;
   top: -72px;
   left: -20px;
+  transition: 0.5s;
+  animation: person 0.7s ease 0.4s 1 forwards;
+  will-change: opacity, transform;
 }
+@keyframes person {
+  from {
+    opacity: 0;
+    top: -102px;
+  }
+  to {
+    opacity: 1;
+    top: -72px;
+  }
+}
+
 /* 가운데 텍스트 */
 
 /* 프로필아이콘 */
@@ -258,6 +272,7 @@ h1 {
 }
 .user_profile span {
   line-height: 17px;
+  margin: 0 10px;
 }
 .user_profile > div:first-of-type {
   display: flex;
@@ -308,17 +323,25 @@ h1 {
   margin-right: 40px;
 }
 .img_wrap {
+  width: 476px;
+  margin-top: 32px;
   display: flex;
   flex-wrap: wrap;
-  width: 420px;
-  margin-top: 32px;
+  gap: 28px;
+  justify-content: space-between;
+  align-items: center;
 }
 .imgbox1 {
-  margin-right: 28px;
+  width: calc(33%-28px);
+  width: 140px;
+  padding: 4px;
+  box-sizing: border-box;
   margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
 }
 .imgbox {
-  width: 100px;
+  width: 105px;
   height: 100px;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
@@ -327,7 +350,9 @@ h1 {
 }
 .imgbox img {
   object-fit: scale-down;
-  transform: scale(1.2);
+}
+.img_wrap .imgbox1:nth-of-type(5) img {
+  transform: translateY(-30px);
 }
 .imgbox + span {
   font-size: 10px;
@@ -366,8 +391,6 @@ h1 {
   padding: 20px;
   box-sizing: border-box;
   margin-bottom: 80px;
-  filter: grayscale(1);
-  transition: 0.5s;
 }
 .card_wrap .card_img {
   overflow: hidden;
@@ -377,11 +400,8 @@ h1 {
 }
 .card_wrap .card_img img {
   object-fit: cover;
-  filter: grayscale(1);
+  filter: grayscale(0.7);
   transition: 0.3s;
-}
-.card_wrap .card1:hover {
-  filter: grayscale(0);
 }
 .card_wrap .card1:hover img {
   filter: grayscale(0);
