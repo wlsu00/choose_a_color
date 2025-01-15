@@ -7,7 +7,6 @@ body {
   font-family: "Inter", "Noto Sans KR", sans-serif;
   color: #111;
 }
-
 /* 공통영역 */
 .con {
   width: 1600px;
@@ -40,6 +39,10 @@ a {
   box-sizing: border-box;
   padding: 8px 16px;
   border-radius: 24px;
+}
+.chips:hover {
+  background-color: #ff834f;
+  color: #fff;
 }
 .chips_plus {
   width: fit-content;
@@ -94,7 +97,6 @@ h1 {
   margin: 26px 0;
   box-sizing: border-box;
   line-height: 25px;
-  /* background-color: gold; */
 }
 #gnb > ul > li {
   /* width: 164px; */
@@ -269,10 +271,7 @@ section {
 .chips_con > a {
   margin-left: auto;
 }
-.chips:hover {
-  background-color: #ff834f;
-  color: #fff;
-}
+
 /* sec1 컨텐츠 */
 #sec1_m {
   display: none; /* 나중에 칩 클릭하면 보여줄꺼임 */
@@ -577,11 +576,10 @@ section {
 
 /* sec4 styling */
 /* 다른계절 숨겨두기 + 글자 정렬방법 💥💥💥💥💥💥💥*/
-#sec4_spring,
-#sec4_fall,
+/* #sec4_fall,
 #sec4_winter {
   display: none;
-}
+} */
 .sec4 .card_wrap {
   display: flex;
   gap: 28px;
@@ -603,8 +601,18 @@ section {
 /* sec4 카드뒤집기 */
 .flip {
   width: calc(33% - 28px);
+  height: 539px;
 }
 .sec4 .card1 {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  /* 뒤집는 효과 */
   display: inline-block;
   transition: transform 0.8s;
   transform: perspective(800px) rotateY(0deg);
@@ -618,85 +626,38 @@ section {
   backface-visibility: hidden;
 }
 .sec4 .card_front {
-  position: relative;
+  width: 100%;
+  height: 100%;
+  position: absolute;
   top: 0;
   left: 0;
 }
 
-/* sec4 컨텐츠 */
-.sec4 .card1 {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  border: 1px solid #d6d6d6;
-  border-radius: 8px;
-  box-sizing: border-box;
-  position: static;
-  cursor: pointer;
-  position: relative;
-}
 /* 카드앞면 이미지사이즈 */
 .card_front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transform: scale(0.9);
-}
-.sec4 #sec4_winter #winter1 img {
-  transform: translate(36px, 33px) scale(1.05);
 }
 
 .sec4 .card1:hover {
   border: 1px solid #ff834f;
 }
 /* 카드뒷면 글씨 위치맞추기 */
-.sec4 #sec4_spring .card_back {
+.sec4 .card_back {
+  width: 100%;
+  height: 100%;
   transform: rotateY(180deg);
   position: absolute;
-  top: 109px;
-  left: 100px;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 226, 201);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.sec4 #sec4_spring .card_back:nth-of-type(1) {
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 109px;
-  left: 122px;
-}
-.sec4 #sec4_summer .card_back {
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 109px;
-  left: 122px;
-}
-.sec4 #sec4_fall .card_back:nth-of-type(2) {
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 109px;
-  left: 90px;
-}
-.sec4 #sec4_fall .card_back {
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 109px;
-  left: 100px;
-}
-.sec4 #sec4_winter #winter3_txt1 {
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 109px;
-  left: 128px;
-}
-
-.sec4 #sec4_winter .card_back:nth-of-type(2) {
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 109px;
-  left: 120px;
-}
-.sec4 #sec4_winter #winter3_txt3 {
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 109px;
-  left: 115px;
-}
-.card1 > div > h4 {
+.card_back > .card_con > h4 {
   color: #ff834f;
   font-size: 24px;
   font-weight: 600;
@@ -704,11 +665,13 @@ section {
   text-align: center;
   margin-bottom: 32px;
 }
-.sec4 .card1 > div > div:first-of-type {
+.card_con > div:first-of-type {
+  width: fit-content;
+  height: fit-content;
   display: flex;
-  gap: 28px;
-  justify-content: center;
-  margin-bottom: 32px;
+  margin: 0 auto;
+  gap: 8px;
+  margin-bottom: 28px;
 }
 .circle {
   width: 40px;

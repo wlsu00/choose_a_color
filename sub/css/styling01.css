@@ -6,7 +6,6 @@
 body {
   font-family: "Inter", "Noto Sans KR", sans-serif;
   color: #111;
-  height: 2000px;
 }
 /* 공통영역 */
 .con {
@@ -104,13 +103,15 @@ h1 {
   margin: 26px 0;
   box-sizing: border-box;
   line-height: 25px;
-  /* background-color: gold; */
 }
 #gnb > ul > li {
-  width: 164px;
+  /* width: 164px; */
+  width: fit-content;
   text-align: center;
   transition: 0.3s;
   position: relative;
+  border-bottom: 1px solid #fff;
+  transition: 0.3s;
 }
 #gnb > ul > li > a {
   line-height: 25px;
@@ -385,7 +386,7 @@ h1 {
 .card_wrap .card1:hover img {
   filter: grayscale(0);
 }
-.icons {
+.content .icons {
   display: flex;
   justify-content: flex-start;
   gap: 8px;
