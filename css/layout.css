@@ -28,9 +28,6 @@ h4 {
 a {
   font-family: "Inter", "Noto Sans KR", sans-serif;
 }
-.user_profile img {
-  width: 20px;
-}
 /* chips 공통 */
 .chips {
   width: fit-content;
@@ -42,6 +39,9 @@ a {
   box-sizing: border-box;
   padding: 8px 16px;
   border-radius: 24px;
+}
+.chips:first-child {
+  width: 62px;
 }
 .chips:hover {
   background-color: #ff834f;
@@ -108,12 +108,11 @@ h1 {
   transition: 0.3s;
   position: relative;
   border-bottom: 1px solid #fff;
-  transition: 0.3s;
 }
 #gnb > ul > li > a {
   line-height: 25px;
   display: block;
-  padding: 0 20px;
+  padding: 0 24px;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   transition: 0.3s;
@@ -136,7 +135,7 @@ h1 {
 }
 #gnb .submenu li {
   width: 100%;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   text-align: center;
   line-height: 48px;
@@ -151,7 +150,7 @@ h1 {
 }
 .submenu > li > a:hover {
   color: #ff834f;
-  font-weight: 400;
+  font-weight: 500;
 }
 #gnb::after {
   content: "header-background";

@@ -67,7 +67,8 @@ h1 {
   /* background-color: gold; */
 }
 #gnb > ul > li {
-  width: 164px;
+  /* width: 164px; */
+  width: fit-content;
   text-align: center;
   transition: 0.3s;
   position: relative;
