@@ -431,7 +431,6 @@ section {
   width: 60%;
 }
 /* 더보기버튼 */
-/* 마진레프트오토 안먹음 */
 .right_table > a {
   display: block;
 }
@@ -490,7 +489,7 @@ section {
   transition: 0.3s;
 }
 .sec2 .table1:hover {
-  background-color: #d6d6d61a;
+  background-color: rgba(214, 214, 214, 0.2);
 }
 .right_table > div > a:last-child > .table1 {
   border-bottom: none;

@@ -152,12 +152,50 @@ h1 {
   height: 520px;
   overflow: hidden;
   background-color: #ffcdb9;
-  /* background: url("../img/makeup/2/main.png"); */
 }
+/* 베너안에 글씨 */
 .banner > div:first-child {
   margin: 215px 151px;
 }
-.content > .content > .con > div:first-child {
+/* 진행중인 이벤트 */
+.content .con > div:first-child {
   display: flex;
   gap: 32px;
+  margin: 32px 0;
+}
+.content .con > div:first-child h4:first-child {
+  color: #ff834f;
+}
+.card_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+/* 카드1 */
+.card_img {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.card_img > .cart_text {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+.card h4 {
+  margin: 12px 0;
+}
+.card h4 + p {
+  font-weight: 300;
+}
+.page {
+  width: fit-content;
+  height: fit-content;
+  margin: 32px auto;
+  font-size: 18px;
+}
+.page > span {
+  color: #d6d6d6;
+}
+.page > span > span {
+  color: #111;
 }

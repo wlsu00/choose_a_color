@@ -46,9 +46,6 @@ section {
   padding: 8px 16px;
   border-radius: 24px;
 }
-.chips:first-child {
-  width: 62px;
-}
 .chips:hover {
   background-color: #ff834f;
   color: #fff;
@@ -205,69 +202,29 @@ h1 {
   margin: 215px 151px;
 }
 /* 칩스 */
-.chips_seoson {
-  width: 1600px;
-  margin: 0 auto;
-}
-.chips_seoson .con {
-  display: flex;
-  gap: 12px;
-  margin-top: 54px;
-  margin-bottom: 16px;
-}
-
-/* sec2 - 베스트드레서 */
-.best .con {
-  height: 600px;
-  padding: 60px 0;
-  box-sizing: border-box;
-}
-.best .con_wrap {
+.chips_con {
   width: 100%;
-  height: 380px;
-  border-top: 1px solid #d6d6d6;
-  border-bottom: 1px solid #d6d6d6;
-  position: relative;
-  top: 0;
-  left: 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  gap: 200px;
+  margin: 32px 0;
 }
-.best .best_person {
-  width: 440px;
-  height: fit-content;
-  overflow: hidden;
-  position: absolute;
-  top: -72px;
-  left: -20px;
-  transition: 0.5s;
-  animation: person 0.7s ease 0.4s 1 forwards;
-  will-change: opacity, transform;
+.chips_con > div:first-child {
+  display: flex;
+  gap: 20px;
 }
-@keyframes person {
-  from {
-    opacity: 0;
-    top: -102px;
-  }
-  to {
-    opacity: 1;
-    top: -72px;
-  }
+.chips_con > a {
+  margin-left: auto;
 }
-
-/* 가운데 텍스트 */
-
+.chips {
+  width: 100%;
+}
+/* 컨텐츠영역 */
 /* 프로필아이콘 */
 .user_profile {
   font-size: 12px;
   font-weight: 300;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   margin: 32px 0;
   padding-right: 124px;
@@ -277,12 +234,7 @@ h1 {
   line-height: 17px;
   margin: 0 10px;
 }
-.user_profile > div:first-of-type {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.user_profile > div:last-of-type {
+.user_profile > div {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -307,136 +259,39 @@ h1 {
   float: right;
   margin-left: 20px;
 }
-.user_profile > img:last-of-type {
+.user_profile > img {
   width: 24px;
   height: 24px;
 }
-.text_wrap p {
-  color: #4d4d4d;
-  margin-bottom: 32px;
-  line-height: 23px;
-}
-.text_wrap p + span {
-  color: #4d4d4d;
-  font-size: 14px;
-  line-height: 20px;
-}
-.text_wrap .icons {
-  margin-top: 32px;
-  gap: 28px;
-}
-/* 오른쪽 이미지 */
-.right_con {
-  margin-right: 40px;
-}
-.img_wrap {
-  width: 476px;
-  margin-top: 32px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 28px;
-  justify-content: space-between;
-  align-items: center;
-}
-.imgbox1 {
-  width: calc(33%-28px);
-  width: 140px;
-  padding: 4px;
-  box-sizing: border-box;
-  margin-bottom: 28px;
-  display: flex;
-  flex-direction: column;
-}
-.imgbox {
-  width: 105px;
-  height: 100px;
-  border: 1px solid #d6d6d6;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  overflow: hidden;
-}
-.imgbox img {
-  object-fit: scale-down;
-}
-.img_wrap .imgbox1:nth-of-type(5) img {
-  transform: translateY(-30px);
-}
-.imgbox + span {
-  font-size: 10px;
-  /* float: right; */
-}
-/* .imgbox + span::before {
-  content: "icon";
-  font-size: 0;
-  background: url("../img/icon/neck.png") no-repeat;
-  display: block;
-  width: 16px;
-  height: 16px;
-  float: left;
-  margin-right: 4px;
-} */
-
-/* 아래컨텐츠 */
-.content {
-  margin-top: 100px;
-}
-.card_wrap {
+.conwrap {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 28px;
-  justify-content: space-around;
+  height: auto;
 }
-.content .card_wrap .user_profile {
-  margin: 0;
-  padding-right: 0;
-}
-.card_wrap .card1 {
-  width: calc(25% - 28px);
-  border: 1px solid #d6d6d6;
-  border-radius: 8px;
-  padding: 20px;
+/* 커뮤니티1 */
+.content1 {
+  padding: 14px 4px;
   box-sizing: border-box;
-  margin-bottom: 80px;
-}
-.card_wrap .card_img {
-  overflow: hidden;
-  border: 1px solid #d6d6d6;
-  height: 362px;
-  margin: 20px 0;
-}
-.card_wrap .card_img img {
-  object-fit: cover;
-  filter: grayscale(0.7);
+  border-bottom: 1px solid #d6d6d6;
   transition: 0.3s;
 }
-.card_wrap .card1:hover img {
-  filter: grayscale(0);
+.content1:hover {
+  background-color: rgba(214, 214, 214, 0.2);
 }
-.content .icons {
-  display: flex;
-  justify-content: flex-start;
-  gap: 8px;
-  margin-bottom: 20px;
+#first_content1 {
+  border-top: 2px solid #d6d6d6;
 }
-.content .icons img {
-  width: 20px;
+#last_content1 {
+  border-bottom: 2px solid #d6d6d6;
 }
-.card_wrap p {
-  font-size: 14px;
-  color: #111;
-  line-height: 20px;
-  margin-bottom: 20px;
+.content1 h4 {
+  margin: 16px 0;
 }
-.card_wrap span {
-  font-size: 14px;
-  font-weight: 300;
-  color: #4d4d4d;
-}
+
 /* footer */
 footer {
   border-top: 1px solid #d6d6d6;
   box-sizing: border-box;
+  margin-top: 32px;
 }
 footer .con {
   display: flex;
@@ -468,4 +323,20 @@ footer span {
   font-weight: 300;
   line-height: 20px;
   text-align: center;
+}
+/* 클릭이벤트할꺼니깐 스타일링영역 꺼두기 */
+#styling {
+  display: none;
+}
+.page {
+  width: fit-content;
+  height: fit-content;
+  margin: 32px auto;
+  font-size: 18px;
+}
+.page > span {
+  color: #d6d6d6;
+}
+.page > span > span {
+  color: #111;
 }
