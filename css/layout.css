@@ -252,8 +252,6 @@ section {
 .btn a:hover {
   color: #ff834f;
   border-bottom: 1px solid #ff834f;
-  font-weight: 400;
-  font-size: 17px;
 }
 /* sec1 best */
 .sec_txt > p {
