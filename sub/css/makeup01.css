@@ -6,6 +6,7 @@
 body {
   font-family: "Inter", "Noto Sans KR", sans-serif;
   color: #111;
+  overflow-x: hidden;
 }
 /* 공통영역 */
 .con {
@@ -198,13 +199,13 @@ h1 {
 }
 /* 칩스 */
 .chips_seoson {
-  width: 1600px;
+  width: 100%;
   margin: 0 auto;
 }
 .chips_seoson .con {
   display: flex;
   gap: 12px;
-  margin: 32px 0;
+  margin: 32px auto;
 }
 /* 두번째섹션 - 컨텐츠영역 */
 .content_wrap {
@@ -213,11 +214,13 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 32px;
-  margin-bottom: 100px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid #d6d6d6;
+  margin: 32px 0;
+  padding: 100px 0;
   box-sizing: border-box;
+}
+#second_img {
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
 }
 .content_wrap .left_img {
   width: 20vw;
@@ -231,9 +234,9 @@ h1 {
   order: 1;
 }
 .content_wrap .left_img img {
-  object-fit: contain;
+  object-fit: scale-down;
 }
-#sm_img {
+.sm_img {
   transform: translate(8px, 38px) scale(1.2);
 }
 /* 프로필 */
@@ -253,12 +256,12 @@ h1 {
 .user_profile > div:first-of-type {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 .user_profile > div:last-of-type {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 #user_id::after {
   content: "line";
@@ -270,7 +273,7 @@ h1 {
   float: right;
   margin-left: 20px;
 }
-.user_profile > img:last-of-type {
+.user_profile img:last-of-type {
   width: 24px;
   height: 24px;
 }
@@ -344,6 +347,21 @@ h1 {
   color: #4d4d4d;
   font-weight: 300;
   font-size: 14px;
+}
+/* top버튼 */
+.top_btn {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  color: #fff;
+  background-color: #ff834f;
+  border-radius: 30px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 500;
 }
 /* footer */
 footer {

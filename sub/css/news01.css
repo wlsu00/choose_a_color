@@ -6,6 +6,7 @@
 body {
   font-family: "Inter", "Noto Sans KR", sans-serif;
   color: #111;
+  overflow-x: hidden;
 }
 /* 공통영역 */
 .con {
@@ -164,9 +165,10 @@ h1 {
   gap: 32px;
   margin: 32px 0;
 }
-.content .con > div:first-child h4:first-child {
+.content .con > div:first-child a:first-of-type {
   color: #ff834f;
 }
+
 .card_wrap {
   display: flex;
   justify-content: space-between;
@@ -199,4 +201,55 @@ h1 {
 }
 .page > span > span {
   color: #111;
+}
+/* top버튼 */
+.top_btn {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  color: #fff;
+  background-color: #ff834f;
+  border-radius: 30px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 500;
+}
+/* footer */
+footer {
+  border-top: 1px solid #d6d6d6;
+  box-sizing: border-box;
+}
+footer .con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+footer h2 {
+  width: 212px;
+}
+.sitemap > ul {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.sitemap > ul > li {
+  padding: 10px;
+  box-sizing: border-box;
+}
+.sitemap > ul > li > a {
+  color: #4d4d4d;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 80px;
+}
+footer span {
+  color: #4d4d4d;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
 }

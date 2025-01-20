@@ -6,6 +6,7 @@
 body {
   font-family: "Inter", "Noto Sans KR", sans-serif;
   color: #111;
+  overflow-x: hidden;
 }
 /* 공통영역 */
 .con {
@@ -40,7 +41,7 @@ a {
   padding: 8px 16px;
   border-radius: 24px;
 }
-.chips:first-child {
+.chips_seoson .chips:first-child {
   width: 62px;
 }
 .chips:hover {
@@ -616,12 +617,13 @@ section {
   position: relative;
   /* 뒤집는 효과 */
   display: inline-block;
-  transition: transform 0.8s;
+  transition: transform 1.4s;
   transform: perspective(800px) rotateY(0deg);
   transform-style: preserve-3d;
 }
 .sec4 .card1:hover {
   transform: perspective(800px) rotateY(180deg);
+  border: 1px solid #ff834f;
 }
 .sec4 .card_front,
 .sec4 .card_back {
@@ -643,9 +645,6 @@ section {
   transform: scale(0.9);
 }
 
-.sec4 .card1:hover {
-  border: 1px solid #ff834f;
-}
 /* 카드뒷면 글씨 위치맞추기 */
 .sec4 .card_back {
   width: 100%;
@@ -840,6 +839,7 @@ section {
   overflow: hidden;
   padding: 20px;
   border: 1px solid #d6d6d6;
+  transition: 0.3s;
 }
 .sec5 .card1:hover {
   border: 1px solid #ff834f;
@@ -906,6 +906,21 @@ section {
   margin: 8px 0;
 }
 
+/* top버튼 */
+.top_btn {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  color: #fff;
+  background-color: #ff834f;
+  border-radius: 30px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 500;
+}
 /* footer */
 footer {
   border-top: 1px solid #d6d6d6;

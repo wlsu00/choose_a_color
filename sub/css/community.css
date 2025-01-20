@@ -6,6 +6,7 @@
 body {
   font-family: "Inter", "Noto Sans KR", sans-serif;
   color: #111;
+  overflow-x: hidden;
 }
 /* 공통영역 */
 .con {
@@ -224,7 +225,6 @@ h1 {
   font-weight: 300;
   width: 100%;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   margin: 32px 0;
   padding-right: 124px;
@@ -237,7 +237,7 @@ h1 {
 .user_profile > div {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 .user_profile > span::before {
   content: "line";
@@ -285,6 +285,21 @@ h1 {
 }
 .content1 h4 {
   margin: 16px 0;
+}
+/* top버튼 */
+.top_btn {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  color: #fff;
+  background-color: #ff834f;
+  border-radius: 30px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 500;
 }
 
 /* footer */

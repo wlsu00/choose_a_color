@@ -6,6 +6,7 @@
 body {
   font-family: "Inter", "Noto Sans KR", sans-serif;
   color: #111;
+  overflow-x: hidden;
 }
 /* 공통영역 */
 .con {
@@ -212,8 +213,7 @@ h1 {
 .chips_seoson .con {
   display: flex;
   gap: 12px;
-  margin-top: 54px;
-  margin-bottom: 16px;
+  margin: 32px 0;
 }
 
 /* sec2 - 베스트드레서 */
@@ -280,12 +280,12 @@ h1 {
 .user_profile > div:first-of-type {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 .user_profile > div:last-of-type {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 .user_profile > span::before {
   content: "line";
@@ -405,6 +405,10 @@ h1 {
   height: 362px;
   margin: 20px 0;
 }
+.card_wrap #sm_img {
+  transform: scale(1.07);
+  transform-origin: bottom;
+}
 .card_wrap .card_img img {
   object-fit: cover;
   filter: grayscale(0.7);
@@ -432,6 +436,40 @@ h1 {
   font-size: 14px;
   font-weight: 300;
   color: #4d4d4d;
+}
+.plus_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plus_icon img {
+  transition: 3s;
+}
+.plus_icon img:hover {
+  animation: plus 1s ease 1 backwards;
+}
+@keyframes plus {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* top버튼 */
+.top_btn {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  color: #fff;
+  background-color: #ff834f;
+  border-radius: 30px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 500;
 }
 /* footer */
 footer {
