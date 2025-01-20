@@ -442,8 +442,10 @@ section {
 .sec2_profile {
   margin-bottom: 16px;
 }
-.right_table img {
+.sec2 .right_table img {
   display: inline-block;
+  width: 20px;
+  height: 20px;
 }
 .sec2 .user_profile {
   display: flex;
@@ -820,11 +822,12 @@ section {
   display: block;
   width: fit-content;
   height: fit-content;
+  flex-grow: 1;
 }
 .sec5 > .con > .con_wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 28px;
   margin-top: 28px;
 }

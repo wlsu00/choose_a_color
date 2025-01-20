@@ -189,7 +189,7 @@ h1 {
 .card_img img {
   transition: 0.3s;
 }
-.card:hover .card_img img {
+.card:not(:hover) .card_img img {
   opacity: 0.7;
 }
 
