@@ -443,19 +443,13 @@ h1 {
   align-items: center;
 }
 .plus_icon img {
-  transition: 3s;
+  transition: 0.5s;
+  transform: rotate(0deg);
 }
 .plus_icon img:hover {
-  animation: plus 1s ease 1 backwards;
+  transform: rotate(360deg);
 }
-@keyframes plus {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+
 /* top버튼 */
 .top_btn {
   width: fit-content;
