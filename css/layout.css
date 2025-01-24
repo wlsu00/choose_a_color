@@ -894,7 +894,7 @@ section {
   width: fit-content;
   height: fit-content;
   position: fixed;
-  right: px;
+  right: 40px;
   bottom: 80px;
   color: #fff;
   background-color: #ff834f;

@@ -202,6 +202,7 @@ h1 {
   background: url("../img/makeup/makeup_best/banner.png") no-repeat;
   padding: 73px 254px;
   box-sizing: border-box;
+  /* display: none; */
 }
 
 /* sec1 베스트-봄 */
@@ -325,8 +326,10 @@ h1 {
 }
 /* 오른쪽 이미지 */
 .right_con {
-  margin-right: 40px;
+  padding-top: 90px;
+  box-sizing: border-box;
 }
+
 .img_wrap {
   width: fit-content;
   margin-top: 32px;
@@ -452,6 +455,20 @@ h1 {
 }
 .plus_icon img:hover {
   transform: rotate(360deg);
+}
+/* 페이저 */
+.page {
+  width: fit-content;
+  height: fit-content;
+  margin: 20px auto;
+  margin-bottom: 80px;
+  font-size: 18px;
+}
+.page > span {
+  color: #d6d6d6;
+}
+.page > span > span {
+  color: #111;
 }
 
 /* top버튼 */
