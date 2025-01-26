@@ -202,11 +202,11 @@ h1 {
   background: url("../img/makeup/makeup_best/banner.png") no-repeat;
   padding: 73px 254px;
   box-sizing: border-box;
-  /* display: none; */
 }
 
-/* sec1 베스트-봄 */
+/* sec1 베스트 */
 /* 칩스 */
+/* 계절설명문구 */
 .best > div:first-of-type {
   width: fit-content;
   height: fit-content;
@@ -423,6 +423,10 @@ h1 {
   filter: grayscale(0.7);
   transition: 0.5s;
 }
+.card_wrap .card1:hover{
+  border: 1px solid #ff834f;
+  border-radius: 8px;
+}
 .card_wrap .card1:hover img {
   filter: grayscale(0);
 }
@@ -464,10 +468,10 @@ h1 {
   margin-bottom: 80px;
   font-size: 18px;
 }
-.page > span {
+.page span {
   color: #d6d6d6;
 }
-.page > span > span {
+.page  span > span {
   color: #111;
 }
 

@@ -29,12 +29,12 @@ h4 {
 a {
   font-family: "Inter", "Noto Sans KR", sans-serif;
 }
-section {
+/* section {
   margin: 32px 0;
 }
 .user_profile img {
   width: 20px;
-}
+} */
 /* chips 공통 */
 .chips {
   width: fit-content;
@@ -47,7 +47,7 @@ section {
   padding: 8px 16px;
   border-radius: 24px;
 }
-.chips:first-child {
+.chips{
   width: 62px;
 }
 .chips:hover {
@@ -197,23 +197,23 @@ h1 {
 }
 .banner {
   width: 100%;
-  height: 520px;
+  height: 240px;
   overflow: hidden;
-  background-color: #ffcdb9;
-  /* background: url("../img/makeup/2/main.png"); */
+  background: url("../img/makeup/makeup_best/banner.png") no-repeat;
+  padding: 73px 254px;
+  box-sizing: border-box;
 }
-.banner > div:first-child {
-  margin: 215px 151px;
-}
+/* sec1 베스트 */
 /* 칩스 */
 .chips_seoson {
-  width: 1600px;
+  width: fit-content;
+  height: fit-content;
   margin: 0 auto;
 }
-.chips_seoson .con {
+.chips_con {
   display: flex;
   gap: 12px;
-  margin: 32px 0;
+  margin: 16px 0 100px;
 }
 
 /* sec2 - 베스트드레서 */
@@ -224,7 +224,7 @@ h1 {
 }
 .best .con_wrap {
   width: 100%;
-  height: 380px;
+  height: fit-content;
   border-top: 1px solid #d6d6d6;
   border-bottom: 1px solid #d6d6d6;
   position: relative;
@@ -245,7 +245,7 @@ h1 {
   top: -72px;
   left: -20px;
   transition: 0.5s;
-  animation: person 0.7s ease 0.4s 1 forwards;
+  animation: person 0.7s ease 1 forwards;
   will-change: opacity, transform;
 }
 @keyframes person {
