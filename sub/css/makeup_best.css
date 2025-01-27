@@ -354,6 +354,7 @@ h1 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  transition: 0.3s;
 }
 .imgbox img {
   object-fit: scale-down;
@@ -368,6 +369,10 @@ h1 {
 }
 .imgbox1:hover .cardtext {
   height: 200px;
+}
+.imgbox:hover {
+  border: 1px solid #ff834f;
+  border-radius: 8px;
 }
 .cardtext span {
   width: fit-content;
@@ -423,7 +428,7 @@ h1 {
   filter: grayscale(0.7);
   transition: 0.5s;
 }
-.card_wrap .card1:hover{
+.card_wrap .card1:hover {
   border: 1px solid #ff834f;
   border-radius: 8px;
 }
@@ -471,7 +476,7 @@ h1 {
 .page span {
   color: #d6d6d6;
 }
-.page  span > span {
+.page span > span {
   color: #111;
 }
 

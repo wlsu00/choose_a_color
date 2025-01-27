@@ -47,7 +47,7 @@ a {
   padding: 8px 16px;
   border-radius: 24px;
 }
-.chips{
+.chips {
   width: 62px;
 }
 .chips:hover {
@@ -267,7 +267,7 @@ h1 {
     top: -72px;
   }
 }
-#winter_best{
+#winter_best {
   transform: scale(1.1);
 }
 /* 가운데 텍스트 */
@@ -373,20 +373,15 @@ h1 {
   transform: translateY(-30px);
 }
 .imgbox + span {
-  font-size: 10px;
-  /* float: right; */
+  font-size: 12px;
 }
-/* .imgbox + span::before {
-  content: "icon";
-  font-size: 0;
-  background: url("../img/icon/neck.png") no-repeat;
-  display: block;
-  width: 16px;
-  height: 16px;
-  float: left;
-  margin-right: 4px;
-} */
 
+#sm_img {
+  transform: scale(1.1);
+}
+#big_img {
+  transform: translateY(-8px);
+}
 /* 아래컨텐츠 */
 .content {
   margin-top: 100px;
@@ -402,6 +397,10 @@ h1 {
   margin: 0;
   padding-right: 0;
 }
+.content .card_wrap .user_profile img {
+  width: 24px;
+  height: 24px;
+}
 .card_wrap .card1 {
   width: calc(25% - 28px);
   border: 1px solid #d6d6d6;
@@ -416,7 +415,6 @@ h1 {
   height: 362px;
   margin: 20px 0;
   border-radius: 8px;
-
 }
 .card_wrap #sm_img {
   transform: scale(1.07);
@@ -427,7 +425,7 @@ h1 {
   filter: grayscale(0.7);
   transition: 0.3s;
 }
-.card_wrap .card1:hover{
+.card_wrap .card1:hover {
   border: 1px solid #ff834f;
   border-radius: 8px;
 }
@@ -437,7 +435,7 @@ h1 {
 .content .icons {
   display: flex;
   justify-content: flex-start;
-  gap: 8px;
+  gap: 16px;
   margin-bottom: 20px;
 }
 .content .icons img {
@@ -477,7 +475,7 @@ h1 {
 .page span {
   color: #d6d6d6;
 }
-.page  span > span {
+.page span > span {
   color: #111;
 }
 

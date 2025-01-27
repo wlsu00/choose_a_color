@@ -303,11 +303,17 @@ section {
   object-fit: scale-down;
   transform: translateY(-50px) scale(1.2);
 }
-#sec1_s > a:first-child .card_img > img {
+#sec1_s > a:nth-child(1) .card_img > img {
   transform: translateY(-70px) scale(1.1);
 }
 #sec1_s > a:nth-child(2) .card_img > img {
-  transform: translateY(-140px) scale(1.2);
+  transform: translateY(-150px);
+}
+#sec1_s > a:nth-child(3) .card_img > img {
+  transform: translateY(-100px) scale(1.2);
+}
+#sec1_s > a:nth-child(4) .card_img > img {
+  transform: translateY(-80px) scale(1.1);
 }
 #sec1_m > a:nth-child(1) .card_img > img {
   transform: translate(0px, -30px);
