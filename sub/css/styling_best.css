@@ -375,7 +375,9 @@ h1 {
 .imgbox + span {
   font-size: 12px;
 }
-
+#ssm_img{
+  transform: scale(1.2);
+}
 #sm_img {
   transform: scale(1.1);
 }

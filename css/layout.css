@@ -259,7 +259,7 @@ section {
 }
 
 /* sec1 컨텐츠 */
-#sec1_m {
+#sec1_s {
   display: none; /* 나중에 칩 클릭하면 보여줄꺼임 */
 }
 .sec1 .con_wrap {
