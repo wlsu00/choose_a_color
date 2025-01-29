@@ -7,8 +7,8 @@
 body {
   font-family: "Inter", "Noto Sans KR", sans-serif;
   color: #111;
-  background-color: #fff3ee;
-  height: 1036px;
+  background-color: #fff;
+  height: 100vh;
 }
 .con {
   width: 1600px;
@@ -137,7 +137,13 @@ h1 {
 /* 로그인폼 */
 .login {
   margin: 140px auto;
-  width: 388px;
+  /* width: 388px; */
+  width: 30%;
+  height: fit-content;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  border: 1px solid #ff834f;
+  border-radius: 8px;
 }
 form {
   margin-bottom: 28px;
@@ -196,6 +202,10 @@ form .search span {
   text-align: center;
   cursor: pointer;
 }
+form .search span:hover{
+color: #ff834f;
+font-weight: 400;
+}
 form .keep {
   display: flex;
   justify-content: space-between;
@@ -222,22 +232,22 @@ form .keep .search > span:first-child::after {
   margin-top: 28px;
   cursor: pointer;
   font-family: "inter", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 28px;
   text-align: center;
-  transition: 0.3s;
+  transition: 0.5s;
+}
+.btn:not(:hover) .btn {
+  opacity: 1;
 }
 .btn:hover {
-  background-color: #cc6a40;
+  opacity: 0.5;
 }
 .btn:last-child {
   background-color: #fae100;
   color: #111;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;
-}
-.btn:last-child:hover {
-  background-color: #d6c100;
 }
 .btn:last-child > img {
   display: inline-block;
@@ -255,9 +265,13 @@ form .keep .search > span:first-child::after {
   color: #ff834f;
   line-height: 24px;
   margin-top: 4px;
-  border-bottom: 1px solid transparent;
   transition: 0.5s;
+  padding: 4px 8px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-left: -10px;
 }
 .login h3:hover {
-  border-bottom: 1px solid #ff834f;
+  background-color: #ff834f;
+  color: #fff;
 }

@@ -226,7 +226,7 @@ h1 {
   width: 100%;
   display: flex;
   align-items: center;
-  margin: 32px 0;
+  margin-bottom: 32px 0;
   padding-right: 124px;
   box-sizing: border-box;
 }
@@ -269,13 +269,13 @@ h1 {
 }
 /* 커뮤니티1 */
 .content1 {
-  padding: 14px 4px;
+  padding: 32px 20px;
   box-sizing: border-box;
   border-bottom: 1px solid #d6d6d6;
   transition: 0.3s;
 }
-.content1:hover {
-  background-color: rgba(214, 214, 214, 0.2);
+.content1:hover h4{
+  background-color: #f8f3ed;
 }
 #first_content1 {
   border-top: 2px solid #d6d6d6;
@@ -285,6 +285,10 @@ h1 {
 }
 .content1 h4 {
   margin: 16px 0;
+  width: fit-content;
+  padding: 0 4px;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
 /* top버튼 */
 .top_btn {

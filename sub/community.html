@@ -28,11 +28,11 @@
             <!-- 1차메뉴 -->
             <ul>
               <li>
-                <a href="./makeup01.html">MAKE UP</a>
+                <a href="./makeup_best_spring.html">MAKE UP</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
                   <li>
-                    <a href="./sub/makeup1.html">베스트</a>
+                    <a href="./makeup_best_spring.html">베스트</a>
                   </li>
                   <li>
                     <a href="#">추천메이크업</a>
@@ -40,10 +40,10 @@
                 </ul>
               </li>
               <li>
-                <a href="./styling01.html">STYLING</a>
+                <a href="./styling_best_spring.html">STYLING</a>
                 <ul class="submenu">
                   <li>
-                    <a href="./styling01.html">베스트</a>
+                    <a href="./styling_best_spring.html">베스트</a>
                   </li>
                   <li>
                     <a href="#">추천스타일링</a>
@@ -68,7 +68,7 @@
           </nav>
           <!-- icons -->
           <div class="icons">
-            <a href="./sub/login.html">
+            <a href="./login.html">
               <img src="../img/icons/login.svg" alt="로그인" />
             </a>
             <a href="#">
@@ -92,11 +92,11 @@
           <div class="con">
             <div class="chips_con">
               <div>
-                <a href="#">
-                  <div class="chips">메이크업</div>
+                <a href="#" id="maBtn" onclick="showTap1()">
+                  <div class="chips" >메이크업</div>
                 </a>
-                <a href="#">
-                  <div class="chips">스타일링</div>
+                <a href="#" id="stBtn" onclick="showTap2()">
+                  <div class="chips" >스타일링</div>
                 </a>
               </div>
               <a href="#">
@@ -163,7 +163,7 @@
                     벨벳인데 촉촉해서 발림성도 좋아서 요즘 바르기 딱 좋은 틴트
                     찾아왔습니다~!~! 겨쿨에 살짝 발걸친 봄라이트인데 두 타입
                     모두한테 잘 어울리는거같아용 메이크소울 소프트에어리벨벳틴트
-                    완전 강추합니다!! 1호 시그니처 소울 레드컬러에용···
+                    완전 강추합니다!!···
                   </p>
                 </div>
               </div>
@@ -348,7 +348,7 @@
           </div>
         </section>
         <section class="con" id="styling">
-          <!-- 메이크업 -->
+          <!-- 스타일링 -->
           <div class="conwrap">
             <!-- 커뮤니티1 -->
             <a href="#">
@@ -370,7 +370,7 @@
                   </div>
                 </div>
                 <div>
-                  <h4>여쿨라'NUSE'에서 인생블러셔 찾음</h4>
+                  <h4>스타일링임.여쿨라'NUSE'에서 인생블러셔 찾음</h4>
                   <p>
                     블러셔 도전할때마다 내가 하면 미쓰홍당무같았는데 이번에
                     추천제품 올라온거랑 커뮤 같이 비교하면서 화장했더니 드디어
@@ -635,5 +635,15 @@
         </div>
       </footer>
     </div>
+    <script>
+      function showTap1(){
+        document.querySelector("#makeup").display = "flex"
+        document.querySelector("#styling").display = "none"
+      }
+      function showTap2(){
+        document.querySelector("#styling").display = "flex"
+        document.querySelector("#makeup").display = "none"
+      }
+    </script>
   </body>
 </html>
