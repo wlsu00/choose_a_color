@@ -265,9 +265,66 @@ section {
     width: 100%;
     height: 324px;
 }
-/* 📌📌📌글씨크기 조절할차례📌📌📌 */
+.sec4 .sec_txt > p{
+    font-size: 14px;
+}
+.sec4 .chips_seoson .chips{
+    width: 40px;
+}
+.sec4 .chips{
+    width: 38px;
+    font-size: 10px;
+}
+.card_back > .card_con > h4{
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.circle{
+    width: 28px;
+    height: 28px;
+}
+.sec4 .maintext{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 8px;
+}
+.sec4 .subtext{
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
 
-.sec5, footer{
+/* sec5 product */
+.sec5 .sec_txt > p{
+    font-size: 14px;
+}
+.sec5 .chips_seoson .chips{
+    width: 40px;
+}
+.sec5 .chips{
+    width: 38px;
+    font-size: 10px;
+}
+.sec5 > .con > .con_wrap {
+    gap: 16px;
+    margin-top: 16px;
+}
+.sec5 .card1{
+    width: 100%;
+    padding: 10px;
+}
+.img_case{
+    width: 142px;
+    height: fit-content;
+}
+.img_case img{
+    object-fit: scale-down;
+}
+.sec5 .cardtext span{
+    font-size: 14px;
+}
+footer{
     display: none;
 }
 

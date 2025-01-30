@@ -41,7 +41,7 @@ a {
   padding: 8px 16px;
   border-radius: 24px;
 }
-.chips_seoson .chips:first-child {
+.chips_seoson .chips {
   width: 62px;
 }
 .chips:hover {
@@ -823,6 +823,8 @@ section {
   margin-top: 28px;
 }
 .sec5 .card1 {
+  width: fit-content;
+  height: fit-content;
   position: relative;
   top: 0;
   left: 0;
