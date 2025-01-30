@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+/* 모바일 */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+/* 공통영역 */
+.con{
+    width: 95%;
+    height:auto;
+}
+h3 {
+    /* 섹션제목 */
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 22px;
+}
+
+/* chips 공통 */
+.chips {
+    width: 53px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+}
+.chips_plus {
+    font-size: 10px;
+    box-sizing: border-box;
+    padding: 4px 8px;
+    font-size: 10px;
+    line-height: 12px;
+}
+.chips con{
+    width: 95%;
+}
+/* header */
+header{
+    width: 95%;
+    height: 32px;
+    position: relative;
+    background-color: #fff;
+    z-index: 999;
+}
+header .con {
+    width: 95%;
+    height: 100%;
+    gap: 64px;
+}
+/* logo */
+h1 {
+    width: 129px;
+}
+  /* gnb */
+#gnb{
+    display: none;
+}
+.icons img {
+    width: 20px;
+    height: 20px;
+}
+.icons a:nth-child(2){
+    display: none;
+}
+.icons .menu_icon{
+    display: block;
+}
+/* sec공통영역 */
+section {
+    margin-bottom: 32px;
+}
+
+/* main */
+.main_visual {
+    width: 100%;
+    height: 168px;
+    display: flex;
+    justify-content: start;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.main_visual_text > h2{
+    font-size: 18px;
+}
+.main_visual_text > h4{
+    font-size: 10px;
+    line-height: 12px;
+}
+.text_btn {
+    width: fit-content;
+    display: flex;
+    font-size: 8px;
+    line-height: 10px;
+}
+.text_btn > a:last-child{
+    display: none;
+}
+.chips_con{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+/* sec1 컨텐츠 */
+.sec1 .con_wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec1 .card1{
+    width: 142px;
+    height: 108px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    position: relative;
+    flex-shrink: 0;  
+}
+/* 이미지 틀 div */
+.card_img {
+    width: 80px;
+    height: 80px;
+    top: -25%;
+    left: 50%;
+    transform: translate(-36px, -12px);}
+.card1:hover .card_img {
+    transform: translate(-36px, -22px);
+}
+.sec1 a .card_img > img {
+    object-fit: scale-down;
+    transform: translate(0) scale(1);
+}
+#sec1_m > a:nth-child(1) .card_img > img {
+    transform: translateY(-20px);
+}
+#sec1_s > a .card_img > img {
+    object-fit: scale-down;
+    transform: translateY(-24px) sccale(1);
+}
+.card1_con{
+    width: 128px;
+    position: absolute;
+    top: 52px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* 해시태그 */
+.sec1 .card1 > div > span{
+    font-size: 8px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+/* 프로필아이콘 */
+.user_profile {
+    width: 100%;
+    font-size: 8px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}  
+.user_profile span {
+    line-height: 10px;
+}
+.user_profile > div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.user_profile > span::before {
+    width: 1px;
+    height: 10px;
+    margin-right: 6px;  
+}
+.user_profile > span::after{
+    width: 1px;
+    height: 10px;
+    margin-left: 6px;  
+}
+.user_profile div:first-of-type img:first-child{
+    display: none;
+}
+.user_profile img:last-of-type {
+    width: 12px;
+    height: 12px;
+}
+.sec1 .card1_con > p{
+    display: none;
+}
+.sec1 .user_profile > div:nth-of-type(2){
+    display: flex;
+    align-items: center;
+    gap: 4px;  
+}
+/* sec2 커뮤니티 */
+.sec2 > .con{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-flow: column wrap ; */
+    /* flex-direction: column; */
+}
+.left_txt{
+    width: 100%;
+    margin: 0 10px;
+}
+.right_table{
+    width: 100%;
+}
+.sec2 h4 {
+    font-size: 12px;
+    line-height: 14px;
+}
+.table1 p {
+    width: auto;
+    height: 12px;
+    overflow: hidden;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+}
+.sec2 .user_profile > span::before, .sec2 .user_profile > span::after{
+    width: 1px;
+    height: 10px;
+}
+
+  /* sec3 이벤트  */
+.sec3 .coupon_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sec3 .sec3_btn{
+    font-size: 10px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -10px;
+    left: 130px;
+    z-index: 20;
+}
+.hover_img2 {
+    position: absolute;
+    transform: translateY(-146px);
+    will-change: transform, opacity, color;
+}
+.coupon_text {
+    position: absolute;
+    top: 38px;
+    left: 46px;
+    z-index: 20;
+}
+.coupon_text > p{
+    font-size: 10px;
+}
+.coupon_text > h4{
+    font-size: 14px;
+}
+/* sec4 스타일링 */
+.sec4 .card_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+}
+.flip{
+    width: 100%;
+    height: 324px;
+}
+/* 📌📌📌글씨크기 조절할차례📌📌📌 */
+
+.sec5, footer{
+    display: none;
+}
+
+}

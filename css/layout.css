@@ -346,7 +346,6 @@ section {
   font-size: 12px;
   font-weight: 300;
   width: 100%;
-  /* background-color: wheat; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -385,7 +384,7 @@ section {
   float: right;
   margin-left: 30px;
 }
-.user_profile > img:last-of-type {
+.user_profile img:last-of-type {
   width: 24px;
   height: 24px;
 }
@@ -406,7 +405,7 @@ section {
 /* 왼쪽텍스트 */
 .left_txt {
   width: 40%;
-  margin: auto; /**/
+  margin: auto;
   margin: 308px auto;
 }
 .sec2 p {
@@ -463,7 +462,7 @@ section {
   float: right;
   margin-left: 10px;
 }
-.user_profile > div:nth-of-type(2) {
+.sec2 .user_profile > div:nth-of-type(2) {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -524,6 +523,7 @@ section {
   top: -14px;
   left: 210px;
   z-index: 20;
+  box-sizing: border-box;
 }
 .sec3 .sec3_btn:hover {
   background-color: #ff834f;
