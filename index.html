@@ -6,8 +6,9 @@
     <title>Choose A Color</title>
     <!-- css -->
     <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="icon" type="image/png" href="./img/icons/apple-icon-57x57.png" />
+    <script src="./js/layout.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -15,11 +16,11 @@
       <header>
         <div class="con">
           <!-- logo -->
-           <div class="icons">
+          <div class="icons">
             <a href="#" class="menu_icon">
               <img src="./img/icons/menu.svg" alt="메뉴" />
             </a>
-           </div>
+          </div>
           <h1>
             <a href="/">
               <img src="./img/logo.png" alt="logo" />
@@ -106,21 +107,26 @@
             <div class="chips_con">
               <div>
                 <a href="#">
-                  <div class="chips" id="sec1MaBtn">메이크업</div>
+                  <div class="chips" id="mabtn_sec1">메이크업</div>
                 </a>
                 <a href="#">
-                  <div class="chips" id="sec1StBtn">스타일링</div>
+                  <div class="chips" id="stbtn_sec1">스타일링</div>
                 </a>
               </div>
-              <a href="#">
-                <div class="chips_plus">+더보기</div>
-              </a>
+              <div class="more_wrap">
+                <a href="./sub/makeup_best_spring.html" class="on"
+                  ><div class="chips_plus">+더보기</div></a
+                >
+                <a href="./sub/styling_best_spring.html"
+                  ><div class="chips_plus">+더보기</div></a
+                >
+              </div>
             </div>
             <!-- sec1 컨텐츠 -->
             <!-- 메이크업 -->
             <div class="con_wrap" id="sec1_m">
               <!-- best1 -->
-              <a href="#">
+              <a href="./sub/makeup_best_fall.html">
                 <div class="card1">
                   <div class="card_img">
                     <!-- 이미지 -->
@@ -148,7 +154,7 @@
                 </div>
               </a>
               <!-- best2 -->
-              <a href="#">
+              <a href="./sub/makeup_best_winter.html">
                 <div class="card1">
                   <div class="card_img">
                     <!-- 이미지 -->
@@ -176,7 +182,7 @@
                 </div>
               </a>
               <!-- best3 -->
-              <a href="#">
+              <a href="./sub/makeup_best_summer.html">
                 <div class="card1">
                   <div class="card_img">
                     <!-- 이미지 -->
@@ -204,7 +210,7 @@
                 </div>
               </a>
               <!-- best4 -->
-              <a href="#">
+              <a href="./sub/makeup_best_spring.html">
                 <div class="card1">
                   <div class="card_img">
                     <!-- 이미지 -->
@@ -232,10 +238,11 @@
                 </div>
               </a>
             </div>
+
             <!-- 스타일링 -->
             <div class="con_wrap" id="sec1_s">
               <!-- best1 -->
-              <a href="#">
+              <a href="./sub/styling_best_winter.html">
                 <div class="card1">
                   <div class="card_img">
                     <!-- 이미지 -->
@@ -263,7 +270,7 @@
                 </div>
               </a>
               <!-- best2 -->
-              <a href="#">
+              <a href="./sub/styling_best_fall.html">
                 <div class="card1">
                   <div class="card_img">
                     <!-- 이미지 -->
@@ -284,21 +291,22 @@
                       </div>
                     </div>
                     <p>
-                      출근룩은 깔끔한게 최고라 검정코트로 겉을 눌러주고<br />
-                      너무 어두워보이지않게 밝은 청바지랑 같이 매치해줘서···
+                      출근룩은 깔끔한게 최고라 검정코트로 겉을 눌러주고 너무
+                      어두워보이지않게 밝은 청바지랑 같이 매치해줘서 가을 웜
+                      뮤트···
                     </p>
                   </div>
                 </div>
               </a>
               <!-- best3 -->
-              <a href="#">
+              <a href="./sub/styling_best_summer.html">
                 <div class="card1">
                   <div class="card_img">
                     <!-- 이미지 -->
                     <img src="./img/sec1_best/3.jpg" alt="woman" />
                   </div>
                   <div class="card1_con">
-                    <span>#겨울코디 #러블리 #캐쥬얼</span>
+                    <span>#모던룩 #데님 #페미닌</span>
                     <div class="user_profile">
                       <!-- 프로필아이콘 -->
                       <div>
@@ -312,21 +320,22 @@
                       </div>
                     </div>
                     <p>
-                      여쿨라하면 역시 연한 하늘색이 짱임<br />
-                      그리고 겨울하면 뽀글이!! 여기저기 뽀글이로 느낌통일했···
+                      여쿨 트루한테 제일 좋은 컬러 쨍한 파란색!! 흔치않은 파란
+                      트위드에 깔끔하게 흰 데님 매치해줬다. 트위드엔 슬렉스보다
+                      데님···
                     </p>
                   </div>
                 </div>
               </a>
               <!-- best4 -->
-              <a href="#">
+              <a href="./sub/styling_best_spring.html">
                 <div class="card1">
                   <div class="card_img">
                     <!-- 이미지 -->
                     <img src="./img/sec1_best/4.jpg" alt="woman" />
                   </div>
                   <div class="card1_con">
-                    <span>#캐쥬얼 #스트릿 #모던룩</span>
+                    <span>#봄라이트코디 #뽀글이 #캐쥬얼</span>
                     <div class="user_profile">
                       <!-- 프로필아이콘 -->
                       <div>
@@ -340,8 +349,9 @@
                       </div>
                     </div>
                     <p>
-                      평소에 깔맞춤을 좋아해서 라이트에 잘 어울리는 베이지,<br />
-                      연브라운으로 전체적인 무드를 맞춰줬음···
+                      봄 하면 떠오르는 연한 파스텔컬러로 겨울이어도 산뜻하게
+                      입어봤습니다! 모자랑 니트는 퐁실퐁실한 재질이라
+                      따뜻해보이···
                     </p>
                   </div>
                 </div>
@@ -361,10 +371,10 @@
               <div class="chips_con">
                 <div>
                   <a href="#">
-                    <div class="chips" id="sec2MaBtn">메이크업</div>
+                    <div class="chips" id="mabtn_sec2">메이크업</div>
                   </a>
                   <a href="#">
-                    <div class="chips" id="sec2StBan">스타일링</div>
+                    <div class="chips" id="stbtn_sec2">스타일링</div>
                   </a>
                 </div>
               </div>
@@ -527,10 +537,7 @@
                         <span>3,524</span>
                       </div>
                     </div>
-                    <h4>
-                      라이트 톤들이 쓰기 좋은 틴트 추천드립니당 라이트톤 인생
-                      니트 소개함!!!
-                    </h4>
+                    <h4>봄라이트 인생 니트 소개함!!!</h4>
                     <p>
                       쨍한 빨간색 겨쿨라만 입을 수 있을 줄 알았는데, 에잇세컨즈
                       빨간 브이넥니트 입어봤더니···
@@ -596,7 +603,7 @@
         <!-- sec3 event💿💿💿 -->
         <section class="sec3">
           <div class="con">
-            <a href="#">
+            <a href="./sub/news01.html">
               <h3>이벤트</h3>
             </a>
             <div class="coupon_wrap">
@@ -677,22 +684,24 @@
             <div>
               <div class="chips_seoson">
                 <a href="#">
-                  <div class="chips">봄</div>
+                  <div class="chips" id="schip_sec4">봄</div>
                 </a>
                 <a href="#">
-                  <div class="chips">여름</div>
+                  <div class="chips" id="mchip_sec4">여름</div>
                 </a>
                 <a href="#">
-                  <div class="chips">가을</div>
+                  <div class="chips" id="fchip_sec4">가을</div>
                 </a>
                 <a href="#">
-                  <div class="chips">겨울</div>
+                  <div class="chips" id="wchip_sec4">겨울</div>
                 </a>
               </div>
-              <div>
-                <a href="#">
-                  <div class="chips_plus">+더보기</div>
-                </a>
+              <div class="more_wrap">
+                <!-- 나중에 추천스타일링 탭 만들면 그때서브연결하기 -->
+                <a href="#" class="on"><div class="chips_plus">+더보기</div></a>
+                <a href="#"><div class="chips_plus">+더보기</div></a>
+                <a href="#"><div class="chips_plus">+더보기</div></a>
+                <a href="#"><div class="chips_plus">+더보기</div></a>
               </div>
             </div>
             <!-- sec4 컨텐츠 -->
@@ -1122,22 +1131,24 @@
             <div>
               <div class="chips_seoson">
                 <a href="#">
-                  <div class="chips">봄</div>
+                  <div class="chips" id="schip_sec5">봄</div>
                 </a>
                 <a href="#">
-                  <div class="chips">여름</div>
+                  <div class="chips" id="mchip_sec5">여름</div>
                 </a>
                 <a href="#">
-                  <div class="chips">가을</div>
+                  <div class="chips" id="fchip_sec5">가을</div>
                 </a>
                 <a href="#">
-                  <div class="chips">겨울</div>
+                  <div class="chips" id="wchip_sec5">겨울</div>
                 </a>
               </div>
-              <div>
-                <a href="#">
-                  <div class="chips_plus">+더보기</div>
-                </a>
+              <div class="more_wrap">
+                <!-- 나중에 추천스타일링 탭 만들면 그때서브연결하기 -->
+                <a href="#" class="on"><div class="chips_plus">+더보기</div></a>
+                <a href="#"><div class="chips_plus">+더보기</div></a>
+                <a href="#"><div class="chips_plus">+더보기</div></a>
+                <a href="#"><div class="chips_plus">+더보기</div></a>
               </div>
             </div>
             <!-- sec5 컨텐츠 -->
@@ -1790,6 +1801,5 @@
         </div>
       </footer>
     </div>
-    <script src="./js/layout.js"></script>
   </body>
 </html>
