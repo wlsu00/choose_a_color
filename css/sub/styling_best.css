@@ -82,11 +82,12 @@ header {
   /* border-bottom: 1px solid #f5f4f4; */
 }
 header .con {
+  width: 80%;
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 209px;
+  /* gap: 209px; */
 }
 /* logo */
 h1 {

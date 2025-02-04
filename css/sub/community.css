@@ -79,11 +79,12 @@ header {
   /* border-bottom: 1px solid #f5f4f4; */
 }
 header .con {
+  width: 80%;
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 209px;
+  /* gap: 209px; */
 }
 /* logo */
 h1 {
@@ -343,10 +344,7 @@ footer span {
   line-height: 20px;
   text-align: center;
 }
-/* 클릭이벤트할꺼니깐 스타일링영역 꺼두기 */
-#com_s {
-  display: none;
-}
+
 .page {
   width: fit-content;
   height: fit-content;

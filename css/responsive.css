@@ -13,7 +13,6 @@
     margin-bottom: 16px;
     line-height: 22px;
   }
-
   /* chips 공통 */
   .chips {
     width: 54px;
@@ -26,7 +25,6 @@
     font-size: 10px;
     box-sizing: border-box;
     padding: 4px 8px;
-    font-size: 10px;
     line-height: 12px;
   }
   .chips con {
@@ -37,11 +35,10 @@
     width: 95%;
     height: 32px;
     position: relative;
-    background-color: #fff;
     z-index: 999;
   }
   header .con {
-    width: 95%;
+    width: 100%;
     height: 100%;
     gap: 64px;
   }
@@ -65,16 +62,16 @@
   }
   /* sec공통영역 */
   section {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
   }
 
   /* main */
   .main_visual {
-    width: 95%;
+    width: 100%;
     height: 168px;
     display: flex;
     justify-content: start;
-    padding: 8px;
+    padding: 12px;
     box-sizing: border-box;
   }
   .main_visual_text > h2 {
@@ -101,11 +98,12 @@
   /* sec1 컨텐츠 */
   .sec1 .con_wrap {
     width: 100%;
-    display: flex;
     flex-wrap: wrap;
+    gap: 16px;
   }
   .sec1 .card1 {
-    width: 142px;
+    /* width: calc(50vw - 16px); */
+    width: clamp(calc(50vw - 16px), calc(50vw - 16px), calc(1516px / 4));
     height: 108px;
     padding: 8px;
     box-sizing: border-box;
@@ -117,13 +115,12 @@
   .card_img {
     width: 80px;
     height: 80px;
-    top: -25%;
-    left: 50%;
     transform: translate(-36px, -12px);
   }
   .card1:hover .card_img {
     transform: translate(-36px, -22px);
   }
+  /* 📍📍📍📍📍📍📍이미지수정📍📍📍📍📍📍📍 */
   .sec1 a .card_img > img {
     object-fit: scale-down;
     transform: translate(0) scale(1);
@@ -131,9 +128,17 @@
   #sec1_m > a:nth-child(1) .card_img > img {
     transform: translateY(-20px);
   }
-  #sec1_s > a .card_img > img {
-    object-fit: scale-down;
-    transform: translateY(-24px) sccale(1);
+  #sec1_s > a:nth-child(1) .card_img > img {
+    transform: translateY(-20px) scale(1.1);
+  }
+  #sec1_s > a:nth-child(2) .card_img > img {
+    transform: translateY(-48px);
+  }
+  #sec1_s > a:nth-child(3) .card_img > img {
+    transform: translateY(-32px);
+  }
+  #sec1_s > a:nth-child(4) .card_img > img {
+    transform: translateY(-22px) scale(1.1);
   }
   .card1_con {
     width: 128px;
@@ -144,7 +149,7 @@
   }
   /* 해시태그 */
   .sec1 .card1 > div > span {
-    font-size: 8px;
+    font-size: 9px;
     font-weight: 400;
     margin-bottom: 16px;
   }
@@ -195,8 +200,6 @@
   .sec2 > .con {
     display: flex;
     flex-wrap: wrap;
-    /* flex-flow: column wrap ; */
-    /* flex-direction: column; */
   }
   .left_txt {
     width: 100%;
@@ -204,6 +207,12 @@
   }
   .right_table {
     width: 100%;
+    position: relative;
+  }
+  .right_table .more_wrap {
+    position: absolute;
+    top: -36px;
+    right: 0;
   }
   .sec2 h4 {
     font-size: 12px;
@@ -225,7 +234,7 @@
 
   /* sec3 이벤트  */
   .sec3 .coupon_wrap {
-    display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -255,12 +264,13 @@
   .coupon_text > h4 {
     font-size: 14px;
   }
+
   /* sec4 스타일링 */
   .sec4 .card_wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0;
+    gap: 16px;
   }
   .flip {
     width: 100%;
@@ -297,6 +307,7 @@
   }
 
   /* sec5 product */
+
   .sec5 .sec_txt > p {
     font-size: 14px;
   }
@@ -307,24 +318,48 @@
     width: 38px;
     font-size: 10px;
   }
+  .sec5 .chips_plus {
+    margin-left: 32px;
+  }
   .sec5 > .con > .con_wrap {
     gap: 16px;
     margin-top: 16px;
   }
   .sec5 .card1 {
-    width: 95vw;
+    width: clamp(calc(50vw - 16px), calc(50vw - 16px), calc(1516px / 4));
     padding: 10px;
   }
   .img_case {
     width: 100%;
-    height: fit-content;
+    height: 100px;
     object-fit: contain;
   }
   .img_case img {
     object-fit: scale-down;
   }
-  .sec5 .cardtext span {
+  .sec5 .con_wrap .chips {
+    width: fit-content;
+    font-size: 10px;
+  }
+  .sec5 .cardtext {
+    height: clamp(80px, 100px, 150px);
+  }
+  .sec5 .cardtext > div > span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .sec5 .cardtext > span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .sec5 .cardtext h4 {
     font-size: 14px;
+  }
+  .sec5 .line {
+    width: 98%;
+    height: 1px;
+    background-color: #d6d6d6;
+    margin: 16px auto;
   }
   footer {
     display: none;

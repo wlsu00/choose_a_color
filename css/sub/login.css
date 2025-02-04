@@ -25,11 +25,12 @@ header {
   /* border-bottom: 1px solid #f5f4f4; */
 }
 header .con {
+  width: 80%;
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 209px;
+  /* gap: 209px; */
 }
 /* logo */
 h1 {
@@ -202,9 +203,9 @@ form .search span {
   text-align: center;
   cursor: pointer;
 }
-form .search span:hover{
-color: #ff834f;
-font-weight: 400;
+form .search span:hover {
+  color: #ff834f;
+  font-weight: 400;
 }
 form .keep {
   display: flex;

@@ -6,7 +6,7 @@
 body {
   font-family: "Inter", "Noto Sans KR", sans-serif;
   color: #111;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 /* 공통영역 */
 .con {
@@ -65,6 +65,7 @@ a {
 .more_wrap > a.on {
   display: block;
 }
+
 .chips_plus {
   width: fit-content;
   height: fit-content;
@@ -79,7 +80,6 @@ a {
   transition: 0.3s;
   margin-left: auto;
 }
-
 .chips_plus:hover {
   background-color: #ff834f;
   color: #fff;
@@ -94,11 +94,12 @@ header {
   /* border-bottom: 1px solid #f5f4f4; */
 }
 header .con {
+  width: 80%;
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 209px;
+  /* gap: 209px; */
 }
 /* logo */
 h1 {
@@ -507,7 +508,8 @@ section {
   font-weight: 300;
   line-height: 22px;
 }
-.right_table > div {
+.right_table > div:nth-child(2),
+.right_table > div:nth-child(3) {
   border-top: 2px solid #d6d6d6;
   border-bottom: 2px solid #d6d6d6;
   margin-top: 28px;
@@ -522,6 +524,7 @@ section {
   margin-bottom: 28px;
 }
 .sec3 .coupon {
+  width: fit-content;
   position: relative;
   top: 0;
   left: 0;
@@ -548,6 +551,7 @@ section {
   border: 1px solid #ff834f;
 }
 .sec3 .coupon img {
+  object-fit: scale-down;
   transition: 0.5s;
 }
 .hover_img {
@@ -586,7 +590,6 @@ section {
 }
 
 /* sec4 styling */
-/* 다른계절 숨겨두기 + 글자 정렬방법 💥💥💥💥💥💥💥*/
 #sec4_summer,
 #sec4_fall,
 #sec4_winter {
@@ -834,7 +837,6 @@ section {
   height: fit-content;
   flex-grow: 1;
 }
-/* 카드 한 장 */
 .sec5 > .con > .con_wrap {
   display: flex;
   flex-wrap: wrap;
@@ -845,7 +847,7 @@ section {
 /* a태그 안의 카드 한 장 전체 */
 .sec5 .card1 {
   width: fit-content;
-  height: fit-content;
+  height: auto;
   position: relative;
   top: 0;
   left: 0;
@@ -887,11 +889,11 @@ section {
   color: #4d4d4d;
   font-weight: 300;
 }
-.sec5 .cardtext span:first-of-type {
+.sec5 .cardtext > div > span {
   font-size: 14px;
   line-height: 20px;
 }
-.sec5 .cardtext span:last-of-type {
+.sec5 .cardtext > span {
   font-size: 16px;
   line-height: 23px;
 }
@@ -904,10 +906,10 @@ section {
   color: #111;
 }
 .sec5 .line {
-  width: 325px;
+  width: 98%;
   height: 1px;
   background-color: #d6d6d6;
-  margin: 16px 0;
+  margin: 16px auto;
 }
 .sec5 .cardtext > div {
   display: flex;
