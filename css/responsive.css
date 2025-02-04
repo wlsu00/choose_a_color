@@ -361,7 +361,31 @@
     background-color: #d6d6d6;
     margin: 16px auto;
   }
-  footer {
-    display: none;
+  footer .con {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    height: 80px;
+  }
+  footer h2 {
+    width: 129px;
+  }
+  .sitemap > ul {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .sitemap > ul > li {
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .sitemap > ul > li > a {
+    color: #4d4d4d;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 10px;
+  }
+  footer span {
+    font-size: 10px;
+    line-height: 14px;
   }
 }
