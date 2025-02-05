@@ -573,19 +573,21 @@ section {
 .hover_img2 {
   opacity: 0;
 }
-.coupon:hover .hover_img2 {
-  opacity: 1;
-}
-.coupon:hover .coupon_text {
-  color: #fff;
-}
-.coupon:hover .coupon_text h4 {
-  color: #fff;
-}
-.coupon:hover .sec3_btn {
-  background-color: #fff;
-  color: #ff834f;
-  border: 1px solid #ff834f;
+@media (hover: hover) {
+  .coupon:hover .hover_img2 {
+    opacity: 1;
+  }
+  .coupon:hover .coupon_text {
+    color: #fff;
+  }
+  .coupon:hover .coupon_text h4 {
+    color: #fff;
+  }
+  .coupon:hover .sec3_btn {
+    background-color: #fff;
+    color: #ff834f;
+    border: 1px solid #ff834f;
+  }
 }
 .coupon_text {
   position: absolute;
@@ -596,7 +598,9 @@ section {
 .coupon_text > h4 {
   margin: 10px 0;
 }
-
+.swiper .swiper-pagination-bullet {
+  background-color: #ff834f;
+}
 /* sec4 styling */
 #sec4_summer,
 #sec4_fall,
@@ -911,7 +915,7 @@ section {
 .sec5 .cardtext h4 {
   width: fit-content;
   text-align: left;
-  margin: 8px, 0;
+  margin: 8px 0;
   line-height: 29px;
   text-decoration: none;
   color: #111;
