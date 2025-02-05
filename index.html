@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="icon" type="image/png" href="./img/icons/apple-icon-57x57.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- js -->
     <script src="./js/layout.js" defer></script>
   </head>
@@ -609,14 +614,14 @@
         </section>
         <!-- sec3 event💿💿💿 -->
         <section class="sec3">
-          <div class="con">
+          <div class="con swiper mySwiper">
             <a href="./sub/news01.html">
               <h3>이벤트</h3>
             </a>
-            <div class="coupon_wrap">
+            <div class="coupon_wrap swiper-wrapper">
               <!-- 쿠폰1 -->
-              <a href="./sub/news01.html">
-                <div class="coupon">
+              <div class="coupon swiper-slide">
+                <a href="./sub/news01.html">
                   <div class="sec3_btn">올리브영</div>
                   <div class="hover_img">
                     <img src="./img/sec3_event/coupon.svg" alt="coupon"/
@@ -632,11 +637,11 @@
                     <h4>5,000원 할인쿠폰</h4>
                     <p>30,000원 이상 구매 시 APP, 매장 사용가능</p>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
               <!-- 쿠폰2 -->
-              <a href="./sub/news01.html">
-                <div class="coupon">
+              <div class="coupon swiper-slide">
+                <a href="./sub/news01.html">
                   <div class="sec3_btn">웰컴쿠폰</div>
                   <div class="hover_img">
                     <img src="./img/sec3_event/coupon.svg" alt="coupon"/
@@ -652,11 +657,11 @@
                     <h4>컬러차트 증정 이벤트</h4>
                     <p>퍼스널컬러를 진단할 수 있는 컬러차트를 보내드려요</p>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
               <!-- 쿠폰3 -->
-              <a href="./sub/news01.html">
-                <div class="coupon">
+              <div class="coupon swiper-slide">
+                <a href="./sub/news01.html">
                   <div class="sec3_btn">ZIGZAG</div>
                   <div class="hover_img">
                     <img src="./img/sec3_event/coupon.svg" alt="coupon"/
@@ -672,9 +677,10 @@
                     <h4>20% 할인쿠폰</h4>
                     <p>20,000원 이상 구매 시 사용가능</p>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </section>
         <!-- sec4 styling💿💿💿💿-->
@@ -1808,5 +1814,28 @@
         </div>
       </footer>
     </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        loop: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 2, //브라우저가 768보다 클 때
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3, //브라우저가 1024보다 클 때
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

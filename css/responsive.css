@@ -231,8 +231,6 @@
 
   /* sec3 이벤트  */
   .sec3 .coupon_wrap {
-    width: 100%;
-    flex-wrap: wrap;
     justify-content: center;
   }
   .sec3 .sec3_btn {

@@ -523,9 +523,10 @@ section {
 }
 /* sec3 event */
 .sec3 .coupon_wrap {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
-  gap: 28px;
 }
 .sec3 .con > a > h3 {
   margin-bottom: 28px;
@@ -566,7 +567,7 @@ section {
 }
 .hover_img2 {
   position: absolute;
-  transform: translateY(-247px);
+  transform: translateY(-240px);
   will-change: transform, opacity, color;
 }
 .hover_img2 {
