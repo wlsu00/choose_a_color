@@ -126,9 +126,11 @@ h1 {
   font-family: "Inter", sans-serif;
   transition: 0.3s;
 }
+#gnb > ul > li:hover {
+  border-bottom: 1px solid #ff834f;
+}
 #gnb > ul > li:hover > a {
   color: #ff834f;
-  text-decoration: underline;
 }
 /* 2차메뉴 */
 #gnb .submenu {

@@ -65,7 +65,6 @@ a {
 .more_wrap > a.on {
   display: block;
 }
-
 .chips_plus {
   width: fit-content;
   height: fit-content;
@@ -290,33 +289,40 @@ section {
 }
 .sec1 .card1 {
   width: calc(1516px / 4);
-  height: 330px;
+  /* width: calc(25% - 28px); */
+  height: fit-content;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
   padding: 30px;
   box-sizing: border-box;
   margin-top: 144px;
-  position: relative;
-  flex-shrink: 0;
+  /* position: relative;
+  flex-shrink: 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   transition: 0.4s;
 }
 .card1:hover {
   border: 1px solid #ff834f;
 }
-.card_img {
+.sec1 .card_img {
   width: 240px;
   height: 240px;
   border-radius: 120px;
   overflow: hidden;
   margin-bottom: 24px;
-  position: absolute;
+  /* position: absolute;
   top: -25%;
-  left: 50%;
-  transform: translate(-120px, -12px);
+  left: 50%;*/
+  /* transform: translate(-120px, -12px); */
+  transform: translateY(-150px);
   transition: 0.4s;
 }
 .card1:hover .card_img {
-  transform: translate(-120px, -22px);
+  /* transform: translate(-120px, -22px); */
+  transform: translateY(-160px);
 }
 .card_img > img {
   object-fit: scale-down;
@@ -345,12 +351,13 @@ section {
 #sec1_m .card_img > img {
   transform: scale(1);
 }
-.card1_con {
+.sec1 .card1_con {
   width: 319px;
   /* width: 100%; */
-  position: absolute;
-  top: 168px;
+  /* position: absolute;
+  top: 168px; */
   margin: 0 auto;
+  margin-top: -120px;
   text-align: center;
 }
 /* 해시태그 */
@@ -653,7 +660,7 @@ section {
 .card_front img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: scale-down;
   transform: scale(0.9);
 }
 
@@ -846,7 +853,7 @@ section {
 }
 /* a태그 안의 카드 한 장 전체 */
 .sec5 .card1 {
-  width: fit-content;
+  width: calc(25% - 28px);
   height: auto;
   position: relative;
   top: 0;
@@ -861,7 +868,7 @@ section {
 .sec5 .card1:hover {
   border: 1px solid #ff834f;
 }
-.img_case {
+.sec5 .img_case {
   width: 320px;
   height: 233px;
   overflow: hidden;
@@ -879,6 +886,9 @@ section {
 }
 .sec5 .card1 .chips:hover {
   color: #4d4d4d;
+}
+.sec5 .card1 img {
+  object-fit: scale-down;
 }
 .sec5 .big_img {
   transform: scale(0.7);
