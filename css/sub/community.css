@@ -79,12 +79,11 @@ header {
   /* border-bottom: 1px solid #f5f4f4; */
 }
 header .con {
-  width: 80%;
+  width: 100%;
   height: 80px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  /* gap: 209px; */
+  gap: 244px;
 }
 /* logo */
 h1 {
