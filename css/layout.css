@@ -93,13 +93,15 @@ header {
   /* border-bottom: 1px solid #f5f4f4; */
 }
 header .con {
-  width: 100%;
+  width: 85%;
   height: 80px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 244px;
 }
-
+header .icons.menu {
+  display: none;
+}
 /* logo */
 h1 {
   width: 212px;
@@ -200,9 +202,7 @@ h1 {
   width: 24px;
   height: 24px;
 }
-.icons .menu_icon {
-  display: none;
-}
+
 /* main */
 main {
   width: 100%;
@@ -352,7 +352,7 @@ section {
   transform: scale(1);
 }
 .sec1 .card1_con {
-  width: 319px;
+  width: 98%;
   /* width: 100%; */
   /* position: absolute;
   top: 168px; */
@@ -523,7 +523,7 @@ section {
 }
 /* sec3 event */
 .sec3 .coupon_wrap {
-  width: 100%;
+  width: max-content;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -537,6 +537,7 @@ section {
   top: 0;
   left: 0;
 }
+
 .sec3 .sec3_btn {
   width: fit-content;
   height: fit-content;
@@ -549,8 +550,9 @@ section {
   border-radius: 24px;
   box-sizing: border-box;
   position: absolute;
-  top: -14px;
-  left: 210px;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-45px);
   z-index: 20;
   box-sizing: border-box;
 }
@@ -578,9 +580,6 @@ section {
     opacity: 1;
   }
   .coupon:hover .coupon_text {
-    color: #fff;
-  }
-  .coupon:hover .coupon_text h4 {
     color: #fff;
   }
   .coupon:hover .sec3_btn {

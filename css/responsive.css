@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-/* 모바일 */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+/* 💡모바일S💡 */
+@media screen and (min-width: 320px) and (max-width: 767px) {
   /* 공통영역 */
   .con {
     width: 95%;
@@ -38,12 +38,11 @@
     z-index: 999;
   }
   header .con {
-    width: 100%;
     height: 100%;
-    gap: 64px;
-    margin: 0 auto;
   }
-
+  header .icons.menu {
+    display: flex;
+  }
   /* logo */
   h1 {
     width: 129px;
@@ -53,28 +52,34 @@
     display: none;
   }
   .icons img {
+    width: 16px;
+    height: 16px;
+  }
+  .icons.menu img {
     width: 20px;
     height: 20px;
   }
   .icons a:nth-child(2) {
     display: none;
   }
-  .icons .menu_icon {
-    display: block;
-  }
+
   /* sec공통영역 */
   section {
     margin-bottom: 48px;
   }
 
   /* main */
+  /* 📍📍📍메인비주얼 높이랑 글자위치 고민해보기📍📍📍 */
   .main_visual {
     width: 100%;
-    height: 168px;
+    height: 300px;
     display: flex;
     justify-content: start;
     padding: 12px;
     box-sizing: border-box;
+  }
+  .main_visual_text {
+    padding-top: 148px;
   }
   .main_visual_text > h2 {
     font-size: 18px;
@@ -236,11 +241,9 @@
   .sec3 .sec3_btn {
     font-size: 10px;
     padding: 4px 8px;
-    box-sizing: border-box;
     position: absolute;
     top: -10px;
-    left: 130px;
-    z-index: 20;
+    transform: translateX(-26px);
   }
   .hover_img2 {
     position: absolute;
@@ -254,10 +257,10 @@
     z-index: 20;
   }
   .coupon_text > p {
-    font-size: 10px;
+    font-size: clamp(10px, 10px, 14px);
   }
   .coupon_text > h4 {
-    font-size: 14px;
+    font-size: clamp(14px, 14px, 16px);
   }
 
   /* sec4 스타일링 */
@@ -302,7 +305,6 @@
   }
 
   /* sec5 product */
-
   .sec5 .sec_txt > p {
     font-size: 14px;
   }
@@ -322,7 +324,7 @@
   }
   .sec5 .card1 {
     /* width: calc(50vw - 16px); */
-    width: calc(50% - 28px);
+    width: calc(50% - 16px);
     padding: 10px;
   }
   .sec5 .img_case {
@@ -381,26 +383,330 @@
     line-height: 14px;
   }
 }
-/* 메인비주얼만 중단점 추가_더 수정해야함📍📍📍📍📍📍 */
-@media screen and (min-width: 350px) and (max-width: 1024px) {
-  .main_visual_text {
-    margin: auto;
+/* 💡모바일M (메인비주얼,섹션3) */
+/* 메인비주얼만 중단점 추가_더 수정해야함(320짜리 메인비주얼 결정하고하기)📍📍📍📍📍📍 */
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  /* sec3 */
+
+  .coupon_text {
+    top: 25%;
+    left: 12%;
+  }
+  .coupon_text > p {
+    font-size: 14px;
+  }
+  .coupon_text > h4 {
+    font-size: 20px;
   }
 }
-
-/* 태블릿 - sm */
-@media screen and (min-width: 480px) and (max-width: 1024px) {
-  /* 메인비주얼 글자 */
-  .main_visual_text {
-    margin: 0 auto;
+/* 💡모바일L (메인비주얼,섹션3,섹션4) */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  /* sec3 */
+  .coupon_text {
+    top: 30%;
+    left: 12%;
   }
-  /* sec3 슬라이드 써보기 */
-
-  /* sec5 */
-  .sec5 .img_case {
-    height: 150px;
+  .coupon_text > p {
+    font-size: 14px;
   }
-  footer {
+  .coupon_text > h4 {
+    font-size: 20px;
+  }
+}
+/* 💡섹션4 */
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+  .sec4 .card_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: start;
+  }
+  .flip {
+    width: calc(50% - 28px);
+    height: 400px;
+  }
+  .card_back > .card_con > h4 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .sec4 .maintext {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+  .sec4 .subtext {
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+}
+/* 💡태블릿💡 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* 공통 */
+  .con {
+    width: 95%;
+  }
+  /* header */
+  header .con {
+    width: 98%;
+  }
+  header .icons.menu {
     display: none;
+  }
+  /* logo */
+  h1 {
+    width: 150px;
+  }
+  #gnb {
+    display: block;
+    height: 80px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  #gnb > ul {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 27px 0;
+    box-sizing: border-box;
+    line-height: 25px;
+  }
+  #gnb > ul > li > a {
+    padding: 0 16px;
+  }
+  /* 2차메뉴 */
+  #gnb .submenu li {
+    font-size: 12px;
+  }
+  .icons {
+    gap: 16px;
+  }
+  .icons img {
+    width: 20px;
+    height: 20px;
+  }
+  .icons a:nth-child(2) {
+    display: flex;
+  }
+  /* 메인비주얼 */
+  .main_visual {
+    height: 640px;
+  }
+  /* sec1 */
+  .sec1 .con_wrap {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+  }
+  .sec1 .card1 {
+    width: 330px;
+  }
+  /* 프로필아이콘 */
+  .user_profile {
+    margin-bottom: 16px;
+  }
+  .user_profile span {
+    line-height: 14px;
+  }
+
+  .user_profile > span::before {
+    width: 1px;
+    height: 10px;
+    margin-right: 20px;
+  }
+  .user_profile > span::after {
+    width: 1px;
+    height: 10px;
+    margin-left: 20px;
+  }
+
+  .user_profile img:last-of-type {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* sec3 */
+  .coupon_text {
+    top: 28%;
+    left: 12%;
+  }
+  .coupon_text > p {
+    font-size: 12px;
+  }
+  .coupon_text > h4 {
+    font-size: 18px;
+  }
+  /* sec5 */
+  .sec5 > .con > .con_wrap {
+    justify-content: start;
+  }
+  .sec5 .card1 {
+    width: calc(33% - 28px);
+  }
+  .sec5 .img_case {
+    width: 100%;
+  }
+  /* footer */
+  footer .con {
+    height: 80px;
+    flex-direction: column;
+    align-items: start;
+    height: 80px;
+  }
+  footer h2 {
+    width: 129px;
+  }
+  .sitemap > ul {
+    padding: 0;
+  }
+  .sitemap > ul > li {
+    padding: 0;
+  }
+  .sitemap > ul > li > a {
+    line-height: 34px;
+  }
+  footer span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+/* 💡노트북💡 */
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  /* 공통 */
+  .con {
+    width: 95%;
+  }
+  /* header */
+  header .con {
+    width: 98%;
+  }
+  header .icons.menu {
+    display: none;
+  }
+  /* logo */
+  h1 {
+    width: 180px;
+  }
+  #gnb {
+    display: block;
+    height: 80px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  #gnb > ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 27px 0;
+    box-sizing: border-box;
+    line-height: 25px;
+  }
+  #gnb > ul > li > a {
+    padding: 0 20px;
+  }
+  /* 2차메뉴 */
+  #gnb .submenu li {
+    font-size: 14px;
+  }
+  .icons {
+    gap: 32px;
+  }
+  .icons img {
+    width: 24px;
+    height: 24px;
+  }
+  .icons a:nth-child(2) {
+    display: flex;
+  }
+  /* sec1 */
+  .sec1 .con_wrap {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+  }
+
+  .sec1 .card1 {
+    width: calc(1514px / 4 - 28px);
+  }
+
+  /* sec3 */
+  .sec3 .sec3_btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    position: absolute;
+    top: -10px;
+    transform: translateX(-36px);
+  }
+  .coupon_text {
+    top: 24%;
+    left: 12%;
+  }
+  .coupon_text p {
+    font-size: 10px;
+  }
+  .coupon_text h4 {
+    font-size: 16px;
+  }
+  /* sec4 */
+  .sec4 .card_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: start;
+  }
+  .flip {
+    width: calc(50% - 28px);
+    height: 400px;
+  }
+  .card_back > .card_con > h4 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .sec4 .maintext {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+  .sec4 .subtext {
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+  /* sec5 */
+  .sec5 > .con > .con_wrap {
+    justify-content: start;
+  }
+  .sec5 .card1 {
+    width: calc(33% - 28px);
+  }
+  .sec5 .img_case {
+    width: 100%;
+  }
+  /* footer */
+  footer .con {
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  footer h2 {
+    width: 180px;
+  }
+  .sitemap > ul {
+    padding: 0;
+  }
+  .sitemap > ul > li {
+    padding: 0;
+  }
+  .sitemap > ul > li > a {
+    line-height: 34px;
+  }
+  footer span {
+    font-size: 12px;
+    line-height: 12px;
   }
 }

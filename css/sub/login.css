@@ -25,13 +25,15 @@ header {
   /* border-bottom: 1px solid #f5f4f4; */
 }
 header .con {
-  width: 100%;
+  width: 85%;
   height: 80px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 244px;
 }
-/* logo */
+header .icons.menu {
+  display: none;
+} /* logo */
 h1 {
   width: 212px;
 }
@@ -130,9 +132,6 @@ h1 {
 .icons img {
   width: 24px;
   height: 24px;
-}
-.icons .menu_icon {
-  display: none;
 }
 /* 로그인폼 */
 .login {
