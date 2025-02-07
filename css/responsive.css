@@ -43,6 +43,82 @@
   header .icons.menu {
     display: flex;
   }
+  /* 햄버거메뉴 */
+  #ham_menu {
+    display: none;
+  }
+  #ham_menu:checked {
+    display: none;
+  }
+  #ham_menu + label {
+    display: block;
+    width: 20px;
+    height: 12px;
+    cursor: pointer;
+    position: relative;
+  }
+  #ham_menu + label > span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-radius: 30px;
+    background: #4d4d4d;
+    position: absolute;
+    transition: all 0.35s;
+    z-index: 2;
+  }
+  /* 햄버거 닫혔을 때 */
+  #ham_menu + label > span:nth-child(1) {
+    top: 0px;
+  }
+  #ham_menu + label > span:nth-child(2) {
+    top: 45%;
+  }
+  #ham_menu + label > span:nth-child(3) {
+    bottom: 0px;
+  }
+  /* 햄버거 열렸을 때 */
+  #ham_menu:checked + label > span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  }
+  #ham_menu:checked + label > span:nth-child(2) {
+    opacity: 0;
+  }
+  #ham_menu:checked + label > span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-135deg);
+  }
+
+  /* 모바일 메뉴 */
+  #ham_menu + label + #mobile_menu {
+    position: fixed;
+    width: 60vw;
+    height: 100vh;
+    background: #fffffff6;
+    top: 0px;
+    padding: 60px 25px 25px 25px;
+    box-sizing: border-box;
+    left: -300px;
+    z-index: 1;
+    transition: all 0.5s;
+  }
+  #ham_menu:checked + label + #mobile_menu {
+    left: 0px;
+  }
+  #mobile_menu > ul > li {
+    margin-bottom: 20px;
+  }
+  #mobile_menu > ul > li > a {
+    color: #ff834f;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mobile_menu .submenu {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
   /* logo */
   h1 {
     width: 129px;
@@ -62,7 +138,6 @@
   .icons a:nth-child(2) {
     display: none;
   }
-
   /* sec공통영역 */
   section {
     margin-bottom: 48px;
@@ -108,6 +183,10 @@
     flex-wrap: wrap;
     gap: 16px;
   }
+  /* .sec1 .con_wrap > a {
+    display: block;
+    width: calc(48% - 16px);
+  } */
   .sec1 .card1 {
     width: clamp(44vw, 45vw, calc(1516px / 4));
     padding: 8px;
@@ -176,12 +255,12 @@
   .user_profile > span::before {
     width: 1px;
     height: 10px;
-    margin-right: 6px;
+    margin-right: 4px;
   }
   .user_profile > span::after {
     width: 1px;
     height: 10px;
-    margin-left: 6px;
+    margin-left: 4px;
   }
   .user_profile div:first-of-type img:first-child {
     display: none;
