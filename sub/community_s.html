@@ -11,6 +11,8 @@
       type="image/png"
       href="../img/icons/favicon/apple-icon-57x57.png"
     />
+    <link rel="stylesheet" href="../css/sub_responsive.css" />
+    <!-- js -->
     <script src="../js/layout.js" defer></script>
   </head>
   <body>
@@ -19,9 +21,55 @@
       <header>
         <div class="con">
           <div class="icons menu">
-            <a href="#" class="menu_icon">
-              <img src="./img/icons/menu.svg" alt="메뉴" />
-            </a>
+            <!-- 햄버거메뉴 -->
+            <!-- 아이콘 -->
+            <input type="checkbox" id="ham_menu" />
+            <label for="ham_menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <div id="mobile_menu">
+              <ul>
+                <li>
+                  <a href="./sub/makeup_best_spring.html">MAKE UP</a>
+                  <!-- 2차메뉴 -->
+                  <ul class="submenu">
+                    <li>
+                      <a href="./sub/makeup_best_spring.html">베스트</a>
+                    </li>
+                    <li>
+                      <a href="#">추천메이크업</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./sub/styling_best_spring.html">STYLING</a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="./sub/styling_best_spring.html">베스트</a>
+                    </li>
+                    <li>
+                      <a href="#">추천스타일링</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./sub/community_m.html">COMMUNITY</a>
+                </li>
+                <li>
+                  <a href="./sub/news01.html">NEWS</a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="./sub/news01.html">이벤트</a>
+                    </li>
+                    <li>
+                      <a href="#">QnA</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
           <!-- logo -->
           <h1>

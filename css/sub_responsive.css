@@ -142,112 +142,51 @@
     margin-bottom: 48px;
   }
 
-  /* main */
-  /* 📍📍📍메인비주얼 높이랑 글자위치 고민해보기📍📍📍 */
-  .main_visual {
-    width: 100%;
-    height: 520px;
-    display: flex;
-    justify-content: start;
-    padding: 12px;
-    box-sizing: border-box;
-  }
-  .main_visual_text {
-    background-color: #ffffff0d;
-    width: 100%;
-    padding: 10px;
-    margin-top: 24px;
-  }
-  .main_visual_text > h2 {
-    font-size: 18px;
-  }
-  .main_visual_text > h4 {
-    font-size: 10px;
-    line-height: 12px;
-  }
-  .text_btn {
-    width: fit-content;
-    display: flex;
-    font-size: 8px;
-    line-height: 10px;
-  }
-  .text_btn > a:last-child {
+  .content,
+  footer {
     display: none;
   }
-  .chips_con {
-    display: flex;
-    margin-bottom: 16px;
+  /* main */
+  /* 배너 */
+  .banner {
+    padding: 92px 20px;
   }
-
-  /* sec1 컨텐츠 */
-  .sec1 .con_wrap {
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 16px;
+  /* sec1 베스트 */
+  /* 칩스 */
+  /* 계절설명문구 */
+  .best > div:first-of-type {
+    margin-top: 60px;
   }
-  /* .sec1 .con_wrap > a {
-    display: block;
-    width: calc(48% - 16px);
-  } */
-  .sec1 .card1 {
-    width: clamp(44vw, 45vw, calc(1516px / 4));
-    padding: 8px;
-    margin-top: 40px;
-    display: flex;
+  .best .con_wrap {
+    flex-direction: column;
+    padding: 20px 10px;
+    box-sizing: border-box;
   }
-  /* 이미지 틀 div */
-  .sec1 .card_img {
-    width: 80px;
-    height: 80px;
-    transform: translateY(-50px);
+  .best .best_person {
+    width: 90%;
+    animation: none;
   }
-  .card1:hover .card_img {
-    transform: translateY(-60px);
+  .text_wrap {
+    order: -1;
   }
-  .sec1 a .card_img > img {
-    object-fit: scale-down;
-    transform: translate(0) scale(1);
+  .text_wrap h4 {
+    font-size: 18px;
   }
-  #sec1_m > a:nth-child(1) .card_img > img {
-    transform: translateY(-20px);
-  }
-  #sec1_s > a:nth-child(1) .card_img > img {
-    transform: translateY(-20px) scale(1.1);
-  }
-  #sec1_s > a:nth-child(2) .card_img > img {
-    transform: translateY(-48px);
-  }
-  #sec1_s > a:nth-child(3) .card_img > img {
-    transform: translateY(-32px);
-  }
-  #sec1_s > a:nth-child(4) .card_img > img {
-    transform: translateY(-22px) scale(1.1);
-  }
-  .sec1 .card1_con {
-    width: 128px;
-    margin: 0 auto;
-    margin-top: -40px;
-    text-align: center;
-    transform: translateY(-10px);
-  }
-  /* 해시태그 */
-  .sec1 .card1 > div > span {
-    font-size: 9px;
-    font-weight: 400;
-    margin-bottom: 16px;
+  .text_wrap p,
+  .text_wrap > span,
+  .text_wrap .icons {
+    display: none;
   }
   /* 프로필아이콘 */
   .user_profile {
-    width: 100%;
-    font-size: 8px;
-    font-weight: 300;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 16px;
+    font-size: 10px;
+    margin: 16px 0;
+    gap: 12px;
   }
+
   .user_profile span {
     line-height: 10px;
+    margin: 0;
   }
   .user_profile > div {
     display: flex;
@@ -255,187 +194,28 @@
     gap: 4px;
   }
   .user_profile > span::before {
-    width: 1px;
     height: 10px;
-    margin-right: 4px;
+    margin-right: 14px;
   }
   .user_profile > span::after {
     width: 1px;
     height: 10px;
-    margin-left: 4px;
-  }
-  .user_profile div:first-of-type img:first-child {
-    display: none;
+    margin-left: 14px;
   }
   .user_profile img:last-of-type {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
   }
-  .sec1 .card1_con > p {
-    display: none;
-  }
-  .sec1 .user_profile > div:nth-of-type(2) {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-  /* sec2 커뮤니티 */
-  .sec2 > .con {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .left_txt {
+  /* 오른쪽 이미지 */
+  .right_con {
+    margin-top: 60px;
     width: 100%;
-    margin: 0 10px;
+    padding: 0;
   }
-  .right_table {
+  .img_wrap {
     width: 100%;
-    position: relative;
   }
-  .right_table .more_wrap {
-    position: absolute;
-    top: -36px;
-    right: 0;
-  }
-  .sec2 h4 {
-    font-size: 12px;
-    line-height: 14px;
-  }
-  .table1 p {
-    width: auto;
-    height: 12px;
-    overflow: hidden;
-    font-size: 10px;
-    font-weight: 300;
-    line-height: 12px;
-  }
-  .sec2 .user_profile > span::before,
-  .sec2 .user_profile > span::after {
-    width: 1px;
-    height: 10px;
-  }
-
-  /* sec3 이벤트  */
-  .sec3 .coupon_wrap {
-    justify-content: center;
-  }
-  .sec3 .sec3_btn {
-    font-size: 10px;
-    padding: 4px 8px;
-    position: absolute;
-    top: -10px;
-    transform: translateX(-26px);
-  }
-  .hover_img2 {
-    position: absolute;
-    transform: translateY(-146px);
-    will-change: transform, opacity, color;
-  }
-  .coupon_text {
-    position: absolute;
-    top: 38px;
-    left: 46px;
-    z-index: 20;
-  }
-  .coupon_text > p {
-    font-size: clamp(10px, 10px, 14px);
-  }
-  .coupon_text > h4 {
-    font-size: clamp(14px, 14px, 16px);
-  }
-
-  /* sec4 스타일링 */
-  .sec4 .card_wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-  }
-  .flip {
-    width: 100%;
-    height: 324px;
-  }
-  .sec4 .sec_txt > p {
-    font-size: 14px;
-  }
-  .sec4 .chips_seoson .chips {
-    width: 40px;
-  }
-  .sec4 .chips {
-    width: 38px;
-    font-size: 10px;
-  }
-  .card_back > .card_con > h4 {
-    font-size: 18px;
-    margin-bottom: 16px;
-  }
-  .circle {
-    width: 28px;
-    height: 28px;
-  }
-  .sec4 .maintext {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 28px;
-    margin-bottom: 8px;
-  }
-  .sec4 .subtext {
-    font-size: 12px;
-    line-height: 24px;
-    margin-bottom: 4px;
-  }
-
-  /* sec5 product */
-  .sec5 .sec_txt > p {
-    font-size: 14px;
-  }
-  .sec5 .chips_seoson .chips {
-    width: 40px;
-  }
-  .sec5 .chips {
-    width: 38px;
-    font-size: 10px;
-  }
-  .sec5 .chips_plus {
-    margin-left: 32px;
-  }
-  .sec5 > .con > .con_wrap {
-    gap: 16px;
-    margin-top: 16px;
-  }
-  .sec5 .card1 {
-    /* width: calc(50vw - 16px); */
-    width: calc(50% - 16px);
-    padding: 10px;
-  }
-  .sec5 .img_case {
-    width: 100%;
-    height: 132px;
-  }
-  .sec5 .con_wrap .chips {
-    width: fit-content;
-    font-size: 10px;
-  }
-  .sec5 .cardtext {
-    height: clamp(80px, 100px, 150px);
-  }
-  .sec5 .cardtext > div > span {
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .sec5 .cardtext > span {
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .sec5 .cardtext h4 {
-    font-size: 14px;
-  }
-  .sec5 .line {
-    width: 98%;
-    height: 1px;
-    background-color: #d6d6d6;
-    margin: 16px auto;
-  }
+  /* footer */
   footer .con {
     padding-top: 10px;
     box-sizing: border-box;
