@@ -16,9 +16,9 @@
   /* chips 공통 */
   .chips {
     width: 54px;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 12px;
-    padding: 4px 8px;
+    padding: 6px 10px;
     box-sizing: border-box;
   }
   .chips_plus {
@@ -29,6 +29,7 @@
   }
   .chips con {
     width: 95%;
+    margin-bottom: 60px;
   }
   /* header */
   header {
@@ -148,7 +149,6 @@
     padding: 92px 20px;
   }
   /* sec1 베스트 */
-  /* 칩스 */
   /* 계절설명문구 */
   .best > div:first-of-type {
     margin-top: 60px;
@@ -179,8 +179,9 @@
   }
   /* 프로필아이콘 */
   .user_profile {
+    width: fit-content;
     font-size: 10px;
-    margin: 16px 0;
+    margin: 16px auto;
     gap: 12px;
     padding-right: 0;
   }
@@ -264,10 +265,13 @@
   .plus_icon span {
     display: none;
   }
-  /* footer */
-  footer {
-    display: none;
+  /* top버튼 */
+  .top_btn {
+    position: fixed;
+    right: 80px;
+    bottom: 120px;
   }
+  /* footer */
   footer .con {
     padding-top: 10px;
     box-sizing: border-box;
@@ -312,12 +316,17 @@
   .card_wrap .card_img {
     height: clamp(44vh, 44vh, 362px);
   }
-
+  .user_profile span {
+    font-size: 14px;
+  }
   .user_profile > span::before {
     margin-right: 32px;
   }
   .user_profile > span::after {
     margin-left: 32px;
+  }
+  .cardtext h4 {
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 540px) and (max-width: 1023px) {
@@ -345,7 +354,7 @@
   /* 프로필 */
   .content .card_wrap .user_profile {
     width: fit-content;
-    margin: 16px auto;
+    /* margin: 16px auto; */
   }
   .user_profile span {
     font-size: 14px;
@@ -354,7 +363,7 @@
     padding: 0 8px;
   }
   .cardtext h4 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .cardtext span {
     font-size: 12px;
@@ -443,7 +452,7 @@
   }
   .best .best_person {
     width: 70%;
-    height: 44vh;
+    height: 70vh;
     animation: none;
   }
   .text_wrap {
@@ -459,31 +468,99 @@
   .sec1 .card1 {
     width: 330px;
   }
-  /* 프로필아이콘 */
   .user_profile {
+    width: fit-content;
     font-size: 10px;
-    margin: 16px 0;
+    margin: 16px auto;
     gap: 12px;
     padding-right: 0;
   }
   .user_profile span {
-    line-height: 14px;
+    line-height: 10px;
+    margin: 0;
+    font-size: 14px;
   }
-
+  .user_profile > div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
   .user_profile > span::before {
-    width: 1px;
     height: 10px;
-    margin-right: 12px;
+    margin-right: 14px;
   }
   .user_profile > span::after {
     width: 1px;
     height: 10px;
-    margin-left: 12px;
+    margin-left: 14px;
   }
-
   .user_profile img:last-of-type {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
+  }
+  /* 오른쪽 이미지 */
+  .right_con {
+    margin-top: 60px;
+    width: 80%;
+    padding: 0;
+  }
+  .right_con > h4 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .img_wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .imgbox1 {
+    height: 280px;
+  }
+  .cardtext {
+    height: 100%;
+    padding: 4px;
+  }
+  .cardtext span {
+    font-size: 14px;
+  }
+  .cardtext h4 {
+    font-size: 16px;
+  }
+  /* 아래컨텐츠 */
+  .card_wrap {
+    flex: row wrap;
+  }
+  .card_wrap .card1 {
+    width: calc(48% - 16px);
+    height: 420px;
+    margin-bottom: 16px;
+  }
+  .card_wrap .card_img {
+    height: 300px;
+  }
+  .card_wrap .card_img img {
+    object-fit: scale-down;
+    filter: grayscale(0);
+    transition: none;
+  }
+  .card_wrap p {
+    display: none;
+  }
+  .plus_icon {
+    position: relative;
+  }
+  .plus_icon img {
+    position: absolute;
+    top: -46px;
+    right: 0px;
+  }
+  .plus_icon span {
+    display: none;
+  }
+  /* top버튼 */
+  .top_btn {
+    position: fixed;
+    right: 80px;
+    bottom: 112px;
   }
   /* footer */
   footer .con {

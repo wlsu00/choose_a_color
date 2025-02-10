@@ -431,11 +431,11 @@ h1 {
   filter: grayscale(0.7);
   transition: 0.5s;
 }
-.card_wrap .card1:hover {
-  border: 1px solid #ff834f;
-  border-radius: 8px;
-}
 @media (hover: hover) {
+  .card_wrap .card1:hover {
+    border: 1px solid #ff834f;
+    border-radius: 8px;
+  }
   .card_wrap .card1:hover img {
     filter: grayscale(0);
   }
