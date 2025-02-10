@@ -273,8 +273,6 @@ h1 {
 .user_profile span {
   line-height: 17px;
   margin: 0 10px;
-}
-.user_profile > span {
   font-size: 14px;
   font-weight: 300;
 }
@@ -333,6 +331,7 @@ h1 {
 }
 .img_wrap {
   width: fit-content;
+  height: fit-content;
   margin-top: 32px;
   display: flex;
   justify-content: space-between;
@@ -368,12 +367,14 @@ h1 {
   box-sizing: border-box;
   transition: 0.5s;
 }
-.imgbox1:hover .cardtext {
-  height: 200px;
-}
-.imgbox:hover {
-  border: 1px solid #ff834f;
-  border-radius: 8px;
+@media (hover: hover) {
+  .imgbox1:hover .cardtext {
+    height: 200px;
+  }
+  .imgbox:hover {
+    border: 1px solid #ff834f;
+    border-radius: 8px;
+  }
 }
 .cardtext span {
   width: fit-content;
@@ -383,6 +384,7 @@ h1 {
   font-size: 14px;
   line-height: 20px;
 }
+
 .cardtext h4 {
   width: fit-content;
   text-align: left;
@@ -399,6 +401,7 @@ h1 {
 }
 .card_wrap {
   width: 100%;
+  height: fit-content;
   display: flex;
   flex-wrap: wrap;
   gap: 28px;
@@ -423,7 +426,6 @@ h1 {
   margin: 20px 0;
   border-radius: 8px;
 }
-
 .card_wrap .card_img img {
   object-fit: cover;
   filter: grayscale(0.7);
@@ -433,8 +435,10 @@ h1 {
   border: 1px solid #ff834f;
   border-radius: 8px;
 }
-.card_wrap .card1:hover img {
-  filter: grayscale(0);
+@media (hover: hover) {
+  .card_wrap .card1:hover img {
+    filter: grayscale(0);
+  }
 }
 .content .icons {
   display: flex;
@@ -442,7 +446,6 @@ h1 {
   gap: 16px;
   margin-bottom: 20px;
 }
-
 .card_wrap p {
   font-size: 14px;
   color: #111;

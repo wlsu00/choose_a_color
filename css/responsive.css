@@ -464,6 +464,12 @@
     font-size: 10px;
     line-height: 14px;
   }
+  /* 탑버튼 */
+  .top_btn {
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+  }
 }
 /* 💡모바일M (메인비주얼,섹션3) */
 /* 메인비주얼만 중단점 추가_더 수정해야함(320짜리 메인비주얼 결정하고하기)📍📍📍📍📍📍 */
@@ -501,6 +507,10 @@
 }
 /* 💡섹션4 */
 @media screen and (min-width: 540px) and (max-width: 1023px) {
+  /* 모바일 메뉴 */
+  #ham_menu + label + #mobile_menu {
+    left: -390px;
+  }
   .sec4 .card_wrap {
     display: flex;
     flex-wrap: wrap;
