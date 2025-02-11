@@ -491,7 +491,7 @@
 @media screen and (min-width: 425px) and (max-width: 767px) {
   /* 모바일 메뉴 */
   #ham_menu + label + #mobile_menu {
-    left: -374px;
+    left: -400px;
   }
   /* sec3 */
   .coupon_text {
@@ -509,7 +509,7 @@
 @media screen and (min-width: 540px) and (max-width: 1023px) {
   /* 모바일 메뉴 */
   #ham_menu + label + #mobile_menu {
-    left: -390px;
+    left: -500px;
   }
   .sec4 .card_wrap {
     display: flex;
@@ -792,7 +792,7 @@
   }
   /* sec5 */
   .sec5 > .con > .con_wrap {
-    justify-content: start;
+    justify-content: flex-start;
   }
   .sec5 .card1 {
     width: calc(33% - 28px);

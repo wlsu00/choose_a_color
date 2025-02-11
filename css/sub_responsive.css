@@ -526,9 +526,6 @@
     font-size: 16px;
   }
   /* 아래컨텐츠 */
-  .card_wrap {
-    flex: row wrap;
-  }
   .card_wrap .card1 {
     width: calc(48% - 16px);
     height: 420px;
@@ -636,70 +633,47 @@
   .icons a:nth-child(2) {
     display: flex;
   }
-  /* sec1 */
+  /* main */
+  /* 배너 */
+  .banner {
+    padding: 73px 16px;
+  }
   .best .con_wrap {
-    width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 28px;
+    gap: 40px;
   }
-  .sec1 .card1 {
-    width: calc(1514px / 4 - 28px);
+  .best .best_person {
+    animation: none;
   }
-
-  /* sec3 */
-  .sec3 .sec3_btn {
-    font-size: 14px;
-    padding: 6px 12px;
-    position: absolute;
-    top: -10px;
-    transform: translateX(-36px);
+  .text_wrap {
+    width: fit-content;
+    order: 10;
   }
-  .coupon_text {
-    top: 24%;
-    left: 12%;
+  .right_con {
+    margin-right: 60px;
+    margin-top: 60px;
+    padding: 0;
   }
-  .coupon_text p {
-    font-size: 10px;
+  .cardtext {
+    padding: 0 10px;
+    box-sizing: border-box;
+    height: 100px;
   }
-  .coupon_text h4 {
-    font-size: 16px;
-  }
-  /* sec4 */
-  .sec4 .card_wrap {
-    display: flex;
+  /* 아래컨텐츠 */
+  .card_wrap {
     flex-wrap: wrap;
-    gap: 28px;
-    justify-content: start;
   }
-  .flip {
-    width: calc(50% - 28px);
-    height: 400px;
-  }
-  .card_back > .card_con > h4 {
-    font-size: 18px;
+  .card_wrap .card1 {
+    width: calc(48% - 28px);
     margin-bottom: 16px;
   }
-  .sec4 .maintext {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 28px;
-    margin-bottom: 8px;
+  .page {
+    margin: 60px auto;
   }
-  .sec4 .subtext {
-    font-size: 12px;
-    line-height: 24px;
-    margin-bottom: 4px;
-  }
-  /* sec5 */
-  .sec5 > .con > .con_wrap {
-    justify-content: start;
-  }
-  .sec5 .card1 {
-    width: calc(33% - 28px);
-  }
-  .sec5 .img_case {
-    width: 100%;
+  /* top버튼 */
+  .top_btn {
+    right: 96px;
+    bottom: 100px;
   }
   /* footer */
   footer .con {
@@ -724,5 +698,44 @@
   footer span {
     font-size: 12px;
     line-height: 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .card_wrap {
+    flex-wrap: nowrap;
+  }
+  .best .best_person {
+    animation: person 0.8s ease 1 forwards;
+    will-change: opacity;
+  }
+
+  .text_wrap {
+    width: fit-content;
+    padding-left: 24px;
+    box-sizing: border-box;
+    order: 0;
+  }
+  .right_con {
+    margin-top: 60px;
+    padding: 0;
+  }
+  .cardtext {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .imgbox1:hover .cardtext {
+    height: 200px;
+  }
+  /* 아래컨텐츠 */
+  .card_wrap {
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: flex-start;
+  }
+  .card_wrap .card1 {
+    width: calc(33% - 28px);
+    margin-bottom: 16px;
   }
 }

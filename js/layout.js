@@ -3,6 +3,8 @@
 //📀메인 sec1
 const sec1_m = document.querySelector("#mabtn_sec1");
 const sec1_s = document.querySelector("#stbtn_sec1");
+const like_btn = document.querySelectorAll(".like_btn");
+const like_fill_btn = document.querySelectorAll(".like_fill_btn");
 
 //베스트-메이크업 버튼
 sec1_m.onclick = function makeupTap1(e) {
@@ -21,11 +23,29 @@ sec1_s.onclick = function makeupTap1(e) {
   document.querySelector(".more_wrap > a:last-child").className = "on";
 };
 
+//베스트-좋아요 버튼
+like_btn.forEach((btn) => {
+  //빈하트->채운하트
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    this.style.display = "none";
+    this.nextElementSibling.style.display = "block";
+  });
+});
+like_fill_btn.forEach((btn) => {
+  //채운하트->빈하트
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    this.style.display = "none";
+    this.previousElementSibling.style.display = "block";
+  });
+});
+
 //📀메인 sec2
 const sec2_m = document.getElementById("mabtn_sec2");
 const sec2_s = document.getElementById("stbtn_sec2");
 
-//커뮤니티-메이크업 버튼 🎈더보기 눌렀을때 서브 커뮤니티 ms가 html1개임
+//커뮤니티-메이크업 버튼
 sec2_m.onclick = function makeupTap2(e) {
   e.preventDefault();
   document.querySelector("#sec2_m").style.display = "block";

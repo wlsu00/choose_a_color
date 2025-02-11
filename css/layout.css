@@ -410,9 +410,24 @@ section {
   float: right;
   margin-left: 30px;
 }
-.user_profile img:last-of-type {
-  width: 24px;
-  height: 24px;
+
+/* 하트 클릭이벤트걸꺼 */
+.sec1 .user_profile > div:last-of-type {
+  position: relative;
+}
+.sec1 .user_profile .like_btn {
+  position: absolute;
+}
+.sec1 .user_profile .like_fill_btn {
+  position: absolute;
+  display: none;
+}
+.user_profile img {
+  width: 20px;
+  height: 20px;
+}
+.sec1 .user_profile > div:last-of-type span {
+  margin-left: 32px;
 }
 .card1_con > p {
   font-size: 12px;
@@ -463,6 +478,7 @@ section {
   width: 20px;
   height: 20px;
 }
+
 .sec2 .user_profile {
   display: flex;
   justify-content: flex-start;
@@ -493,7 +509,20 @@ section {
   align-items: center;
   gap: 8px;
 }
-.sec2 h4 {
+.sec2 .user_profile > div:last-of-type {
+  position: relative;
+}
+.sec2 .user_profile > div:last-of-type span {
+  margin-left: 24px;
+}
+.sec2 .user_profile .like_btn {
+  position: absolute;
+}
+.sec2 .user_profile .like_fill_btn {
+  position: absolute;
+  display: none;
+}
+.sec2 .user_profile .sec2 h4 {
   margin-bottom: 16px;
 }
 .sec2 .table1 {
@@ -927,11 +956,20 @@ section {
 }
 .sec5 .cardtext > div {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
-.sec5 .cardtext > div > img {
+.sec5 .cardtext > div img {
   margin-left: auto;
-  /* margin-bottom: 32px; */
+}
+.sec5 .cardtext .like_wrap {
+  padding-right: 20px;
+}
+.sec5 .cardtext .like_btn {
+  position: absolute;
+}
+.sec5 .cardtext .like_fill_btn {
+  position: absolute;
+  display: none;
 }
 
 /* top버튼 */
