@@ -29,6 +29,10 @@ h4 {
 a {
   font-family: "Inter", "Noto Sans KR", sans-serif;
 }
+/* sec공통영역 */
+section {
+  margin-bottom: 100px;
+}
 /* chips 공통 */
 .chips {
   width: fit-content;
@@ -208,11 +212,8 @@ main {
   width: 100%;
   height: auto;
 }
-/* sec공통영역 */
-section {
-  margin-bottom: 100px;
-}
-/* main visual */
+
+/* 메인비주얼 */
 .main_visual {
   width: 100%;
   height: 720px;
@@ -256,7 +257,7 @@ section {
   color: #ff834f;
   border-bottom: 1px solid #ff834f;
 }
-/* sec1 best */
+/* 섹션1 - 베스트 */
 .sec_txt > p {
   font-size: 15px;
   font-weight: 400;
@@ -276,7 +277,7 @@ section {
   margin-left: auto;
 }
 
-/* sec1 컨텐츠 */
+/* 베스트-컨텐츠 */
 #sec1_s {
   display: none; /* 나중에 칩 클릭하면 보여줄꺼임 */
 }
@@ -373,24 +374,26 @@ section {
   font-weight: 300;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 24px;
 }
-.user_profile span {
+.sec1 .user_profile span {
+  color: #4d4d4d;
+  font-weight: 400;
   line-height: 17px;
 }
-.user_profile > div:first-of-type {
+.sec1 .user_profile > div:first-of-type {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.user_profile > div:last-of-type {
+.sec1 .user_profile > div:last-of-type {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.user_profile > span::before {
+.sec1 .user_profile > span::before {
   content: "line";
   font-size: 0px;
   display: block;
@@ -400,7 +403,7 @@ section {
   float: left;
   margin-right: 30px;
 }
-.user_profile > span::after {
+.sec1 .user_profile > span::after {
   content: "line";
   font-size: 0px;
   display: block;
@@ -411,7 +414,7 @@ section {
   margin-left: 30px;
 }
 
-/* 하트 클릭이벤트걸꺼 */
+/* 하트 클릭이벤트 */
 .sec1 .user_profile > div:last-of-type {
   position: relative;
 }
@@ -429,16 +432,16 @@ section {
 .sec1 .user_profile > div:last-of-type span {
   margin-left: 32px;
 }
-.card1_con > p {
+.sec1 .card1_con > p {
   font-size: 12px;
   color: #4d4d4d;
   text-align: center;
   line-height: 17px;
 }
 
-/* sec2 community */
+/* 섹션2 - 커뮤니티 */
 #sec2_s {
-  display: none; /* 나중에 칩 클릭하면 보여줄꺼임*/
+  display: none;
 }
 .sec2 > .con {
   display: flex;
@@ -469,7 +472,7 @@ section {
   border: 1px solid #ff834f;
   box-sizing: border-box;
 }
-/* 표 */
+/* 표1 */
 .sec2_profile {
   margin-bottom: 16px;
 }
@@ -478,11 +481,15 @@ section {
   width: 20px;
   height: 20px;
 }
-
 .sec2 .user_profile {
   display: flex;
   justify-content: flex-start;
   gap: 10px;
+}
+.sec2 .user_profile span {
+  color: #4d4d4d;
+  font-weight: 400;
+  line-height: 17px;
 }
 .sec2 .user_profile > span::before {
   content: "line";
@@ -512,12 +519,20 @@ section {
 .sec2 .user_profile > div:last-of-type {
   position: relative;
 }
-.sec2 .user_profile > div:last-of-type span {
+/* 하트,눈 클릭이벤트 */
+.sec2 .user_profile > div:nth-of-type(2) span,
+.sec2 .user_profile > div:nth-of-type(3) span {
   margin-left: 24px;
 }
+.sec2 .user_profile > div:nth-of-type(2),
+.sec2 .user_profile > div:nth-of-type(3) {
+  position: relative;
+}
+.sec2 .user_profile .eye_btn,
 .sec2 .user_profile .like_btn {
   position: absolute;
 }
+.sec2 .user_profile .eye_fill_btn,
 .sec2 .user_profile .like_fill_btn {
   position: absolute;
   display: none;
@@ -550,7 +565,7 @@ section {
   border-bottom: 2px solid #d6d6d6;
   margin-top: 28px;
 }
-/* sec3 event */
+/* 섹션3 - 이벤트 */
 .sec3 .coupon_wrap {
   width: max-content;
   height: auto;
@@ -566,7 +581,6 @@ section {
   top: 0;
   left: 0;
 }
-
 .sec3 .sec3_btn {
   width: fit-content;
   height: fit-content;
@@ -629,7 +643,7 @@ section {
 .swiper .swiper-pagination-bullet {
   background-color: #ff834f;
 }
-/* sec4 styling */
+/* 섹션4 - 추천스타일링 */
 #sec4_summer,
 #sec4_fall,
 #sec4_winter {
@@ -860,7 +874,7 @@ section {
 .card_back > div:nth-of-type(2) {
   margin: 0 auto;
 }
-/* sec5 product */
+/* 섹션5 - 추천메이크업 */
 #sec5_summer,
 #sec5_fall,
 #sec5_winter {
@@ -930,7 +944,7 @@ section {
   width: fit-content;
   text-align: left;
   color: #4d4d4d;
-  font-weight: 300;
+  font-weight: 400;
 }
 .sec5 .cardtext > div > span {
   font-size: 14px;
@@ -991,6 +1005,9 @@ section {
 footer {
   border-top: 1px solid #d6d6d6;
   box-sizing: border-box;
+  color: #4d4d4d;
+  font-size: 14px;
+  font-weight: 300;
 }
 footer .con {
   display: flex;
@@ -1011,15 +1028,9 @@ footer h2 {
   box-sizing: border-box;
 }
 .sitemap > ul > li > a {
-  color: #4d4d4d;
-  font-size: 14px;
-  font-weight: 300;
   line-height: 80px;
 }
 footer span {
-  color: #4d4d4d;
-  font-size: 14px;
-  font-weight: 300;
   line-height: 20px;
   text-align: center;
 }

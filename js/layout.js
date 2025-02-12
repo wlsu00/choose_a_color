@@ -44,6 +44,8 @@ like_fill_btn.forEach((btn) => {
 //📀메인 sec2
 const sec2_m = document.getElementById("mabtn_sec2");
 const sec2_s = document.getElementById("stbtn_sec2");
+const eye_btn = document.querySelectorAll(".eye_btn");
+const eye_fill_btn = document.querySelectorAll(".eye_fill_btn");
 
 //커뮤니티-메이크업 버튼
 sec2_m.onclick = function makeupTap2(e) {
@@ -65,6 +67,24 @@ sec2_s.onclick = function styleTap2(e) {
   document.querySelector(".right_table .more_wrap > a:last-child").className =
     "on";
 };
+//베스트-좋아요 버튼
+eye_btn.forEach((btn) => {
+  //빈눈->채운눈
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    this.style.display = "none";
+    this.nextElementSibling.style.display = "block";
+  });
+});
+eye_fill_btn.forEach((btn) => {
+  //채운눈->빈눈
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    this.style.display = "none";
+    this.previousElementSibling.style.display = "block";
+  });
+});
+
 //📀메인 sec4 🎈여기서부터 모어뷰 랩 수정하기 on < 서브사이트 아직 안만들었음
 //계절칩
 const sec4_s = document.querySelector("#schip_sec4");
