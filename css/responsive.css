@@ -6,12 +6,22 @@
   .con {
     width: 95%;
   }
+
+  /* 섹션 공통영역 */
+  section {
+    margin-bottom: 80px;
+  }
+  .sec_txt {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  /* 섹션 제목 */
   h3 {
-    /* 섹션제목 */
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 16px;
     line-height: 22px;
+    text-align: center;
   }
   /* chips 공통 */
   .chips {
@@ -20,6 +30,9 @@
     line-height: 12px;
     padding: 6px 10px;
     box-sizing: border-box;
+  }
+  .chips_con > div:first-child {
+    gap: 12px;
   }
   .chips_plus {
     font-size: 12px;
@@ -72,7 +85,7 @@
     border-radius: 30px;
     background: #4d4d4d;
     position: absolute;
-    transition: all 0.35s;
+    transition: all 0.5s;
     z-index: 2;
   }
   /* 햄버거 닫혔을 때 */
@@ -144,10 +157,6 @@
   }
   .icons a:nth-child(2) {
     display: none;
-  }
-  /* 섹션 공통영역 */
-  section {
-    margin-bottom: 48px;
   }
 
   /* main */
@@ -308,6 +317,9 @@
   .sec2 .right_table img {
     width: 14px;
     height: 14px;
+  }
+  .sec2 .table1 {
+    padding: 10px;
   }
   .sec2 .user_profile span {
     line-height: 10px;
@@ -639,11 +651,15 @@
     height: 16px;
   }
   /* 섹션4 - 추천 스타일링 */
+  .sec4 .hidden_card {
+    /* 숨겨뒀던카드 540부터 보여주기 */
+    display: block;
+  }
   .sec4 .card_wrap {
     display: flex;
     flex-wrap: wrap;
     gap: 28px;
-    justify-content: start;
+    justify-content: center;
   }
   .flip {
     width: calc(50% - 28px);
@@ -674,6 +690,14 @@
   /* 공통 */
   .con {
     width: 95%;
+  }
+  /* 섹션 공통영역 */
+  section {
+    margin-bottom: 80px;
+  }
+  .sec_txt {
+    text-align: center;
+    margin-bottom: 40px;
   }
   /* header */
   header {
@@ -779,6 +803,41 @@
     display: none;
   }
 
+  /* 섹션2 - 커뮤니티 */
+  .sec2 > .con {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .left_txt {
+    width: 100%;
+    margin: 0 10px;
+  }
+  .right_table {
+    width: 100%;
+    position: relative;
+  }
+  .sec2 .table1 {
+    padding: 28px 10px;
+  }
+  .sec2 .user_profile span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+  .sec2 .user_profile > span::before {
+    height: 14px;
+  }
+  .sec2 .user_profile > span::after {
+    height: 14px;
+  }
+  .sec2 h4 {
+    margin-bottom: 12px;
+  }
+  .table1 p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+  }
   /* 섹션3 - 이벤트 */
   .coupon_text {
     top: 28%;
@@ -790,9 +849,16 @@
   .coupon_text > h4 {
     font-size: 18px;
   }
-  /* sec5 */
+  /* 섹션4 - 추천스타일링 */
+  .sec4 .hidden_card {
+    display: block;
+  }
+  /* 섹션5 - 추천메이크업 */
+  .sec5 .hidden_card {
+    display: block;
+  }
   .sec5 > .con > .con_wrap {
-    justify-content: start;
+    justify-content: center;
   }
   .sec5 .card1 {
     width: calc(33% - 28px);
@@ -964,7 +1030,13 @@
     line-height: 24px;
     margin-bottom: 14px;
   }
-  /* sec5 */
+  .sec4 .hidden_card {
+    display: block;
+  }
+  /* 섹션5 - 추천메이크업 */
+  .sec5 .hidden_card {
+    display: block;
+  }
   .sec5 > .con > .con_wrap {
     justify-content: flex-start;
   }
@@ -1001,6 +1073,31 @@
 }
 /* 섹션3, 섹션4 */
 @media screen and (min-width: 1220px) and (max-width: 1919px) {
+  /* 섹션1 - 베스트 */
+  .sec1 .card1 {
+    width: calc(1138px / 4 - 16px);
+  }
+  /* 해시태그 */
+  .sec1 .card1 > div > span {
+    font-size: 14px;
+  }
+  .sec1 .user_profile span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .sec1 .user_profile > span::before {
+    height: 12px;
+    margin-right: 8px;
+  }
+  .sec1 .user_profile > span::after {
+    height: 12px;
+    margin-left: 8px;
+  }
+  /* 섹션2 - 커뮤니티 */
+  .left_txt {
+    width: 40%;
+    margin: 308px auto;
+  }
   /* 섹션3 - 이벤트 */
   .coupon_text {
     top: 26%;
@@ -1015,6 +1112,28 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  /* 섹션1 - 베스트 */
+  .sec1 .card1 {
+    width: calc(1220px / 4 - 16px);
+    height: 340px;
+  }
+  /* 해시태그 */
+  .sec1 .card1 > div > span {
+    font-size: 16px;
+  }
+  .sec1 .user_profile span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .sec1 .user_profile > span::before {
+    height: 12px;
+    margin-right: 6px;
+  }
+  .sec1 .user_profile > span::after {
+    height: 12px;
+    margin-left: 6px;
+  }
+
   /* 섹션3 - 이벤트 */
   .coupon_text {
     top: 30%;
@@ -1027,7 +1146,14 @@
     font-size: 20px;
   }
   /* 섹션4 - 추천스타일링 */
-
+  .card_back > .card_con > h4 {
+    color: #ff834f;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
   .sec4 .maintext {
     font-size: 18px;
     font-weight: 500;
@@ -1036,6 +1162,6 @@
   }
   .sec4 .subtext {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
   }
 }

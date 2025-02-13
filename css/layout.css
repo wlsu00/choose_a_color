@@ -33,6 +33,12 @@ a {
 section {
   margin-bottom: 100px;
 }
+.sec_txt > p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #4d4d4d;
+  margin-bottom: 28px;
+}
 /* chips 공통 */
 .chips {
   width: fit-content;
@@ -258,12 +264,6 @@ main {
   border-bottom: 1px solid #ff834f;
 }
 /* 섹션1 - 베스트 */
-.sec_txt > p {
-  font-size: 15px;
-  font-weight: 400;
-  color: #4d4d4d;
-  margin-bottom: 28px;
-}
 .chips_con {
   width: 100%;
   display: flex;
@@ -451,12 +451,6 @@ main {
   width: 40%;
   margin: auto;
   margin: 308px auto;
-}
-.sec2 p {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 17px;
-  margin-bottom: 28px;
 }
 /* 오른쪽 표 */
 .right_table {
@@ -646,7 +640,8 @@ main {
 /* 섹션4 - 추천스타일링 */
 #sec4_summer,
 #sec4_fall,
-#sec4_winter {
+#sec4_winter,
+.sec4 .hidden_card {
   display: none;
 }
 .sec4 .card_wrap {
@@ -877,7 +872,8 @@ main {
 /* 섹션5 - 추천메이크업 */
 #sec5_summer,
 #sec5_fall,
-#sec5_winter {
+#sec5_winter,
+.sec5 .hidden_card {
   display: none;
 }
 /* 계절칩 */

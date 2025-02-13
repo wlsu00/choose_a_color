@@ -6,12 +6,18 @@
   .con {
     width: 95%;
   }
+  /* 섹션제목 */
+  .sec_txt {
+    margin: 93px 4vw;
+  }
   h3 {
-    /* 섹션제목 */
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 16px;
     line-height: 22px;
+  }
+  section {
+    margin-bottom: 80px;
   }
   /* chips 공통 */
   .chips {
@@ -90,7 +96,6 @@
     bottom: 50%;
     transform: translateY(50%) rotate(-135deg);
   }
-
   /* 모바일 메뉴 */
   #ham_menu + label + #mobile_menu {
     position: fixed;
@@ -100,7 +105,7 @@
     top: 0px;
     padding: 60px 25px 25px 25px;
     box-sizing: border-box;
-    left: -300px;
+    left: -2000px;
     z-index: 1;
     transition: all 0.5s;
   }
@@ -138,30 +143,57 @@
   .icons a:nth-child(2) {
     display: none;
   }
-  /* sec공통영역 */
-  section {
-    margin-bottom: 48px;
-  }
 
   /* main */
-  /* 배너 */
-  .banner {
-    padding: 92px 20px;
-  }
-  /* sec1 베스트 */
+  /* 섹션1 - 베스트 */
   /* 계절설명문구 */
   .best > div:first-of-type {
     margin-top: 60px;
   }
+  /* 컨텐츠 */
+  .best .con {
+    height: auto;
+    padding: 0;
+  }
   .best .con_wrap {
-    flex-direction: column;
+    position: static;
+    justify-content: center;
     padding: 20px 10px;
     box-sizing: border-box;
+    gap: 40px;
+    flex-direction: column;
   }
   .best .best_person {
-    width: 90%;
-    height: 44vh;
+    width: 100%;
+    position: static;
+    transition: none;
     animation: none;
+  }
+  /* 가운데 텍스트 */
+  /* 프로필아이콘 */
+  .user_profile {
+    width: 80%;
+    font-size: 10px;
+    margin: 16px auto;
+    padding-right: 0;
+    gap: 8px;
+  }
+  .user_profile span {
+    line-height: 10px;
+    margin: 0;
+    font-size: 13px;
+  }
+  .user_profile > span::before {
+    height: 10px;
+    margin-right: 14px;
+  }
+  .user_profile > span::after {
+    height: 10px;
+    margin-left: 14px;
+  }
+  .text_wrap .user_profile img:last-of-type {
+    width: 14px;
+    height: 14px;
   }
   .text_wrap {
     width: 100%;
@@ -177,74 +209,49 @@
   .text_wrap .icons {
     display: none;
   }
-  /* 프로필아이콘 */
-  .user_profile {
-    width: fit-content;
-    font-size: 10px;
-    margin: 16px auto;
-    gap: 12px;
-    padding-right: 0;
-  }
-  .user_profile span {
-    line-height: 10px;
-    margin: 0;
-    font-size: 13px;
-  }
-  .user_profile > div {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-  .user_profile > span::before {
-    height: 10px;
-    margin-right: 14px;
-  }
-  .user_profile > span::after {
-    width: 1px;
-    height: 10px;
-    margin-left: 14px;
-  }
-  .user_profile img:last-of-type {
-    width: 14px;
-    height: 14px;
-  }
   /* 오른쪽 이미지 */
   .right_con {
-    margin-top: 60px;
     width: 100%;
+    margin: 0 auto;
+    margin-top: 48px;
+    text-align: center;
     padding: 0;
   }
   .img_wrap {
     width: 100%;
+    justify-content: center;
+    gap: 8px;
   }
   .imgbox1 {
-    height: 280px;
-  }
-  .cardtext {
-    height: 100%;
-    padding: 4px;
-  }
-  .cardtext span {
-    font-size: 12px;
-  }
-  .cardtext h4 {
-    font-size: 12px;
+    width: calc(50% - 8px);
+    height: fit-content;
   }
   /* 아래컨텐츠 */
+
   .content {
     margin-top: 10px;
   }
   .card_wrap {
     flex-direction: column;
-    gap: 16px;
+    /* gap: 16px; */
+    gap: 0;
+    justify-content: center;
   }
   .card_wrap .card1 {
-    width: calc(48% - 16px);
     width: 100%;
+    /* height: 458px; */
     margin-bottom: 16px;
   }
+  /* 프로필 */
+  .content .card_wrap .user_profile {
+    width: 90%;
+  }
+  .content .card_wrap .user_profile img {
+    width: 12px;
+    height: 12px;
+  }
   .card_wrap .card_img {
-    height: 320px;
+    height: 316px;
   }
   .card_wrap .card_img img {
     object-fit: scale-down;
@@ -375,6 +382,11 @@
   .con {
     width: 95%;
   }
+  /* 섹션제목 */
+  .sec_txt {
+    margin: 93px 4vw;
+  }
+
   /* header */
   header .con {
     width: 98%;
@@ -494,10 +506,7 @@
     height: 10px;
     margin-left: 14px;
   }
-  .user_profile img:last-of-type {
-    width: 14px;
-    height: 14px;
-  }
+
   /* 오른쪽 이미지 */
   .right_con {
     margin-top: 60px;
@@ -505,12 +514,14 @@
     padding: 0;
   }
   .right_con > h4 {
+    text-align: center;
     font-size: 20px;
     margin-bottom: 16px;
   }
   .img_wrap {
-    width: 100%;
+    width: fit-content;
     margin: 0 auto;
+    gap: 32px;
   }
   .imgbox1 {
     height: 280px;
@@ -633,25 +644,25 @@
   .icons a:nth-child(2) {
     display: flex;
   }
-  /* main */
-  /* 배너 */
-  .banner {
-    padding: 73px 16px;
-  }
+  /* 섹션1 - 베스트 */
   .best .con_wrap {
     flex-wrap: wrap;
-    gap: 40px;
+    justify-content: flex-end;
   }
   .best .best_person {
-    animation: none;
+    width: 40vw;
+    height: 56vh;
+    margin-right: auto;
   }
   .text_wrap {
-    width: fit-content;
+    width: 45vw;
+    /* margin-top: -200px; */
     order: 10;
   }
   .right_con {
-    margin-right: 60px;
-    margin-top: 60px;
+    width: 45vw;
+    /* margin-top: -160px; */
+    /* margin-top: -20px; */
     padding: 0;
   }
   .cardtext {
@@ -702,19 +713,24 @@
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
-  .card_wrap {
+  /* 섹션1 - 베스트 */
+  .best .con_wrap {
     flex-wrap: nowrap;
+    gap: 36px;
   }
   .best .best_person {
-    animation: person 0.8s ease 1 forwards;
-    will-change: opacity;
+    width: 32vw;
+    height: 52vh;
+    margin-right: auto;
   }
-
   .text_wrap {
     width: fit-content;
     padding-left: 24px;
     box-sizing: border-box;
     order: 0;
+  }
+  .text_wrap .user_profile {
+    padding: 0;
   }
   .right_con {
     margin-top: 60px;

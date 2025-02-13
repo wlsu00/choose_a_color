@@ -203,11 +203,9 @@ h1 {
   height: 240px;
   overflow: hidden;
   background: url("../../img/sub/banner/styling.png") no-repeat;
-  padding: 73px 254px;
   box-sizing: border-box;
 }
-/* sec1 베스트 */
-/* 칩스 */
+/* 섹션1 - 베스트 */
 /* 계절설명문구 */
 .best > div:first-of-type {
   width: fit-content;
@@ -217,6 +215,7 @@ h1 {
   line-height: 19px;
   margin-top: 100px;
 }
+/* 칩스 */
 .chips_seoson {
   width: fit-content;
   height: fit-content;
@@ -228,7 +227,7 @@ h1 {
   margin: 16px 0 100px;
 }
 
-/* sec2 - 베스트드레서 */
+/* 컨텐츠 */
 .best .con {
   height: 600px;
   padding: 60px 0;
@@ -277,9 +276,10 @@ h1 {
 
 /* 프로필아이콘 */
 .user_profile {
+  width: 100%;
+
   font-size: 12px;
   font-weight: 300;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
