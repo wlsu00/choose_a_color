@@ -228,7 +228,7 @@
     height: fit-content;
     align-items: center;
   }
-  .imgbox + span{
+  .imgbox + span {
     text-align: start;
   }
 
@@ -237,7 +237,7 @@
   .content {
     margin-top: 10px;
   }
-  .content .icons{
+  .content .icons {
     margin-bottom: 12px;
   }
   .card_wrap {
@@ -382,7 +382,7 @@
   .imgbox1 {
     width: calc(33% - 8px);
   }
-  .card_wrap .card1{
+  .card_wrap .card1 {
     height: auto;
   }
 }
@@ -475,7 +475,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-  }  /* main */
+  } /* main */
   /* 섹션1 - 베스트 */
   /* 컨텐츠 */
   .best {
@@ -508,7 +508,7 @@
     text-align: center;
     order: -1;
   }
-  .text_wrap h4{
+  .text_wrap h4 {
     font-size: 24px;
   }
   .text_wrap p,
@@ -565,7 +565,7 @@
     justify-content: center;
     align-items: center;
   }
-  .imgbox{
+  .imgbox {
     margin: 0 auto;
     margin-bottom: 12px;
   }
@@ -573,7 +573,7 @@
     width: calc(33% - 28px);
     height: auto;
   }
-  .imgbox+span{
+  .imgbox + span {
     font-size: 15px;
     text-align: center;
   }
@@ -656,6 +656,10 @@
   .con {
     width: 95%;
   }
+  /* 섹션제목 */
+  .sec_txt {
+    margin: 75px 4vw;
+  }
   /* header */
   header .con {
     width: 98%;
@@ -698,6 +702,7 @@
   .icons a:nth-child(2) {
     display: flex;
   }
+  /* main */
   /* 섹션1 - 베스트 */
   .best .con_wrap {
     flex-wrap: wrap;
@@ -705,19 +710,18 @@
   }
   .best .best_person {
     width: 40vw;
-    height: 56vh;
+    height: 70vh;
+    margin-top: 100px;
     margin-right: auto;
   }
   .text_wrap {
     width: 45vw;
-    /* margin-top: -200px; */
-    order: 10;
   }
   .right_con {
     width: 45vw;
-    /* margin-top: -160px; */
-    /* margin-top: -20px; */
     padding: 0;
+    margin-top: -120px;
+    margin-right: 0;
   }
   .cardtext {
     padding: 0 10px;
@@ -725,6 +729,9 @@
     height: 100px;
   }
   /* 아래컨텐츠 */
+  .content {
+    margin-top: 480px;
+  }
   .card_wrap {
     flex-wrap: wrap;
   }

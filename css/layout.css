@@ -881,12 +881,12 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.sec5 a {
+/* .sec5 a {
   display: block;
   width: fit-content;
   height: fit-content;
   flex-grow: 1;
-}
+} */
 .sec5 > .con > .con_wrap {
   display: flex;
   flex-wrap: wrap;

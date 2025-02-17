@@ -22,9 +22,14 @@ h3 {
   line-height: 46px;
 }
 h4 {
+  width: fit-content;
   font-size: 20px;
   font-weight: 500;
   line-height: 29px;
+  margin: 16px 0;
+  /* padding: 0 4px; */
+  box-sizing: border-box;
+  transition: 0.5s;
 }
 a {
   font-family: "Inter", "Noto Sans KR", sans-serif;
@@ -221,11 +226,15 @@ h1 {
   width: 100%;
 }
 /* 컨텐츠영역 */
+.conwrap {
+  width: 100%;
+  height: auto;
+}
 /* 프로필아이콘 */
 .user_profile {
+  width: 100%;
   font-size: 12px;
   font-weight: 300;
-  width: 100%;
   display: flex;
   align-items: center;
   margin-bottom: 32px 0;
@@ -265,10 +274,22 @@ h1 {
   width: 24px;
   height: 24px;
 }
-.conwrap {
-  width: 100%;
-  height: auto;
+/* 하트 클릭이벤트 */
+.user_profile > div:last-of-type {
+  position: relative;
 }
+.user_profile .like_btn {
+  position: absolute;
+}
+.user_profile .like_fill_btn {
+  position: absolute;
+  display: none;
+}
+.user_profile > div:last-of-type > span {
+  margin-left: 26px;
+  line-height: 26px;
+}
+
 /* 커뮤니티1 */
 .content1 {
   padding: 32px 20px;
@@ -278,6 +299,7 @@ h1 {
 }
 .content1:hover h4 {
   background-color: #f8f3ed;
+  background-color: #fce3c4;
 }
 #first_content1 {
   border-top: 2px solid #d6d6d6;
@@ -285,13 +307,7 @@ h1 {
 #last_content1 {
   border-bottom: 2px solid #d6d6d6;
 }
-.content1 h4 {
-  margin: 16px 0;
-  width: fit-content;
-  padding: 0 4px;
-  box-sizing: border-box;
-  transition: 0.5s;
-}
+
 /* top버튼 */
 .top_btn {
   width: fit-content;
