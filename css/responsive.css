@@ -1165,3 +1165,8 @@
     font-weight: 300;
   }
 }
+@media screen and (min-width: 1920px) {
+  .sec1 .card1 {
+    width: calc(1516px / 4);
+  }
+}

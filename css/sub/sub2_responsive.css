@@ -192,6 +192,9 @@
     height: 10px;
     margin-left: 14px;
   }
+  .text_wrap .user_profile {
+    width: fit-content;
+  }
   .text_wrap .user_profile img:last-of-type {
     width: 14px;
     height: 14px;
@@ -354,21 +357,36 @@
     padding: 8px 16px;
   }
   .best .best_person {
-    height: auto;
+    height: 72vh;
   }
   .card_wrap .card1 {
-    height: 66vh;
+    height: 70vh;
   }
   .card_wrap .card_img {
     height: clamp(52vh, 52vh, 362px);
   }
   /* 프로필 */
-  .content .card_wrap .user_profile {
-    width: fit-content;
-    /* margin: 16px auto; */
-  }
+
   .user_profile span {
     font-size: 14px;
+    line-height: 20px;
+  }
+  .text_wrap .user_profile {
+    width: fit-content;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .user_profile > span::before {
+    height: 20px;
+    margin-right: 16px;
+  }
+  .user_profile > span::after {
+    height: 20px;
+    margin-left: 16px;
+  }
+  .text_wrap .user_profile img:last-of-type {
+    width: 18px;
+    height: 18px;
   }
   .cardtext {
     padding: 0 8px;
@@ -378,12 +396,18 @@
   }
   .cardtext span {
     font-size: 12px;
+    font-weight: 300;
   }
   .imgbox1 {
     width: calc(33% - 8px);
   }
-  .card_wrap .card1 {
-    height: auto;
+  .content .card_wrap .user_profile img {
+    width: 18px;
+    height: 18px;
+  }
+  .plus_icon span {
+    display: block;
+    font-weight: 300;
   }
 }
 /* 💡태블릿💡 */
@@ -590,7 +614,7 @@
   /* 아래컨텐츠 */
   .card_wrap .card1 {
     width: calc(48% - 16px);
-    height: 420px;
+    height: 52vh;
     margin-bottom: 16px;
   }
   .card_wrap .card_img {
@@ -604,6 +628,10 @@
   .card1 .user_profile span {
     font-size: 14px;
   }
+  .content .card_wrap .user_profile img {
+    width: 20px;
+    height: 20px;
+  }
   .card_wrap p {
     display: none;
   }
@@ -614,9 +642,6 @@
     position: absolute;
     top: -46px;
     right: 0px;
-  }
-  .plus_icon span {
-    display: none;
   }
   /* top버튼 */
   .top_btn {
@@ -674,7 +699,7 @@
   #gnb {
     display: block;
     height: 80px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
   }
   #gnb > ul {
@@ -710,17 +735,50 @@
   }
   .best .best_person {
     width: 40vw;
-    height: 70vh;
-    margin-top: 100px;
+    height: 46vh;
+    /* margin-top: 100px; */
     margin-right: auto;
   }
   .text_wrap {
+    margin-top: -120px;
     width: 45vw;
+  }
+  .user_profile {
+    font-size: 15px;
+    font-weight: 400;
+    color: #4d4d4d;
+  }
+  .text_wrap .user_profile {
+    width: fit-content;
+    font-size: 16px;
+  }
+  .user_profile > span::before {
+    height: 20px;
+    margin-left: 16px;
+  }
+  .user_profile > span::after {
+    height: 20px;
+    margin-right: 16px;
+  }
+  .text_wrap .user_profile > div:last-of-type {
+    width: 22px;
+    height: 22px;
+  }
+  .text_wrap .user_profile > div:last-of-type img {
+    width: 20px;
+    height: 20px;
+  }
+  .text_wrap p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .text_wrap p + span {
+    font-size: 16px;
   }
   .right_con {
     width: 45vw;
     padding: 0;
-    margin-top: -120px;
+    margin-top: -40px;
     margin-right: 0;
   }
   .cardtext {
@@ -728,16 +786,25 @@
     box-sizing: border-box;
     height: 100px;
   }
-  /* 아래컨텐츠 */
-  .content {
-    margin-top: 480px;
+  .imgbox + span {
+    font-size: 15px;
   }
+  /* 아래컨텐츠 */
   .card_wrap {
     flex-wrap: wrap;
+  }
+  .content .card_wrap .user_profile {
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 20px;
   }
   .card_wrap .card1 {
     width: calc(48% - 28px);
     margin-bottom: 16px;
+  }
+  .card_wrap p {
+    font-size: 16px;
+    line-height: 24px;
   }
   .page {
     margin: 60px auto;
@@ -774,6 +841,13 @@
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
+  /* 공통 */
+  .chips {
+    width: 72px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 18px;
+  }
   /* 섹션1 - 베스트 */
   .best .con_wrap {
     flex-wrap: nowrap;
@@ -785,16 +859,21 @@
     margin-right: auto;
   }
   .text_wrap {
-    width: fit-content;
-    padding-left: 24px;
+    width: 28vw;
+    margin-top: 0;
     box-sizing: border-box;
     order: 0;
+  }
+  .text_wrap br {
+    display: none;
+    overflow: hidden;
   }
   .text_wrap .user_profile {
     padding: 0;
   }
   .right_con {
-    margin-top: 60px;
+    width: 32vw;
+    margin-top: 0;
     padding: 0;
   }
   .cardtext {

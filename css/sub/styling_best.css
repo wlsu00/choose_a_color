@@ -189,8 +189,8 @@ h1 {
   box-sizing: border-box;
 }
 .icons img {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
 }
 
 /* 메인 */
@@ -229,7 +229,7 @@ h1 {
 
 /* 컨텐츠 */
 .best .con {
-  height: 600px;
+  height: auto;
   padding: 60px 0;
   box-sizing: border-box;
 }
@@ -238,35 +238,40 @@ h1 {
   height: fit-content;
   border-top: 1px solid #d6d6d6;
   border-bottom: 1px solid #d6d6d6;
-  position: relative;
+  /* position: relative;
   top: 0;
-  left: 0;
+  left: 0; */
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  gap: 200px;
+  padding: 60px 0;
+  /* gap: 200px; */
 }
 .best .best_person {
-  width: 440px;
-  height: fit-content;
+  width: 340px;
+  height: 452px;
+  /* height: 340px; */
+  border-radius: 8px;
   overflow: hidden;
-  position: absolute;
-  top: -72px;
-  left: -20px;
   transition: 0.5s;
   animation: person 0.7s ease 1 forwards;
-  will-change: opacity, transform;
+  will-change: opacity;
+}
+.best .best_person img {
+  transform: scale(1.1);
+}
+#bestImg_summer {
+  transform: translateY(-50px);
+}
+#bestImg_fall {
+  transform: translateY(-160px);
 }
 @keyframes person {
   from {
     opacity: 0;
-    top: -102px;
   }
   to {
     opacity: 1;
-    top: -72px;
   }
 }
 #winter_best {
@@ -277,7 +282,6 @@ h1 {
 /* 프로필아이콘 */
 .user_profile {
   width: 100%;
-
   font-size: 12px;
   font-weight: 300;
   display: flex;
@@ -287,7 +291,7 @@ h1 {
   padding-right: 124px;
   box-sizing: border-box;
 }
-.user_profile span {
+.best_person .user_profile span {
   line-height: 17px;
   margin: 0 10px;
 }
@@ -399,6 +403,9 @@ h1 {
   justify-content: space-around;
 }
 .content .card_wrap .user_profile {
+  font-size: 14px;
+  font-weight: 300;
+  color: #4d4d4d;
   margin: 0;
   padding-right: 0;
 }
@@ -443,20 +450,29 @@ h1 {
   gap: 16px;
   margin-bottom: 20px;
 }
-.content .icons img {
+/* .content .icons img {
   width: 20px;
-}
+} */
 .card_wrap p {
   font-size: 14px;
   color: #111;
   line-height: 20px;
   margin-bottom: 20px;
 }
-.card_wrap span {
-  font-size: 14px;
-  font-weight: 300;
-  color: #4d4d4d;
+/* 하트 클릭이벤트 */
+.icons .like_wrap {
+  position: relative;
+  width: 28px;
+  height: 28px;
 }
+.icons .like_btn {
+  position: absolute;
+}
+.icons .like_fill_btn {
+  position: absolute;
+  display: none;
+}
+
 .plus_icon {
   display: flex;
   justify-content: space-between;

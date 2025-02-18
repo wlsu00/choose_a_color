@@ -299,10 +299,6 @@
 }
 /* 💡모바일L */
 @media screen and (min-width: 425px) and (max-width: 767px) {
-  /* 모바일 메뉴 */
-  #ham_menu + label + #mobile_menu {
-    left: -374px;
-  }
   .best .best_person {
     height: 52vh;
   }
@@ -333,10 +329,6 @@
   .chips {
     font-size: 14px;
     padding: 8px 16px;
-  }
-  /* 모바일 메뉴 */
-  #ham_menu + label + #mobile_menu {
-    left: -390px;
   }
   .best .best_person {
     height: 72vh;

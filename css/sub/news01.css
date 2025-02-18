@@ -189,12 +189,10 @@ h1 {
   border-radius: 8px;
   overflow: hidden;
 }
-.card_img img {
-  transition: 0.3s;
-}
 @media (hover: hover) {
   .card:not(:hover) .card_img img {
-    opacity: 0.7;
+    opacity: 0.5;
+    filter: grayscale(0.3);
   }
 }
 .card_img > .cart_text {

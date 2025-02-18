@@ -460,6 +460,20 @@ h1 {
   font-weight: 300;
   color: #4d4d4d;
 }
+/* 하트 클릭이벤트 */
+.icons .like_wrap {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.icons .like_btn {
+  position: absolute;
+}
+.icons .like_fill_btn {
+  position: absolute;
+  display: none;
+}
+
 .plus_icon {
   display: flex;
   justify-content: space-between;

@@ -593,9 +593,11 @@ main {
   z-index: 20;
   box-sizing: border-box;
 }
-.sec3 .sec3_btn:hover {
-  background-color: #ff834f;
-  border: 1px solid #ff834f;
+@media (hover: hover) {
+  .sec3 .sec3_btn:hover {
+    background-color: #ff834f;
+    border: 1px solid #ff834f;
+  }
 }
 .sec3 .coupon img {
   object-fit: scale-down;
