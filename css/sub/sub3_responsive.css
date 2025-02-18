@@ -181,12 +181,6 @@
   .content1 p {
     display: none;
   }
-  /* top버튼 */
-  .top_btn {
-    position: fixed;
-    right: 80px;
-    bottom: 120px;
-  }
   /* footer */
   footer .con {
     padding-top: 10px;
@@ -339,12 +333,6 @@
     line-height: 20px;
     font-weight: 400;
   }
-  /* top버튼 */
-  .top_btn {
-    position: fixed;
-    right: 80px;
-    bottom: 112px;
-  }
   /* footer */
   footer .con {
     padding-top: 10px;
@@ -457,11 +445,6 @@
   }
   .content1 > div:last-child p {
     line-height: 28px;
-  }
-  /* top버튼 */
-  .top_btn {
-    right: 96px;
-    bottom: 100px;
   }
   /* footer */
   footer .con {

@@ -261,12 +261,6 @@
   .plus_icon span {
     display: none;
   }
-  /* top버튼 */
-  .top_btn {
-    position: fixed;
-    right: 80px;
-    bottom: 120px;
-  }
   /* footer */
   footer .con {
     padding-top: 10px;
@@ -544,12 +538,6 @@
   .plus_icon span {
     display: none;
   }
-  /* top버튼 */
-  .top_btn {
-    position: fixed;
-    right: 80px;
-    bottom: 112px;
-  }
   /* footer */
   footer .con {
     padding-top: 10px;
@@ -595,17 +583,10 @@
   }
   #gnb {
     display: block;
-    height: 80px;
-    font-size: 15px;
-    font-weight: 300;
   }
   #gnb > ul {
-    display: flex;
-    justify-content: center;
     gap: 30px;
     margin: 27px 0;
-    box-sizing: border-box;
-    line-height: 25px;
   }
   #gnb > ul > li > a {
     padding: 0 20px;
@@ -665,11 +646,6 @@
   }
   .page {
     margin: 60px auto;
-  }
-  /* top버튼 */
-  .top_btn {
-    right: 96px;
-    bottom: 100px;
   }
   /* footer */
   footer .con {

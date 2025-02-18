@@ -205,6 +205,9 @@ h1 {
   background: url("../../img/sub/banner/styling.png") no-repeat;
   box-sizing: border-box;
 }
+.sec_txt {
+  margin: 75px 4vw;
+}
 /* 섹션1 - 베스트 */
 /* 계절설명문구 */
 .best > div:first-of-type {
@@ -502,18 +505,24 @@ h1 {
 
 /* top버튼 */
 .top_btn {
-  width: fit-content;
-  height: fit-content;
+  width: 60px;
+  height: 40px;
   position: fixed;
-  right: 28px;
-  bottom: 28px;
-  color: #fff;
+  right: 4vw;
+  bottom: 8vh;
   background-color: #ff834f;
   border-radius: 30px;
-  padding: 8px 16px;
+}
+.top_btn a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 8px;
   box-sizing: border-box;
+  color: #fff;
   text-align: center;
   font-weight: 500;
+  line-height: 24px;
 }
 /* footer */
 footer {

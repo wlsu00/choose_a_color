@@ -284,12 +284,6 @@
   .plus_icon span {
     display: none;
   }
-  /* top버튼 */
-  .top_btn {
-    position: fixed;
-    right: 80px;
-    bottom: 120px;
-  }
   /* footer */
   footer .con {
     padding-top: 10px;
@@ -643,12 +637,6 @@
     top: -46px;
     right: 0px;
   }
-  /* top버튼 */
-  .top_btn {
-    position: fixed;
-    right: 80px;
-    bottom: 112px;
-  }
   /* footer */
   footer .con {
     padding-top: 10px;
@@ -808,11 +796,6 @@
   }
   .page {
     margin: 60px auto;
-  }
-  /* top버튼 */
-  .top_btn {
-    right: 96px;
-    bottom: 100px;
   }
   /* footer */
   footer .con {

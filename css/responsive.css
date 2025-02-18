@@ -491,12 +491,6 @@
     font-size: 10px;
     line-height: 14px;
   }
-  /* top버튼 */
-  .top_btn {
-    position: fixed;
-    right: 10px;
-    bottom: 80px;
-  }
 }
 /* 💡모바일M💡 */
 /* 💥메인비주얼 먼저 결정하고 중단점 추가하기 */
