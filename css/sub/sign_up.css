@@ -1,0 +1,263 @@
+@charset "utf-8";
+@import url("../../css/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR&display=swap");
+
+/* 공통영역 */
+body {
+  font-family: "Inter", "Noto Sans KR", sans-serif;
+  color: #111;
+  background-color: #fff;
+  height: auto;
+}
+.con {
+  width: 1600px;
+  height: auto;
+  margin: 0 auto;
+}
+/* header */
+header {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background-color: #fff;
+  z-index: 999;
+  border-bottom: 1px solid #f5f4f4;
+}
+header .con {
+  width: 85%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .icons.menu {
+  display: none;
+}
+/* logo */
+h1 {
+  width: 212px;
+}
+/* gnb */
+#gnb {
+  width: fit-content;
+  height: 80px;
+  font-size: 15px;
+  font-weight: 300;
+}
+/* 1차메뉴 */
+#gnb > ul {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 26px 0;
+  box-sizing: border-box;
+  line-height: 25px;
+}
+#gnb > ul > li {
+  /* width: 164px; */
+  width: fit-content;
+  text-align: center;
+  transition: 0.3s;
+  position: relative;
+  border-bottom: 1px solid #fff;
+}
+#gnb > ul > li > a {
+  line-height: 25px;
+  display: block;
+  padding: 0 24px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  transition: 0.3s;
+}
+#gnb > ul > li:hover {
+  border-bottom: 1px solid #ff834f;
+}
+#gnb > ul > li:hover > a {
+  color: #ff834f;
+}
+/* 2차메뉴 */
+#gnb .submenu {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  position: absolute;
+  top: 80px;
+  z-index: 1000;
+}
+#gnb .submenu li {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 48px;
+}
+#gnb .submenu li a {
+  transition: 0.3s;
+  display: block;
+  width: 100%;
+}
+#gnb:hover .submenu {
+  height: 110px;
+}
+.submenu > li > a:hover {
+  color: #ff834f;
+  font-weight: 500;
+}
+#gnb::after {
+  content: "header-background";
+  font-size: 0;
+  position: absolute; /* 0점 헤더기준_gnb기준이면 그거 시작지점부터 100vw */
+  top: 80px; /* 헤더아래부터 */
+  left: 0;
+  width: 100vw;
+  height: 0; /*마우스올리면 그때보여야해서*/
+  transition: 0.5s;
+  backdrop-filter: blur(10px); /* 배경 블러처리 △뒤에 단색이면 블러 안먹음 */
+}
+#gnb:hover::after {
+  height: 200px;
+  background-color: #ffffff4b;
+  border-bottom: 1px solid #ddd;
+}
+.icons {
+  display: flex;
+  gap: 50px;
+}
+.icons a {
+  display: block;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.icons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* 회원가입 폼 */
+.sign_up {
+  background-color: #fff;
+  margin: 100px auto;
+  width: 30%;
+  height: fit-content;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  border: 1px solid #ff834f;
+  border-radius: 8px;
+}
+form > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 34%;
+  padding-bottom: 32px;
+  border-bottom: 2px solid #d6d6d6;
+}
+form > div:first-child img {
+  width: 24px;
+}
+form > div:first-child h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26px;
+}
+form h4 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 400;
+}
+form input {
+  width: 70%;
+  border: none;
+  border: 1px solid #d6d6d6;
+  /* background-color: #d6d6d61f; */
+  border-radius: 4px;
+  outline: none;
+  padding: 8px;
+  margin-top: 8px;
+}
+form input:focus {
+  background-color: #d6d6d628;
+  color: #ff834f;
+}
+.chk1,
+.chk2 {
+  width: fit-content;
+  height: fit-content;
+  font-size: 14px;
+  color: #ff834f;
+  border: 1px solid #ff834f;
+  border-radius: 16px;
+  padding: 6px 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  float: right;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.user_info,
+.real_user {
+  width: 86%;
+  margin: 0 auto;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  margin-top: 40px;
+  background-color: #d6d6d6;
+}
+@media (hover: hover) {
+  .chk1:hover,
+  .chk2:hover {
+    background-color: #ff834f;
+    color: #fff;
+  }
+}
+.terms {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.terms > input {
+  width: fit-content;
+  margin: 0;
+}
+.terms p {
+  width: fit-content;
+  height: fit-content;
+  color: #4d4d4d;
+  font-size: 12px;
+  padding: 6px 8px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  margin-left: auto;
+  background-color: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .terms p:hover {
+    background-color: #d6d6d65e;
+  }
+}
+.sign {
+  width: 100%;
+  height: fit-content;
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin: 64px auto 0;
+  background-color: #ff834f;
+  padding: 16px 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sign:hover {
+  opacity: 0.5;
+}
