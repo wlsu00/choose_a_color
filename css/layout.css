@@ -611,12 +611,7 @@ main {
   z-index: 20;
   box-sizing: border-box;
 }
-@media (hover: hover) {
-  .sec3 .sec3_btn:hover {
-    background-color: #ff834f;
-    border: 1px solid #ff834f;
-  }
-}
+
 .sec3 .coupon img {
   object-fit: scale-down;
   transition: 0.5s;
@@ -632,21 +627,18 @@ main {
 .hover_img2 {
   opacity: 0;
 }
-@media (hover: hover) {
-  .coupon:hover .hover_img2 {
-    opacity: 1;
-  }
+.coupon:hover .hover_img2 {
+  opacity: 1;
 }
-@media (hover: hover) {
-  .coupon:hover .coupon_text {
-    color: #fff;
-  }
-  .coupon:hover .sec3_btn {
-    background-color: #fff;
-    color: #ff834f;
-    border: 1px solid #ff834f;
-  }
+.coupon:hover .coupon_text {
+  color: #fff;
 }
+.coupon:hover .sec3_btn {
+  background-color: #fff;
+  color: #ff834f;
+  border: 1px solid #ff834f;
+}
+
 .coupon_text {
   position: absolute;
   top: 84px;

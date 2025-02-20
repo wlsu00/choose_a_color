@@ -232,15 +232,18 @@
         });
 
         //💥💥💥💥💥💥수정해야함💥💥💥💥💥💥
-        function inputError() {
-          $(".user_id").css("border", "1px solid red");
-        }
-        $(document).ready(function () {
-          $("input").blur(function (e) {
+
+        $("input").on({
+          focus: function (e) {
+            $(e.target).css({
+              border: "1px solid #d6d6d6",
+            });
+          },
+          blur: function (e) {
             if ($(e.target).val().trim() === "") {
-              inputError();
+              $(e.target).css("border", "1px solid red");
             }
-          });
+          },
         });
       });
     </script>

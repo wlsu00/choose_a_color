@@ -361,9 +361,15 @@
     transform: translateX(-26px);
   }
   .hover_img2 {
-    position: absolute;
-    transform: translateY(-146px);
-    will-change: transform, opacity, color;
+    display: none;
+  }
+  .coupon:hover .coupon_text {
+    color: #111;
+  }
+  .coupon:hover .sec3_btn {
+    background-color: #ff834f;
+    color: #fff;
+    border: 1px solid #ff834f;
   }
   .coupon_text {
     position: absolute;
@@ -529,6 +535,17 @@
     font-size: 10px;
   }
   /* 섹션3 - 이벤트  */
+  .hover_img2 {
+    display: none;
+  }
+  .coupon:hover .coupon_text {
+    color: #111;
+  }
+  .coupon:hover .sec3_btn {
+    background-color: #ff834f;
+    color: #fff;
+    border: 1px solid #ff834f;
+  }
   .coupon_text {
     top: 25%;
     left: 12%;
@@ -590,6 +607,17 @@
     font-weight: 400;
   }
   /* 섹션3 - 이벤트 */
+  .hover_img2 {
+    display: none;
+  }
+  .coupon:hover .coupon_text {
+    color: #111;
+  }
+  .coupon:hover .sec3_btn {
+    background-color: #ff834f;
+    color: #fff;
+    border: 1px solid #ff834f;
+  }
   .coupon_text {
     top: 30%;
     left: 12%;
@@ -842,6 +870,17 @@
     line-height: 16px;
   }
   /* 섹션3 - 이벤트 */
+  .hover_img2 {
+    display: none;
+  }
+  .coupon:hover .coupon_text {
+    color: #111;
+  }
+  .coupon:hover .sec3_btn {
+    background-color: #ff834f;
+    color: #fff;
+    border: 1px solid #ff834f;
+  }
   .coupon_text {
     top: 28%;
     left: 12%;
@@ -991,6 +1030,17 @@
     margin-bottom: 16px;
   }
   /* 섹션3 - 이벤트 */
+  .hover_img2 {
+    display: none;
+  }
+  .coupon:hover .coupon_text {
+    color: #111;
+  }
+  .coupon:hover .sec3_btn {
+    background-color: #ff834f;
+    color: #fff;
+    border: 1px solid #ff834f;
+  }
   .sec3 .sec3_btn {
     font-size: 14px;
     padding: 6px 12px;
@@ -1107,6 +1157,17 @@
     margin: 308px auto;
   }
   /* 섹션3 - 이벤트 */
+  .hover_img2 {
+    display: none;
+  }
+  .coupon:hover .coupon_text {
+    color: #111;
+  }
+  .coupon:hover .sec3_btn {
+    background-color: #ff834f;
+    color: #fff;
+    border: 1px solid #ff834f;
+  }
   .coupon_text {
     top: 26%;
     left: 12%;
@@ -1151,6 +1212,17 @@
   }
 
   /* 섹션3 - 이벤트 */
+  .hover_img2 {
+    display: none;
+  }
+  .coupon:hover .coupon_text {
+    color: #111;
+  }
+  .coupon:hover .sec3_btn {
+    background-color: #ff834f;
+    color: #fff;
+    border: 1px solid #ff834f;
+  }
   .coupon_text {
     top: 30%;
   }
