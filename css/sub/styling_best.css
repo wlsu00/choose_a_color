@@ -48,7 +48,7 @@ a {
   border-radius: 24px;
 }
 .chips {
-  width: 62px;
+  width: 64px;
 }
 .chips:hover {
   background-color: #ff834f;
@@ -72,6 +72,13 @@ a {
   background-color: #ff834f;
   color: #fff;
 }
+.main_chips {
+  background-color: #fff;
+  border: 1px solid #ff834f;
+  color: #ff834f;
+  box-sizing: border-box;
+}
+
 /* header */
 header {
   width: 100%;

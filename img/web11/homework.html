@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>애니메이션 실습</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .btnWrap {
+        width: fit-content;
+        margin: 40px auto;
+        display: flex;
+        gap: 20px;
+      }
+      button {
+        outline: none;
+        border: 1px solid coral;
+        border-radius: 10px;
+        padding: 8px 16px;
+        background-color: transparent;
+        color: coral;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .wrap {
+        width: 1000px;
+        height: 50px;
+        background-color: coral;
+        margin: 0 auto;
+      }
+      .txt1 {
+        width: 10%;
+        height: 100%;
+        text-align: center;
+        line-height: 50px;
+        border: 1px solid coral;
+        background-color: #fff;
+        /* padding: 0 4px; */
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    animate()메서드를 사용하여 슬라이드 요소 만들기
+
+    [조건]
+    1. 요소는 총 10만큼만 이동할 수 있다.
+    2. back버튼을 누르면 1씩 왼쪽으로 이동한다.
+    3. go버튼을 누르면 1씩 오른쪽으로 이동한다.
+    4. .wrap 안에서만 움직일 수 있다.
+    5. 한 번 이동할 때 마다 소요시간은 0.3초이다.
+    -->
+
+    <div class="btnWrap">
+      <button class="backBtn">Back</button>
+      <button class="goBtn">Go</button>
+    </div>
+
+    <div class="wrap">
+      <p class="txt1">내용</p>
+    </div>
+
+    <script>
+      $(function () {
+        //.back버튼을 클릭하면
+        $(".backBtn").on("click", function () {
+          let offLeft = $(".txt1").offset().left;
+          if (offLeft > 460) {
+            $(".txt1").animate({ marginLeft: "-=10%" }, 300);
+          } else {
+            $(".txt1").stop();
+          }
+        });
+
+        $(".goBtn").on("click", function () {
+          let offLeft = $(".txt1").offset().left;
+          if (offLeft < 1350) {
+            $(".txt1").animate({ marginLeft: "+=10%" }, 300);
+          } else {
+            $(".txt1").stop();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

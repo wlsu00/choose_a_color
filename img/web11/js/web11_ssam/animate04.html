@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>애니메이션 효과 제어 메서드</title>
+    <script src="./js/jquery.min.js"></script>
+    <style>
+      p {
+        width: 100px;
+        text-align: center;
+        background-color: sandybrown;
+      }
+      .txt2 {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      3. clearQueue()
+      ===========================
+      [기본형]
+      $('요소').clearQueue();
+    -->
+    <p class="txt1">내용1</p>
+    <p class="txt2">내용2</p>
+
+    <script>
+      $(function () {
+        $('.txt1')
+          .animate({ marginLeft: '100px' }, 1000) //왼쪽에서 오른쪽으로 100px지점으로 이동한다.
+          .animate({ marginLeft: '300px' }, 1000) //왼쪽에서 오른쪽으로 300px지점으로 이동한다.
+          .animate({ marginLeft: '400px' }, 1000); //왼쪽에서 오른쪽으로 400px지점으로 이동한다.
+
+        $('.txt2')
+          .animate({ marginLeft: '100px' }, 1000) //왼쪽에서 오른쪽으로 100px지점으로 이동한다.
+          //clearQueue에 의해 애니메이션이 삭제된다.
+          .animate({ marginLeft: '300px' }, 1000)
+          .animate({ marginLeft: '400px' }, 1000);
+
+        $('.txt2').clearQueue(); //첫번째 애니메이션만 제외하고 나머지 애니메이션을 삭제한다.
+      });
+    </script>
+  </body>
+</html>

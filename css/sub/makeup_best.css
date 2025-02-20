@@ -50,8 +50,8 @@ section {
   padding: 8px 16px;
   border-radius: 24px;
 }
-.chips:first-child {
-  width: 62px;
+.chips {
+  width: 64px;
 }
 .chips:hover {
   background-color: #ff834f;
@@ -74,6 +74,12 @@ section {
 .chips_plus:hover {
   background-color: #ff834f;
   color: #fff;
+}
+.main_chips {
+  background-color: #fff;
+  border: 1px solid #ff834f;
+  color: #ff834f;
+  box-sizing: border-box;
 }
 /* header */
 header {

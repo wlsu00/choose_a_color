@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animate 메서드</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style></style>
+  </head>
+  <body>
+    <!-- 
+    animate() 메서드
+  ====================
+    animate()메서드를 사용하면 선택한 요소에 다양한 동작(Motion)효과를 만들 수 있다.
+    예를 들어, 요소를 옆으로 자연스럽게 이동시키거나 커지게 하는 등 다양한 동작을 적용할 수 있다.
+
+    [기본형]
+    $("요소").animate({css스타일 속성}, 적용시간, "가속도", 콜백함수)
+    - {css스타일 속성} : 애니메이션에 의해 변화될 속성을 적용한다.
+    - 적용시간 : 동작에 반응하는데 소요되는 시간. ms단위로 적는다.
+    - 가속도 : swing 또는 linear를 이용하여 속도감을 조절할 수 있다. 기본값은 swing으로 생략가능하다.
+    - 콜백함수 : 애니메이션이 끝나면 실행될 함수로 생략 가능하다.
+    -->
+
+    <p>
+      <button class="btn1">버튼1</button>
+    </p>
+    <span class="txt1">500px 이동</span>
+    <p>
+      <button class="btn2">버튼2</button>
+    </p>
+    <span class="txt2">50px씩 이동</span>
+
+    <script>
+      $(function () {
+        $(".btn1").on("click", function () {
+          $(".txt1").animate(
+            {
+              marginLeft: "500px",
+              fontSize: "30px",
+            },
+            1000,
+            "linear",
+            function () {
+              alert("모션완료!");
+            }
+          );
+        });
+
+        $(".btn2").on("click", function () {
+          $(".txt2").animate(
+            {
+              marginLeft: "+=50px",
+            },
+            800
+          );
+        });
+      });
+    </script>
+  </body>
+</html>

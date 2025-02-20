@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>애니메이션 실습</title>
+    <script src="./js/jquery.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .btnWrap {
+        width: fit-content;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        gap: 20px;
+      }
+      .wrap {
+        width: 1000px;
+        height: 50px;
+        border: 2px solid #000;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      .txt1 {
+        width: fit-content;
+        height: 100%;
+        background-color: salmon;
+        line-height: 50px;
+        padding: 0 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      animate()메서드를 사용하여 슬라이드 요소 만들기
+      [조건]
+      1. 요소는 총 10만큼만 이동할 수 있다.
+      2. back버튼을 누르면 1씩 왼쪽으로 이동한다.
+      3. go버튼을 누르면 1씩 오른쪽으로 이동한다.
+      4. 한 번 이동할때마다 소요 시간은 0.3초동안 이동해야 한다.
+    -->
+
+    <div class="btnWrap">
+      <button class="backBtn">Back</button>
+      <button class="goBtn">Go</button>
+    </div>
+
+    <div class="wrap">
+      <p class="txt1">내용</p>
+    </div>
+  </body>
+</html>

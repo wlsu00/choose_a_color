@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>애니메이션 효과 제어 메서드</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      p {
+        width: 110px;
+        text-align: center;
+      }
+      .txt1 {
+        background-color: lavenderblush;
+      }
+      .txt2 {
+        background-color: darksalmon;
+      }
+      .txt3 {
+        background-color: gold;
+      }
+      .txt4 {
+        background-color: yellowgreen;
+      }
+      .txt5 {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    애니메이션 효과 제어 메서드
+  ==============================
+    애니메이션 효과 제어 메서드란 '효과' 또는 '애니메이션'이 적용된 요소의 동작을 제어하는 메서드이다.
+
+    애니메이션 적용 원리와 큐의 개념
+  ==================================
+    애니메이션 메서드는 함수가 적용된 순서대로 큐(queue)라는 저장소에 저장된다.
+    큐는 카페에서 주문을 기다리는 것 처럼 맨 처음 들어온 애니메이션부터 순서대로 시작한다.
+    즉, 첫 번째 애니메이션이 끝나기 전 까지는 두 번째 애니메이션이 동작하지 않는다.
+    이렇게 먼저 들어온 데이터가 먼저 처리되는 형식을 FIFO(First In First Out)방식 이라고 한다.
+
+    [종류]
+    1. stop() : 현재 실행중인 효과를 모두 중지시킨다.
+    2. delay() : 지정한 시간만큼 기다렸다가 애니메이션을 실행한다.
+    3. queue() : 큐(메모리 공간)에 함수를 추가하거나 큐에 대기중인 함수를 배열에 담아 반환한다.
+                그리고 큐메서드 이후에 애니메이션 효과 메서드는 전부 제거된다. 
+    4. dequeue() : queue()메서드를 사용하면 대기하고있는 애니메이션 메서드는 제거된다.
+                  이 때 dequeue()메서드를 사용하면 애니메이션이 제거되는것을 막는다.
+    5.clearQueue() : 큐에서 처음으로 진행하고있는 애니메이션만 제외하고, 대기중인 애니메이션은 모두 제거한다.
+    6. finish() : 선택한 요소의 진행중인 애니메이션을 강제로 완료시점으로 보낸 후 종료한다.
+
+
+    stop() / delay()
+  =====================
+    [기본형]
+
+    1. stop()
+
+    - $("요소").stop(); 
+    : 진행중인 첫번째 애니메이션만 중지시킨다. 큐에 대기중인 애니메이션은 계속 실행된다.
+    
+    - $("요소").stop(clearQueue, finish);
+    : clearQueue, finish 자리에는 true/false만 입력할 수 있다. 기본값은 false이다.
+      clearQueue가 true이면 큐에서 대기중인 애니메이션을 모두 제거하고,
+      finish가 true이면 진행중인 애니메이션을 강제로 종료시킨다.
+
+    2. delay()
+
+    - $("요소").delay(지연시간ms).animate();
+
+    -->
+    <p class="txt1">효과1</p>
+    <p class="txt2">효과2<br />delay(2000)</p>
+    <p>
+      <button class="btn1">50px전진</button>
+    </p>
+    <p class="txt3">효과3</p>
+    <p class="txt4">효과4<br />stop()</p>
+    <p class="txt5">효과5<br />stop(true, true)</p>
+
+    <script>
+      $(function () {
+        //.txt1을 1초동안 왼쪽에서 오른쪽으로 300px 이동
+        $(".txt1").animate({ marginLeft: "300px" }, 1000);
+
+        //.txt2가 2초를 기다린 후 1초동안 왼쪽에서 오른쪽으로 300px 이동
+        $(".txt2").delay(2000).animate({ marginLeft: "300px" }, 1000);
+
+        //버튼을 클릭하면 moveElement함수 실행
+        $(".btn1").on("click", moveElement);
+
+        function moveElement() {
+          //.txt3은 버튼을 클릭할 때 마다 0.8초동안 50px씩 이동
+          $(".txt3").animate({ marginLeft: "+=50px" }, 800);
+
+          //.txt4는 연결된 애니메이션이 1가지라 아무것도 동작하지않음
+          $(".txt4").animate({ marginLeft: "+=50px" }, 800);
+          $(".txt4").stop(); //stop은 첫번째 애니메이션을 중지시킴
+
+          //.txt5는 애니메이션 없이 css메서드만 적용한것처럼 50px씩 옆으로 이동
+          $(".txt5").animate({ marginLeft: "+=50px" }, 800);
+          $(".txt5").stop(true, true); //애니메이션이 바로 종료시점으로 이동
+        }
+      });
+    </script>
+  </body>
+</html>

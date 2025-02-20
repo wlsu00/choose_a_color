@@ -93,6 +93,13 @@ section {
   background-color: #ff834f;
   color: #fff;
 }
+.main_chips {
+  background-color: #fff;
+  border: 1px solid #ff834f;
+  color: #ff834f;
+  box-sizing: border-box;
+}
+
 /* header */
 header {
   width: 100%;

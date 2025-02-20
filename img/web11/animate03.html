@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>애니메이션 효과 제어 메서드</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .txt1 {
+        width: 100px;
+        text-align: center;
+        background-color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    2. queue() / dequeue
+  ========================
+    [기본형]
+    1. queue()
+  ----------------
+    - $("요소").queue()
+    : 애니메이션이 적용된 요소에 queue에 대기중인 함수를 반환한다.
+
+    - $("요소").queue(function(){코드});
+    : queue(메모리공간)에 함수를 추가한다.
+
+    2. dequeue()
+  ------------------   
+    - $("요소").dequeue();
+    -->
+    <p class="txt1">내용1</p>
+
+    <script>
+      $(function () {
+        //아래의 animate들은 순서대로 queue안에 들어있음
+        $(".txt1")
+          .delay(800) //0.8초동안 기다리기
+          .animate({ marginLeft: "200px" }, 1000) // 현재위치에서 왼>오 200px이동
+          .animate({ marginTop: "200px" }, 1000) // 현재위치에서 위>아래 200px이동
+          //사용자정의함수로 중간에 모양을 바꿈
+          .queue(function () {
+            //queue는 대기중인 함수를 중지시킴
+            //this : 현재 애니메이션이 진행중인 태그(.txt1)
+            $(this).css({ backgroundColor: "gold" }); //배경색바꾸기
+            $(this).dequeue(); //뒤에 대기중인 애니메이션을 삭제하지않고 연결
+          })
+          .animate({ marginLeft: "0px" }, 1000) // 현재위치에서 오>왼 200px이동
+          .animate({ marginTop: "0px" }, 1000); // 현재위치에서 아래>위 200px이동
+      });
+    </script>
+  </body>
+</html>
