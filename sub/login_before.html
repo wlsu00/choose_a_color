@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Choose A Color</title>
     <!-- css -->
-    <link rel="stylesheet" href="../css/sub/sign_up.css" />
+    <link rel="stylesheet" href="../css/sub/login.css" />
     <link
       rel="icon"
       type="image/png"
       href="../img/icons/apple-icon-57x57.png"
     />
-    <!-- 제이쿼리 -->
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery.js"></script>
   </head>
   <body>
     <div class="container">
@@ -73,7 +70,7 @@
           <!-- logo -->
           <h1>
             <a href="/">
-              <img src="../img/logo.png" alt="logo" id="logo" />
+              <img src="../img/logo.png" alt="logo" />
             </a>
           </h1>
           <!-- gnb -->
@@ -141,108 +138,62 @@
         </div>
       </header>
       <main>
-        <div class="sign_up">
+        <!-- 로그인폼 -->
+        <div class="login">
           <form action="#" method="post">
-            <div>
-              <img src="../img/icons/arrow.svg" alt="arrow" />
-              <h2>회원가입</h2>
-            </div>
-            <!-- 유저정보 -->
-            <div class="user_info">
-              <h4>아이디</h4>
+            <h2>login</h2>
+            <!-- 아이디 -->
+            <span>id</span>
+            <div class="input_box">
               <label for="user_id">
                 <input
                   type="text"
-                  name="user_id"
                   id="user_id"
+                  name="user_id"
+                  required
                   placeholder="아이디를 입력해주세요."
                   autofocus
-                  class="user_id"
                 />
               </label>
-              <p class="chk1">중복확인</p>
-              <h4>비밀번호</h4>
+            </div>
+            <!-- 비밀번호 -->
+            <span>password</span>
+            <div class="input_box">
               <label for="user_pw">
                 <input
                   type="password"
-                  name="user_pw"
                   id="user_pw"
+                  name="user_pw"
+                  required
                   placeholder="비밀번호를 입력해주세요."
                 />
               </label>
             </div>
-            <div class="line"></div>
-            <!-- 실명인증 -->
-            <div class="real_user">
-              <h4>이름</h4>
-              <label for="user_name">
-                <input
-                  type="text"
-                  name="user_name"
-                  id="user_name"
-                  placeholder="이름을 입력해주세요."
-                />
-              </label>
-              <h4>휴대폰 번호</h4>
-              <label for="user_tel">
-                <input
-                  type="tel"
-                  name="user_tel"
-                  id="user_tel"
-                  placeholder="' - ' 을 제외하고 입력해주세요."
-                  class="user_tel"
-                />
-              </label>
-              <p class="chk2">인증번호</p>
-              <div class="hidden_user">
-                <h4>인증번호</h4>
-                <label for="user_num">
-                  <input
-                    type="text"
-                    name="user_num"
-                    id="user_num"
-                    placeholder="인증번호"
-                  />
+            <div class="keep">
+              <div>
+                <label for="keep_text" class="keep_text">
+                  <input type="checkbox" id="keep_text" name="keep_text" />
+                  <span>아이디 저장</span>
                 </label>
               </div>
-              <h4>필수약관 전체동의</h4>
-              <div class="terms">
-                <input type="checkbox" name="terms1" />
-                <label for="terms1">이용약관</label>
-                <p>보기</p>
-              </div>
-              <div class="terms">
-                <input type="checkbox" name="terms2" />
-                <label for="terms2">개인정보 처리방침</label>
-                <p>보기</p>
+              <div class="search">
+                <span>아이디찾기</span>
+                <span>비밀번호찾기</span>
               </div>
             </div>
-            <p class="sign">회원가입하기</p>
+            <!-- 로그인버튼 -->
+            <div class="btn">LOGIN</div>
+            <div class="btn">
+              <img src="../img/icons/kakao.png" alt="카카오톡" />
+              <span>카카오톡으로 간편로그인</span>
+            </div>
           </form>
+          <span>회원이 아니십니까?</span>
+          <a href="./sign_up.html">
+            <h3>회원가입 바로가기</h3>
+          </a>
         </div>
       </main>
     </div>
-    <script>
-      $(function () {
-        //인증번호 전송을 누르면 인증번호 입력칸 보여주기
-        $(".hidden_user").slideUp(300);
-
-        $(".chk2").on("click", function () {
-          $(".hidden_user").slideDown(300);
-        });
-
-        //💥💥💥💥💥💥수정해야함💥💥💥💥💥💥
-        function inputError() {
-          $(".user_id").css("border", "1px solid red");
-        }
-        $(document).ready(function () {
-          $("input").blur(function (e) {
-            if ($(e.target).val().trim() === "") {
-              inputError();
-            }
-          });
-        });
-      });
-    </script>
   </body>
 </html>

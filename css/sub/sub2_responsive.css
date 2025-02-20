@@ -143,6 +143,9 @@
   .icons a:nth-child(2) {
     display: none;
   }
+  .icons {
+    gap: 8px;
+  }
 
   /* main */
   /* 섹션1 - 베스트 */
@@ -166,6 +169,7 @@
   /* 누끼이미지 */
   .best .best_person {
     width: 100%;
+    height: 356px;
     position: static;
     transition: none;
     animation: none;
@@ -273,6 +277,10 @@
   .card_wrap p {
     display: none;
   }
+  .icons .like_wrap {
+    width: 20px;
+    height: 20px;
+  }
   .plus_icon {
     position: relative;
   }
@@ -316,9 +324,11 @@
 }
 /* 💡모바일L */
 @media screen and (min-width: 425px) and (max-width: 767px) {
-  /* 모바일 메뉴 */
+  .icons {
+    gap: 12px;
+  }
   .best .best_person {
-    height: auto;
+    height: 524px;
   }
   .card_wrap .card1 {
     height: 58vh;
@@ -723,12 +733,12 @@
   }
   .best .best_person {
     width: 40vw;
-    height: 46vh;
+    height: 62vh;
     /* margin-top: 100px; */
     margin-right: auto;
   }
   .text_wrap {
-    margin-top: -120px;
+    margin-top: -228px;
     width: 45vw;
   }
   .user_profile {
@@ -766,7 +776,7 @@
   .right_con {
     width: 45vw;
     padding: 0;
-    margin-top: -40px;
+    margin-top: -168px;
     margin-right: 0;
   }
   .cardtext {

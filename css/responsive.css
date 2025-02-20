@@ -147,6 +147,9 @@
   #gnb {
     display: none;
   }
+  .icons {
+    gap: 8px;
+  }
   .icons img {
     width: 20px;
     height: 20px;
@@ -555,6 +558,9 @@
   h1 {
     width: 146px;
   }
+  .icons {
+    gap: 12px;
+  }
 
   /* 섹션1 - 베스트 */
   /* 해시태그 */
@@ -594,6 +600,9 @@
   .coupon_text > h4 {
     font-size: 20px;
   }
+  /* .hover_img2 {
+    display: none;
+  } */
   /* 섹션4 - 추천 스타일링 */
   .sec4 .subtext {
     font-weight: 400;
@@ -931,6 +940,11 @@
   .icons a:nth-child(2) {
     display: flex;
   }
+  /* 메인비주얼 */
+  .main_visual_text {
+    width: 100%;
+    padding: 20px;
+  }
   /* 섹션1 - 베스트 */
   .sec1 .con_wrap {
     width: 100%;
@@ -1106,6 +1120,14 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .main_visual {
+    background-position: center;
+    justify-content: center;
+  }
+  .main_visual_text {
+    width: fit-content;
+    padding: 0;
+  }
   /* 섹션1 - 베스트 */
   .sec1 .card1 {
     width: calc(1220px / 4 - 16px);

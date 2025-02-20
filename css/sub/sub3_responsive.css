@@ -140,6 +140,10 @@
   .icons a:nth-child(2) {
     display: none;
   }
+  .icons {
+    gap: 8px;
+  }
+
   /* 메인 */
   /* 컨텐츠영역 */
   .banner {
@@ -223,6 +227,12 @@
     margin-left: 32px;
   }
 }
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+  .icons {
+    gap: 12px;
+  }
+}
+
 @media screen and (min-width: 540px) and (max-width: 1023px) {
   /* 프로필 */
   .user_profile {

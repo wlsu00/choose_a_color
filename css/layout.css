@@ -263,6 +263,24 @@ main {
   color: #ff834f;
   border-bottom: 1px solid #ff834f;
 }
+/* 서치바 */
+.search_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.search_bar input {
+  /* background-color: yellowgreen; */
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  padding: 6px 8px;
+  outline: none;
+}
+.search_img {
+  cursor: pointer;
+}
+/* 메인 */
 /* 섹션1 - 베스트 */
 .chips_con {
   width: 100%;
@@ -618,6 +636,8 @@ main {
   .coupon:hover .hover_img2 {
     opacity: 1;
   }
+}
+@media (hover: hover) {
   .coupon:hover .coupon_text {
     color: #fff;
   }

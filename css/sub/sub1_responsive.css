@@ -143,6 +143,9 @@
   .icons a:nth-child(2) {
     display: none;
   }
+  .icons {
+    gap: 8px;
+  }
 
   /* main */
   /* 섹션1 - 베스트 */
@@ -293,6 +296,9 @@
 }
 /* 💡모바일L */
 @media screen and (min-width: 425px) and (max-width: 767px) {
+  .icons {
+    gap: 12px;
+  }
   .best .best_person {
     height: 52vh;
   }
@@ -611,18 +617,17 @@
     justify-content: flex-end;
   }
   .best .best_person {
-    width: 40vw;
-    height: 56vh;
+    width: 34vw;
+    height: 48vh;
     margin-right: auto;
   }
   .text_wrap {
     width: 45vw;
-    margin-top: -160px;
+    margin-top: -98px;
   }
   .right_con {
     width: 45vw;
-    /* margin-left: 500px; */
-    margin-top: -100px;
+    margin-top: -20px;
     padding: 0;
   }
   .imgbox1 {
@@ -677,30 +682,37 @@
   /* 섹션1 - 베스트 */
   .best .con_wrap {
     flex-wrap: nowrap;
-    gap: 36px;
+    justify-content: space-between;
   }
   .best .best_person {
-    width: 32vw;
-    height: 52vh;
-    margin-right: auto;
+    width: 20vw;
+    height: 36vh;
+    margin: 0;
   }
   .text_wrap {
     width: fit-content;
-    padding-left: 24px;
     box-sizing: border-box;
     order: 0;
+    margin: 0;
   }
   .text_wrap .user_profile {
     padding: 0;
   }
   .right_con {
+    width: 33%;
+    display: block;
     margin-top: 60px;
     padding: 0;
+    margin: 0;
   }
   .cardtext {
     height: 0;
     overflow: hidden;
     transition: 0.5s;
+  }
+  .imgbox1 {
+    height: 262px;
+    margin-bottom: 0;
   }
   .imgbox1:hover .cardtext {
     height: 200px;

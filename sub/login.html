@@ -11,6 +11,9 @@
       type="image/png"
       href="../img/icons/apple-icon-57x57.png"
     />
+    <!-- 제이쿼리 -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.js"></script>
   </head>
   <body>
     <div class="container">
@@ -70,7 +73,7 @@
           <!-- logo -->
           <h1>
             <a href="/">
-              <img src="../img/logo.png" alt="logo" />
+              <img src="../img/logo.png" alt="logo" id="logo" />
             </a>
           </h1>
           <!-- gnb -->
@@ -121,20 +124,29 @@
             <a href="./login.html">
               <img src="../img/icons/login.svg" alt="로그인" />
             </a>
-            <a href="#">
-              <img src="../img/icons/search.svg" alt="검색" />
-            </a>
+            <!-- 서치바 -->
+            <div class="search_bar">
+              <div>
+                <label for="search_bar">
+                  <input type="text" placeholder="검색어를 입력하세요." />
+                </label>
+              </div>
+              <img
+                src="../img/icons/search.svg"
+                alt="검색"
+                class="search_img"
+              />
+            </div>
           </div>
         </div>
       </header>
       <main>
-        <!-- 로그인폼 -->
         <div class="login">
           <form action="#" method="post">
             <h2>login</h2>
             <!-- 아이디 -->
-            <span>id</span>
             <div class="input_box">
+              <h4>id</h4>
               <label for="user_id">
                 <input
                   type="text"
@@ -147,8 +159,8 @@
               </label>
             </div>
             <!-- 비밀번호 -->
-            <span>password</span>
             <div class="input_box">
+              <h4>password</h4>
               <label for="user_pw">
                 <input
                   type="password"
@@ -162,26 +174,28 @@
             <div class="keep">
               <div>
                 <label for="keep_text" class="keep_text">
-                  <input type="checkbox" id="keep_text" name="keep_text" />
+                  <input type="checkbox" id="kedep_text" name="keep_text" />
                   <span>아이디 저장</span>
                 </label>
               </div>
               <div class="search">
-                <span>아이디찾기</span>
-                <span>비밀번호찾기</span>
+                <p class="search_line">아이디찾기</p>
+                <p>비밀번호찾기</p>
               </div>
             </div>
             <!-- 로그인버튼 -->
-            <div class="btn">LOGIN</div>
-            <div class="btn">
+            <div class="btn">로그인</div>
+            <div class="btn kakao">
               <img src="../img/icons/kakao.png" alt="카카오톡" />
               <span>카카오톡으로 간편로그인</span>
             </div>
+            <div class="sing_up">
+              <p>&nbsp;&nbsp;회원이 아니십니까?</p>
+              <h3>
+                <a href="../sub/sign_up.html">회원가입 바로가기</a>
+              </h3>
+            </div>
           </form>
-          <span>회원이 아니십니까?</span>
-          <a href="./sign_up.html">
-            <h3>회원가입 바로가기</h3>
-          </a>
         </div>
       </main>
     </div>

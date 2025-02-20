@@ -140,6 +140,10 @@
   .icons a:nth-child(2) {
     display: none;
   }
+  .icons {
+    gap: 8px;
+  }
+
   /* 메인 */
   /* 컨텐츠영역 */
   .banner {
@@ -196,8 +200,12 @@
     line-height: 14px;
   }
 }
-
-@media screen and (min-width: 540px) and (max-width: 1023px) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  @media screen and (min-width: 540px) and (max-width: 1023px) {
+    .icons {
+      gap: 12px;
+    }
+  }
   /* 진행중인 이벤트 */
   .content .con > div:first-child {
     margin: 80px 0;
@@ -394,32 +402,14 @@
   .banner {
     padding: 0;
   }
-  /* 프로필 */
-  .user_profile {
-    margin-bottom: 8px;
-    padding-right: 0;
-    gap: 4px;
+  .card {
+    width: 30vw;
   }
-  .user_profile > div:first-of-type img {
-    display: flex;
-  }
-  .user_profile > span::before {
-    margin-right: 12px;
-  }
-  .user_profile > span::after {
-    margin-left: 12px;
-  }
-  .user_profile img {
-    width: 20px;
-    height: 20px;
-  }
-  .user_profile span {
-    font-size: 14px;
-    font-weight: 400;
-    margin: 0 4px;
-  }
-  .content1 > div:last-child p {
-    line-height: 28px;
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 35px;
   }
   /* footer */
   footer .con {

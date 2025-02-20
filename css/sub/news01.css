@@ -150,6 +150,23 @@ h1 {
   width: 24px;
   height: 24px;
 }
+/* 서치바 */
+.search_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.search_bar input {
+  /* background-color: yellowgreen; */
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  padding: 6px 8px;
+  outline: none;
+}
+.search_img {
+  cursor: pointer;
+}
 
 /* 메인 */
 .banner {

@@ -133,6 +133,23 @@ h1 {
   width: 24px;
   height: 24px;
 }
+/* 서치바 */
+.search_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.search_bar input {
+  /* background-color: yellowgreen; */
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  padding: 6px 8px;
+  outline: none;
+}
+.search_img {
+  cursor: pointer;
+}
 
 /* 회원가입 폼 */
 .sign_up {
@@ -155,7 +172,7 @@ form > div:first-child {
 form > div:first-child img {
   width: 24px;
 }
-form > div:first-child h2 {
+h2 {
   font-size: 24px;
   font-weight: 500;
   line-height: 26px;
@@ -175,6 +192,7 @@ form input {
   outline: none;
   padding: 8px;
   margin-top: 8px;
+  box-sizing: border-box;
 }
 form input:focus {
   background-color: #d6d6d628;
@@ -218,7 +236,7 @@ form input:focus {
   gap: 12px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8px;
+  margin: 0 auto 8px;
 }
 
 .terms > input {
@@ -260,4 +278,323 @@ form input:focus {
 }
 .sign:hover {
   opacity: 0.5;
+}
+
+/* 반응형 */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /* 공통영역 */
+  .con {
+    width: 95%;
+  }
+  /* header */
+  header {
+    width: 100%;
+    height: 32px;
+    position: relative;
+    z-index: 999;
+  }
+  header .con {
+    height: 100%;
+  }
+  header .icons.menu {
+    display: flex;
+  }
+  /* 햄버거메뉴 */
+  #ham_menu {
+    display: none;
+  }
+  #ham_menu:checked {
+    display: none;
+  }
+  #ham_menu + label {
+    display: block;
+    width: 20px;
+    height: 12px;
+    cursor: pointer;
+    position: relative;
+  }
+  #ham_menu + label > span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-radius: 30px;
+    background: #4d4d4d;
+    position: absolute;
+    transition: all 0.35s;
+    z-index: 2;
+  }
+  /* 햄버거 닫혔을 때 */
+  #ham_menu + label > span:nth-child(1) {
+    top: 0px;
+  }
+  #ham_menu + label > span:nth-child(2) {
+    top: 45%;
+  }
+  #ham_menu + label > span:nth-child(3) {
+    bottom: 0px;
+  }
+  /* 햄버거 열렸을 때 */
+  #ham_menu:checked + label > span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  }
+  #ham_menu:checked + label > span:nth-child(2) {
+    opacity: 0;
+  }
+  #ham_menu:checked + label > span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-135deg);
+  }
+  /* 모바일 메뉴 */
+  #ham_menu + label + #mobile_menu {
+    position: fixed;
+    width: 72vw;
+    height: 100vh;
+    background: #fffffff6;
+    top: 0px;
+    padding: 60px 25px 25px 25px;
+    box-sizing: border-box;
+    left: -2000px;
+    z-index: 1;
+    transition: all 0.5s;
+  }
+  #ham_menu:checked + label + #mobile_menu {
+    left: 0px;
+  }
+  #mobile_menu > ul > li {
+    margin-bottom: 20px;
+  }
+  #mobile_menu > ul > li > a {
+    color: #ff834f;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #mobile_menu .submenu {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  /* logo */
+  h1 {
+    width: 129px;
+  }
+  /* gnb */
+  #gnb {
+    display: none;
+  }
+  .icons img {
+    width: 20px;
+    height: 20px;
+  }
+  .icons.menu img {
+    width: 20px;
+    height: 20px;
+  }
+  .icons a:nth-child(2) {
+    display: none;
+  }
+  .icons {
+    gap: 8px;
+  }
+  /* 회원가입폼 */
+  .sign_up {
+    width: 90%;
+    margin: 80px auto;
+    padding: 10px 14px;
+  }
+  form {
+    width: 100%;
+  }
+  form > div:first-child {
+    gap: 27%;
+    padding-bottom: 16px;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+  .user_info,
+  .real_user {
+    width: 100%;
+  }
+  form h4 {
+    font-size: 15px;
+  }
+  form input {
+    width: 100%;
+  }
+  .chk1,
+  .chk2 {
+    padding: 4px 8px;
+  }
+  .terms {
+    font-size: 14px;
+  }
+  .sign {
+    line-height: 20px;
+    margin: 40px auto 0;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  form > div:first-child {
+    gap: clamp(32%, 33%, 35%);
+  }
+  h2 {
+    font-size: clamp(20px, 22px, 2vw);
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 767px) {
+  /* 회원가입폼 */
+  .sign_up {
+    width: 70%;
+    margin: 80px auto;
+    padding: 10px 14px;
+  }
+  form > div:first-child {
+    gap: 32%;
+  }
+  h2 {
+    font-size: clamp(20px, 20px, 4vw);
+  }
+  form input {
+    width: 70%;
+  }
+  .chk1,
+  .chk2 {
+    padding: 6px 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* 공통 */
+  .con {
+    width: 95%;
+  }
+  /* header */
+  header .con {
+    width: 98%;
+  }
+  /* logo */
+  h1 {
+    width: 150px;
+  }
+  #gnb {
+    display: block;
+    height: 80px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  #gnb > ul {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 27px 0;
+    box-sizing: border-box;
+    line-height: 25px;
+  }
+  #gnb > ul > li > a {
+    padding: 0 16px;
+  }
+  /* 2차메뉴 */
+  #gnb .submenu li {
+    font-size: 12px;
+  }
+  .icons {
+    gap: 16px;
+  }
+  .icons img {
+    width: 20px;
+    height: 20px;
+  }
+  .icons a:nth-child(2) {
+    display: flex;
+  }
+  /* 회원가입 폼 */
+  .sign_up {
+    width: 70%;
+    margin: 80px auto;
+    padding: 10px 14px;
+  }
+  form {
+    width: 100%;
+  }
+  form > div:first-child {
+    gap: 38%;
+    padding-bottom: 16px;
+  }
+  h2 {
+    font-size: 3vw;
+    line-height: 44px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  /* 공통 */
+  .con {
+    width: 95%;
+  }
+  /* header */
+  header .con {
+    width: 98%;
+  }
+  /* logo */
+  h1 {
+    width: 150px;
+  }
+  #gnb {
+    display: block;
+    height: 80px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  #gnb > ul {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 27px 0;
+    box-sizing: border-box;
+    line-height: 25px;
+  }
+  #gnb > ul > li > a {
+    padding: 0 16px;
+  }
+  /* 2차메뉴 */
+  #gnb .submenu li {
+    font-size: 12px;
+  }
+  .icons {
+    gap: 16px;
+  }
+  .icons img {
+    width: 20px;
+    height: 20px;
+  }
+  .icons a:nth-child(2) {
+    display: flex;
+  }
+  /* 회원가입 폼 */
+  .sign_up {
+    width: 50%;
+    margin: 80px auto;
+    padding: 10px 14px;
+  }
+  form {
+    width: 100%;
+  }
+  form > div:first-child {
+    gap: clamp(35%, 35%, 38%);
+    padding-bottom: 16px;
+  }
+  h2 {
+    font-size: clamp(26px, 26px, 3vw);
+    line-height: 44px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .sign_up {
+    width: 30%;
+  }
+  form > div:first-child {
+    gap: 33%;
+  }
+  h2 {
+    font-size: 2vw;
+  }
 }
