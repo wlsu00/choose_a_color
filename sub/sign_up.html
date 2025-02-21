@@ -150,7 +150,7 @@
             <!-- 유저정보 -->
             <div class="user_info">
               <h4>아이디</h4>
-              <label for="user_id">
+              <label for="user_id" class="user_id">
                 <input
                   type="text"
                   name="user_id"
@@ -162,7 +162,7 @@
               </label>
               <p class="chk1">중복확인</p>
               <h4>비밀번호</h4>
-              <label for="user_pw">
+              <label for="user_pw" class="user_pw">
                 <input
                   type="password"
                   name="user_pw"
@@ -222,30 +222,6 @@
         </div>
       </main>
     </div>
-    <script>
-      $(function () {
-        //인증번호 전송을 누르면 인증번호 입력칸 보여주기
-        $(".hidden_user").slideUp(300);
-
-        $(".chk2").on("click", function () {
-          $(".hidden_user").slideDown(300);
-        });
-
-        //💥💥💥💥💥💥수정해야함💥💥💥💥💥💥
-
-        $("input").on({
-          focus: function (e) {
-            $(e.target).css({
-              border: "1px solid #d6d6d6",
-            });
-          },
-          blur: function (e) {
-            if ($(e.target).val().trim() === "") {
-              $(e.target).css("border", "1px solid red");
-            }
-          },
-        });
-      });
-    </script>
+    <script src="../js/jquery.js"></script>
   </body>
 </html>

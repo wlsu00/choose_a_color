@@ -163,3 +163,23 @@ sec5_w.onclick = function sec5_chip(e) {
   document.querySelector(".more_wrap > a:first-child").className = "on";
   document.querySelector(".more_wrap > a:last-child").className = "";
 };
+
+//📀스와이퍼 슬라이드
+// Initialize Swiper
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2, //브라우저가 768보다 클 때
+      spaceBetween: 40,
+    },
+    1220: {
+      slidesPerView: 3, //브라우저가 1024보다 클 때
+      spaceBetween: 50,
+    },
+  },
+});

@@ -424,6 +424,9 @@ h2 {
   }
 }
 @media screen and (min-width: 540px) and (max-width: 767px) {
+  .login {
+    width: 70vw;
+  }
   .login h2 {
     font-size: 6vw;
   }
@@ -476,7 +479,7 @@ h2 {
     display: flex;
   }
   .login {
-    width: 70%;
+    width: 60vw;
     margin: 80px auto;
     padding: 80px 60px;
   }
@@ -544,7 +547,7 @@ h2 {
   }
   /* 로그인폼 */
   .login {
-    width: 70%;
+    width: 40vw;
     margin: 140px auto;
     padding: 80px 60px;
   }
@@ -565,6 +568,6 @@ h2 {
 }
 @media screen and (min-width: 1440px) {
   .login {
-    width: 40%;
+    width: 30%;
   }
 }

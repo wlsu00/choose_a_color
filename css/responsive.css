@@ -59,6 +59,7 @@
     z-index: 999;
   }
   header .con {
+    width: 95%;
     height: 100%;
   }
   header .icons.menu {
@@ -141,6 +142,7 @@
   }
   /* logo */
   h1 {
+    margin-left: 10%;
     width: 129px;
   }
   /* gnb */
@@ -366,7 +368,7 @@
   .coupon:hover .coupon_text {
     color: #111;
   }
-  .coupon:hover .sec3_btn {
+  .sec3 .coupon:hover .sec3_btn {
     background-color: #ff834f;
     color: #fff;
     border: 1px solid #ff834f;
@@ -541,7 +543,7 @@
   .coupon:hover .coupon_text {
     color: #111;
   }
-  .coupon:hover .sec3_btn {
+  .sec3 .coupon:hover .sec3_btn {
     background-color: #ff834f;
     color: #fff;
     border: 1px solid #ff834f;
@@ -613,7 +615,7 @@
   .coupon:hover .coupon_text {
     color: #111;
   }
-  .coupon:hover .sec3_btn {
+  .sec3 .coupon:hover .sec3_btn {
     background-color: #ff834f;
     color: #fff;
     border: 1px solid #ff834f;
@@ -628,9 +630,9 @@
   .coupon_text > h4 {
     font-size: 20px;
   }
-  /* .hover_img2 {
+  .hover_img2 {
     display: none;
-  } */
+  }
   /* 섹션4 - 추천 스타일링 */
   .sec4 .subtext {
     font-weight: 400;
@@ -681,6 +683,10 @@
     width: 1px;
     height: 16px;
   }
+  /* 섹션3 - 이벤트 */
+  /* 버튼크기랑 쿠폰크기 키우기 
+  아니면 쿠폰이미지를 가운데로  */
+
   /* 섹션4 - 추천 스타일링 */
   .sec4 .hidden_card {
     /* 숨겨뒀던카드 540부터 보여주기 */
@@ -716,6 +722,14 @@
     margin-bottom: 4px;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /* 섹션3-이벤트 */
+  /* .sec3 .coupon {
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+}
+
 /* 💡태블릿💡 */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* 공통 */
@@ -876,7 +890,7 @@
   .coupon:hover .coupon_text {
     color: #111;
   }
-  .coupon:hover .sec3_btn {
+  .sec3 .coupon:hover .sec3_btn {
     background-color: #ff834f;
     color: #fff;
     border: 1px solid #ff834f;
@@ -1036,7 +1050,7 @@
   .coupon:hover .coupon_text {
     color: #111;
   }
-  .coupon:hover .sec3_btn {
+  .sec3 .coupon:hover .sec3_btn {
     background-color: #ff834f;
     color: #fff;
     border: 1px solid #ff834f;
@@ -1063,10 +1077,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 28px;
-    justify-content: start;
+    justify-content: center;
   }
   .flip {
-    width: calc(50% - 28px);
+    width: calc(35% - 28px);
     height: 400px;
   }
   .card_back > .card_con > h4 {
@@ -1096,13 +1110,14 @@
     display: block;
   }
   .sec5 > .con > .con_wrap {
-    justify-content: flex-start;
+    justify-content: center;
   }
   .sec5 .card1 {
-    width: calc(33% - 28px);
+    width: calc(30% - 28px);
   }
   .sec5 .img_case {
     width: 100%;
+    height: auto;
   }
   /* footer */
   footer .con {
@@ -1129,11 +1144,24 @@
     line-height: 12px;
   }
 }
-/* 섹션3, 섹션4 */
-@media screen and (min-width: 1220px) and (max-width: 1919px) {
-  /* 섹션1 - 베스트 */
+@media screen and (min-width: 1166px) and (max-width: 1919px) {
+  .sec1 .con_wrap {
+    padding: 0 130px;
+    box-sizing: border-box;
+  }
   .sec1 .card1 {
-    width: calc(1138px / 4 - 16px);
+    width: calc(1620px / 4 - 28px);
+  }
+}
+/* 섹션3, 섹션4 */
+@media screen and (min-width: 1220px) and (max-width: 1439px) {
+  /* 섹션1 - 베스트 */
+  .sec1 .con_wrap {
+    padding: 0 128px;
+    box-sizing: border-box;
+  }
+  .sec1 .card1 {
+    width: calc(1620px / 4 - 28px);
   }
   /* 해시태그 */
   .sec1 .card1 > div > span {
@@ -1163,7 +1191,7 @@
   .coupon:hover .coupon_text {
     color: #111;
   }
-  .coupon:hover .sec3_btn {
+  .sec3 .coupon:hover .sec3_btn {
     background-color: #ff834f;
     color: #fff;
     border: 1px solid #ff834f;
@@ -1190,8 +1218,11 @@
     padding: 0;
   }
   /* 섹션1 - 베스트 */
+  .sec1 .con_wrap {
+    width: 80%;
+  }
   .sec1 .card1 {
-    width: calc(1220px / 4 - 16px);
+    width: calc(1620px / 4 - 28px);
     height: 340px;
   }
   /* 해시태그 */
@@ -1218,7 +1249,7 @@
   .coupon:hover .coupon_text {
     color: #111;
   }
-  .coupon:hover .sec3_btn {
+  .sec3 .coupon:hover .sec3_btn {
     background-color: #ff834f;
     color: #fff;
     border: 1px solid #ff834f;
@@ -1254,7 +1285,19 @@
   }
 }
 @media screen and (min-width: 1920px) {
-  .sec1 .card1 {
-    width: calc(1516px / 4);
+  /* 섹션3 - 이벤트 */
+  .hover_img2 {
+    display: block;
+  }
+  .coupon:hover .hover_img2 {
+    opacity: 1;
+  }
+  .coupon:hover .coupon_text {
+    color: #fff;
+  }
+  .sec3 .coupon:hover .sec3_btn {
+    background-color: #fff;
+    color: #ff834f;
+    border: 1px solid #ff834f;
   }
 }
