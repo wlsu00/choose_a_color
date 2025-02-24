@@ -314,21 +314,25 @@ main {
   justify-content: space-between;
 }
 .sec1 .card1 {
-  width: calc(1516px / 4);
-  /* width: calc(25% - 28px); */
-  height: fit-content;
+  width: calc(25% - 28px);
+  height: 340px;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
-  padding: 30px;
   box-sizing: border-box;
+  padding: 30px;
   margin-top: 144px;
-  /* position: relative;
-  flex-shrink: 0; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: 0.4s;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.sec1 .card1 > a {
+  display: block;
+  width: 100%;
 }
 .card1:hover {
   border: 1px solid #ff834f;
@@ -339,55 +343,40 @@ main {
   border-radius: 120px;
   overflow: hidden;
   margin-bottom: 24px;
-  /* position: absolute;
-  top: -25%;
-  left: 50%;*/
-  /* transform: translate(-120px, -12px); */
-  transform: translateY(-150px);
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
   transition: 0.4s;
 }
-.card1:hover .card_img {
-  /* transform: translate(-120px, -22px); */
-  transform: translateY(-160px);
+sec1 .card1:hover .card_img {
+  top: -140px;
 }
 .card_img > img {
   object-fit: scale-down;
   transform: translateY(-50px) scale(1.2);
 }
-#sec1_s > a:nth-child(1) .card_img > img {
-  transform: translateY(-70px) scale(1.1);
+.card_img > img.sec1_m4 {
+  transform: translateY(-40px) scale(0.98);
 }
-#sec1_s > a:nth-child(2) .card_img > img {
+.card_img > img.sec_1_s2 {
   transform: translateY(-150px);
 }
-#sec1_s > a:nth-child(3) .card_img > img {
+.card_img > img.sec_1_s3 {
   transform: translateY(-100px) scale(1.2);
 }
-#sec1_s > a:nth-child(4) .card_img > img {
+.card_img > img.sec_1_s4 {
   transform: translateY(-80px) scale(1.1);
 }
-#sec1_m > a:nth-child(1) .card_img > img {
-  transform: translate(0px, -30px);
-  transform-origin: top;
-}
-#sec1_m > a:nth-child(4) .card_img > img {
-  transform: translate(0px, -30px);
-  transform-origin: top;
-}
-#sec1_m .card_img > img {
-  transform: scale(1);
-}
+
 .sec1 .card1_con {
-  width: 98%;
-  /* width: 100%; */
-  /* position: absolute;
-  top: 168px; */
+  width: 100%;
   margin: 0 auto;
-  margin-top: -120px;
+  margin-top: 48%;
   text-align: center;
 }
 /* 해시태그 */
-.sec1 .card1 > div > span {
+.sec1 .card1 .card1_con > span {
   text-align: center;
   font-size: 15px;
   display: block;
@@ -395,11 +384,11 @@ main {
 }
 /* 프로필아이콘 */
 .user_profile {
+  width: 100%;
   font-size: 12px;
   font-weight: 300;
-  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 24px;
 }
@@ -599,6 +588,8 @@ main {
   position: relative;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
 }
 .sec3 .sec3_btn {
   width: fit-content;
@@ -606,15 +597,15 @@ main {
   font-size: 16px;
   text-align: center;
   padding: 8px 16px;
-  color: #ff834f;
-  background-color: #fff;
-  border: 1px solid #666;
+  color: #fff;
+  background-color: #ff834f;
+  border: 1px solid #ff834f;
   border-radius: 24px;
   box-sizing: border-box;
   position: absolute;
   top: -18px;
   left: 50%;
-  transform: translateX(-45px);
+  transform: translateX(-50%);
   z-index: 20;
   box-sizing: border-box;
 }
@@ -650,10 +641,12 @@ main {
   border: 1px solid #ff834f;
 }
 .coupon_text {
+  width: 80%;
   position: absolute;
-  top: 84px;
-  left: 78px;
+  top: 33%;
+  left: 50%;
   z-index: 20;
+  transform: translateX(-45%);
 }
 .coupon_text > h4 {
   margin: 10px 0;
@@ -911,14 +904,15 @@ main {
 .sec5 > .con > .con_wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 28px;
   margin-top: 28px;
 }
 /* a태그 안의 카드 한 장 전체 */
 .sec5 .card1 {
   width: calc(25% - 28px);
-  height: auto;
+  /* height: auto; */
+  height: 40%;
   position: relative;
   top: 0;
   left: 0;
@@ -975,7 +969,8 @@ main {
   width: fit-content;
   text-align: left;
   margin: 8px 0;
-  line-height: 29px;
+  /* line-height: 29px; */
+  line-height: 1;
   text-decoration: none;
   color: #111;
 }
