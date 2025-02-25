@@ -854,6 +854,15 @@
     font-size: 14px;
     gap: 18px;
   }
+  /* 앱다운로드 라이트박스 */
+  .light_box {
+    /* display: none; */
+    width: 480px;
+    height: 560px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   /* 섹션1 - 베스트 */
   .sec1 .con_wrap {
     width: 100%;
@@ -1284,9 +1293,7 @@
     padding: 0;
   }
   /* 섹션1 - 베스트 */
-  /* .sec1 .con_wrap {
-    width: 80%;
-  } */
+
   .sec1 .card1 {
     width: calc(25% - 28px);
     height: 340px;
