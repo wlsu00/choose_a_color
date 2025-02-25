@@ -8,6 +8,24 @@ body {
   color: #111;
   overflow-x: hidden;
 }
+/* 드래그했을 때
+::selection {
+  background-color: #ff834f;
+  color: #fff;
+} */
+/* 스크롤 모양 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-image: linear-gradient(-225deg, #fff 0%, #ff834f 100%);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
 /* 공통영역 */
 .con {
   width: 1600px;
@@ -219,6 +237,23 @@ h1 {
   width: 24px;
   height: 24px;
 }
+/* 서치바 */
+.search_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.search_bar input {
+  /* background-color: yellowgreen; */
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  padding: 6px 8px;
+  outline: none;
+}
+.search_img {
+  cursor: pointer;
+}
 
 /* main */
 main {
@@ -270,23 +305,58 @@ main {
   color: #ff834f;
   border-bottom: 1px solid #ff834f;
 }
-/* 서치바 */
-.search_bar {
+/* 앱다운로드 라이트박스 */
+.light_box {
+  display: none;
+  width: 480px;
+  height: 560px;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  background-color: #fff;
+  border: 1px solid #ff834f;
+  border-radius: 8px;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.light_box div:first-child {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 8px;
+  box-sizing: border-box;
+  padding-top: 40px;
 }
-.search_bar input {
-  /* background-color: yellowgreen; */
-  border: 1px solid #d6d6d6;
-  border-radius: 8px;
-  padding: 6px 8px;
-  outline: none;
+.light_box img.qr_code {
+  width: 180px;
+  height: 180px;
 }
-.search_img {
+.light_box .light_text {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.light_text h4 {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.light_text p {
+  line-height: 1.4;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+.light_box_btn {
+  width: 100%;
+  line-height: 48px;
+  color: #fff;
+  background-color: #ff834f;
+  border-radius: 50px;
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
   cursor: pointer;
 }
+
 /* 메인 */
 /* 섹션1 - 베스트 */
 .chips_con {

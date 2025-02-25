@@ -19,6 +19,17 @@ $(function () {
     });
   }
 
+  //📌앱다운로드 클릭하면 라이트박스 뜨기
+  $(".light_box").hide();
+  $(".app_btn").on("click", function () {
+    $(".light_box").show(0.5);
+  });
+
+  //📌확인누르면 닫히기
+  $(".light_box_btn").on("click", function () {
+    $(".light_box").hide(0.5);
+  });
+
   //📌chips 클릭하면 클래스명 추가해서 css 바꾸기
 
   //메이크업, 스타일링버튼
