@@ -148,7 +148,7 @@ h1 {
 h2 {
   font-family: "Aboreto", serif;
   font-size: clamp(1vw, 2vw, 2vw);
-  line-height: 46px;
+  line-height: 1.8;
   padding-bottom: 20px;
 }
 .input_box {
@@ -403,7 +403,7 @@ h2 {
   }
   /* 로그인폼 */
   .login {
-    width: 90%;
+    width: 80%;
     margin: 80px auto;
     padding: 10px 14px;
   }
@@ -419,13 +419,16 @@ h2 {
   }
 }
 @media screen and (min-width: 425px) and (max-width: 767px) {
+  .login {
+    width: 80%;
+  }
   .login h3 {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 540px) and (max-width: 767px) {
   .login {
-    width: 70vw;
+    width: clamp(70%, 74vw, 76vw);
   }
   .login h2 {
     font-size: 6vw;
@@ -478,13 +481,14 @@ h2 {
   .icons a:nth-child(2) {
     display: flex;
   }
+  /* 로그인폼 */
   .login {
-    width: 60vw;
+    width: 400px;
     margin: 80px auto;
-    padding: 80px 60px;
+    padding: 40px 60px;
   }
   .login h2 {
-    font-size: 5vw;
+    font-size: 36px;
   }
   form {
     width: 100%;
@@ -547,12 +551,12 @@ h2 {
   }
   /* 로그인폼 */
   .login {
-    width: 40vw;
-    margin: 140px auto;
-    padding: 80px 60px;
+    width: 480px;
+    margin: 80px auto;
+    padding: 60px 80px;
   }
   .login h2 {
-    font-size: clamp(3vw, 3vw, 5vw);
+    font-size: 36px;
   }
   form {
     width: 100%;
@@ -564,10 +568,5 @@ h2 {
   form .search span {
     font-size: 14px;
     font-weight: 400;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .login {
-    width: 30%;
   }
 }

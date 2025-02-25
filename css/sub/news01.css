@@ -176,6 +176,7 @@ h1 {
   background-color: #f8f3ed;
   /* padding: 73px 254px; */
   box-sizing: border-box;
+  background: url("../../img/sub/banner/styling.png") no-repeat;
 }
 .sec_txt {
   margin: 75px 4vw;
@@ -183,19 +184,33 @@ h1 {
 /* 진행중인 이벤트 */
 .content .con > div:first-child {
   display: flex;
+  justify-content: center;
   gap: 32px;
   margin: 100px 0;
 }
+.content .con > div:first-child h4:first-child a {
+  color: #ff834f;
+}
+.content .con > div:first-child h4:last-child a {
+  color: #d6d6d6;
+}
 /* 진행중인 이벤트 제목에 밑줄 */
-/* .con > div > h4{
+.con > div > h4 {
   padding: 0 8px;
-  border-bottom: 1px solid #d6d6d6;
+  border-bottom: 1px solid transparent;
   box-sizing: border-box;
-} */
+  transition: 0.3s;
+}
+
 .content .con > div:first-child a {
   transition: 0.3s;
 }
-.content .con > div:first-child a:hover {
+.content .con > div h4:hover {
+  padding: 0 8px;
+  border-bottom: 1px solid #d6d6d6;
+  box-sizing: border-box;
+}
+.content .con > div:first-child a {
   color: #ff834f;
 }
 .card_wrap {

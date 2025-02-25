@@ -151,6 +151,7 @@
   }
   /* 진행중인 이벤트 */
   .content .con > div:first-child {
+    gap: 8px;
     margin: 60px 0;
     justify-content: center;
   }
@@ -214,16 +215,15 @@
   .con > div > h4 {
     font-size: 18px;
   }
-  .con h3 {
+  .cart_text h3 {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 16px;
     line-height: 36px;
   }
   .card_img > .cart_text {
-    position: absolute;
-    top: 60px;
-    left: 48px;
+    top: 38px;
+    left: 30px;
   }
 }
 /* 💡태블릿💡 */
@@ -312,6 +312,12 @@
     position: absolute;
     top: 40px;
     left: 32px;
+  }
+  .cart_text h3 {
+    font-size: 24px;
+  }
+  .cart_text p {
+    font-size: 18px;
   }
   .card h4 {
     margin: 20px 0;
@@ -403,13 +409,24 @@
     padding: 0;
   }
   .card {
-    width: 30vw;
+    width: 27vw;
   }
-  h3 {
-    font-size: 20px;
+  .card_img > .cart_text {
+    position: absolute;
+    top: 24px;
+    left: 22px;
+  }
+  .cart_text h3 {
+    font-size: 1.4vw;
     font-weight: 500;
     margin-bottom: 20px;
-    line-height: 35px;
+    line-height: 1.8;
+  }
+  .content p {
+    font-size: 15px;
+  }
+  .card h4 {
+    font-size: 16px;
   }
   /* footer */
   footer .con {

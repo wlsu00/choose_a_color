@@ -21,7 +21,7 @@
   }
   /* chips 공통 */
   .chips {
-    width: 54px;
+    width: 60px;
     font-size: 12px;
     line-height: 12px;
     padding: 6px 10px;
@@ -160,7 +160,7 @@
   }
   .best .best_person {
     width: 90%;
-    height: 44vh;
+    height: 34vh;
     animation: none;
   }
   .text_wrap {
@@ -308,6 +308,9 @@
   .card_wrap .card_img {
     height: clamp(44vh, 44vh, 362px);
   }
+  .best .best_person.best_person_fall {
+    width: fit-content;
+  }
   .user_profile span {
     font-size: 14px;
   }
@@ -331,7 +334,9 @@
     padding: 8px 16px;
   }
   .best .best_person {
-    height: 72vh;
+    height: 56vh;
+    width: 78%;
+    height: clamp(50vh, 52vh, 68vh);
   }
   .card_wrap .card1 {
     height: 66vh;
@@ -443,6 +448,10 @@
     width: 70%;
     height: 70vh;
     animation: none;
+  }
+  .best .best_person.best_person_fall {
+    width: fit-content;
+    height: 53vh;
   }
   .text_wrap {
     width: 100%;
@@ -679,6 +688,9 @@
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .user_profile {
+    width: fit-content;
+  }
   /* 섹션1 - 베스트 */
   .best .con_wrap {
     flex-wrap: nowrap;
@@ -687,7 +699,11 @@
   .best .best_person {
     width: 20vw;
     height: 36vh;
+    height: clamp(36vh, 40vh, 44vh);
     margin: 0;
+  }
+  .best .best_person .best_person_spring {
+    transform: translateY(-80px);
   }
   .text_wrap {
     width: fit-content;

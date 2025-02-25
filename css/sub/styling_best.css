@@ -287,10 +287,10 @@ h1 {
 .best .best_person img {
   transform: scale(1.1);
 }
-#bestImg_summer {
+.best .best_person .best_person_summer {
   transform: translateY(-50px);
 }
-#bestImg_fall {
+.best .best_person .best_person_fall {
   transform: translateY(-160px);
 }
 @keyframes person {

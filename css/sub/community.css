@@ -74,6 +74,12 @@ section {
   background-color: #ff834f;
   color: #fff;
 }
+.main_chips {
+  background-color: #fff;
+  border: 1px solid #ff834f;
+  color: #ff834f;
+  box-sizing: border-box;
+}
 /* header */
 header {
   width: 100%;
@@ -221,8 +227,7 @@ h1 {
   height: 240px;
   overflow: hidden;
   background-color: #f8f3ed;
-  /* background: url("../img/makeup/2/main.png"); */
-  /* padding: 73px 254px; */
+  background: url("../../img/sub/banner/makeup.png") no-repeat;
   box-sizing: border-box;
 }
 .sec_txt {
@@ -317,8 +322,7 @@ h1 {
   transition: 0.3s;
 }
 .content1:hover h4 {
-  background-color: #f8f3ed;
-  background-color: #fce3c4;
+  background-color: #f7ddbe;
 }
 #first_content1 {
   border-top: 2px solid #d6d6d6;
