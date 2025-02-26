@@ -240,6 +240,9 @@ h1 {
   overflow: hidden;
   background: url("../../img/sub/banner/sub_banner.png") no-repeat;
   box-sizing: border-box;
+  position: relative;
+  right: 0;
+  background-position: right;
 }
 .sec_txt {
   margin: 75px 4vw;

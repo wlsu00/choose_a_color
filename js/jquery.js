@@ -75,4 +75,9 @@ $(function () {
       }
     },
   });
+
+  //📌회원가입창에서 뒤로가기
+  $(".back_arrow").on("click", function () {
+    window.history.back();
+  });
 });

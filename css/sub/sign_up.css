@@ -169,6 +169,13 @@ form > div:first-child {
   padding-bottom: 32px;
   border-bottom: 2px solid #d6d6d6;
 }
+form > div:first-child a {
+  display: block;
+  width: 28px;
+  height: fit-content;
+  z-index: 100;
+  background-color: transparent;
+}
 form > div:first-child img {
   width: 24px;
 }
@@ -560,12 +567,12 @@ label.error::after {
   }
   /* logo */
   h1 {
-    width: 150px;
+    width: 180px;
   }
   #gnb {
     display: block;
     height: 80px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
   }
   #gnb > ul {

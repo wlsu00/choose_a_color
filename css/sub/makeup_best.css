@@ -244,6 +244,9 @@ h1 {
   background: url("../../img/sub/banner/sub_banner.png") no-repeat;
   /* padding: 73px 254px; */
   box-sizing: border-box;
+  position: relative;
+  right: 0;
+  background-position: right;
 }
 
 /* sec1 베스트 */
