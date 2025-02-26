@@ -354,7 +354,11 @@ main {
   font-size: 22px;
   font-weight: 400;
   text-align: center;
+  transition: 0.3s;
   cursor: pointer;
+}
+.light_box_btn:hover {
+  opacity: 0.8;
 }
 
 /* 메인 */
