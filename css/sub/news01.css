@@ -29,6 +29,18 @@ h4 {
 a {
   font-family: "Inter", "Noto Sans KR", sans-serif;
 }
+/* 스크롤 모양 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-image: linear-gradient(-225deg, #fff 0%, #ff834f 100%);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
 
 /* header */
 header {
@@ -176,7 +188,7 @@ h1 {
   background-color: #f8f3ed;
   /* padding: 73px 254px; */
   box-sizing: border-box;
-  background: url("../../img/sub/banner/styling.png") no-repeat;
+  background: url("../../img/sub/banner/sub_banner.png") no-repeat;
 }
 .sec_txt {
   margin: 75px 4vw;
@@ -218,6 +230,9 @@ h1 {
   justify-content: space-between;
 }
 /* 카드1 */
+.card_img img {
+  transition: 0.3s;
+}
 .card_img {
   position: relative;
   left: 0;
@@ -226,9 +241,16 @@ h1 {
   overflow: hidden;
 }
 @media (hover: hover) {
+  .card:hover h3,
+  .card:hover p {
+    color: #000;
+  }
+  .card:hover .card_img img {
+    filter: brightness(1);
+    transform: scale(1.02);
+  }
   .card:not(:hover) .card_img img {
-    opacity: 0.5;
-    filter: grayscale(0.3);
+    opacity: 0.8;
   }
 }
 .card_img > .cart_text {

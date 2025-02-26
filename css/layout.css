@@ -419,7 +419,7 @@ main {
   transform: translateX(-50%);
   transition: 0.4s;
 }
-sec1 .card1:hover .card_img {
+.card1:hover .card_img {
   top: -140px;
 }
 .card_img > img {
@@ -619,8 +619,7 @@ sec1 .card1:hover .card_img {
   margin-bottom: 16px;
 }
 .sec2 .table1 {
-  padding: 10px;
-  padding-top: 28px;
+  padding: 24px 10px;
   box-sizing: border-box;
   border-bottom: 1px solid #d6d6d6;
   background-color: #fff;
@@ -631,6 +630,9 @@ sec1 .card1:hover .card_img {
 }
 .right_table > div > a:last-child > .table1 {
   border-bottom: none;
+}
+.table1 h4 {
+  margin-bottom: 4px;
 }
 .table1 p {
   font-size: 15px;
@@ -765,6 +767,7 @@ sec1 .card1:hover .card_img {
   transition: transform 1.4s;
   transform: perspective(800px) rotateY(0deg);
   transform-style: preserve-3d;
+  background-color: #fff;
 }
 .sec4 .card1:hover {
   transform: perspective(800px) rotateY(180deg);

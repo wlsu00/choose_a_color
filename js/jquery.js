@@ -44,6 +44,11 @@ $(function () {
     $(e.target).addClass("main_chips");
   });
 
+  //📌탑버튼
+  $(".top_btn").on("click", function () {
+    $(this).scrollTop();
+  });
+
   //📌회원가입창
   //인증번호 전송을 누르면 인증번호 입력칸 보여주기
   $(".hidden_user").slideUp(300);

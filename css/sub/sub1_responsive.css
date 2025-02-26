@@ -127,6 +127,8 @@
   /* logo */
   h1 {
     width: 129px;
+    /* 로고 가운데로 보내기 */
+    margin-left: 5vw;
   }
   /* gnb */
   #gnb {
@@ -253,6 +255,10 @@
   .card_wrap p {
     display: none;
   }
+  .icons .like_wrap {
+    width: 20px;
+    height: 20px;
+  }
   .plus_icon {
     position: relative;
   }
@@ -302,11 +308,16 @@
   .best .best_person {
     height: 52vh;
   }
+  .card_wrap {
+    justify-content: center;
+    align-items: center;
+  }
   .card_wrap .card1 {
-    height: 58vh;
+    width: 70%;
+    height: 49vh;
   }
   .card_wrap .card_img {
-    height: clamp(44vh, 44vh, 362px);
+    height: clamp(34vh, 35vh, 320px);
   }
   .best .best_person.best_person_fall {
     width: fit-content;
@@ -338,11 +349,16 @@
     width: 78%;
     height: clamp(50vh, 52vh, 68vh);
   }
+  .card_wrap {
+    justify-content: center;
+    align-items: center;
+  }
   .card_wrap .card1 {
-    height: 66vh;
+    width: 70%;
+    height: 60vh;
   }
   .card_wrap .card_img {
-    height: clamp(52vh, 52vh, 362px);
+    height: clamp(40vh, 47vh, 460px);
   }
   /* 프로필 */
   .content .card_wrap .user_profile {

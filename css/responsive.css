@@ -142,10 +142,10 @@
   }
   /* logo */
   h1 {
-    margin-left: 10%;
     width: 129px;
-  }
-  /* gnb */
+    /* 로고 가운데로 보내기 */
+    margin-left: 5vw;
+  } /* gnb */
   #gnb {
     display: none;
   }

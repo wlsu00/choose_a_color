@@ -127,8 +127,9 @@
   /* logo */
   h1 {
     width: 129px;
-  }
-  /* gnb */
+    /* 로고 가운데로 보내기 */
+    margin-left: 5vw;
+  } /* gnb */
   #gnb {
     display: none;
   }
@@ -642,7 +643,7 @@
   /* 아래컨텐츠 */
   .card_wrap .card1 {
     width: calc(48% - 16px);
-    height: 52vh;
+    height: 55vh;
     margin-bottom: 16px;
   }
   .card_wrap .card_img {
@@ -816,17 +817,22 @@
     flex-wrap: wrap;
   }
   .content .card_wrap .user_profile {
-    font-size: 16px;
-    font-weight: 400;
-    padding-right: 20px;
+    width: fit-content;
+    font-size: 15px;
+    font-weight: 350;
   }
   .card_wrap .card1 {
     width: calc(48% - 28px);
     margin-bottom: 16px;
   }
   .card_wrap p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  .card1 .plus_icon span {
+    font-weight: 300;
+    color: #4d4d4d;
   }
   .page {
     margin: 60px auto;
