@@ -461,6 +461,8 @@ label.error::after {
   }
   .chk1,
   .chk2 {
+    font-size: 12px;
+
     padding: 4px 8px;
   }
   .terms {
