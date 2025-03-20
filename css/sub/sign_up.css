@@ -311,9 +311,6 @@ label.error::after {
   border: 1px solid #d6d6d6;
 }
 .sign:hover {
-  /* background-color: #ff844f;
-  filter: grayscale(0.1);
-  color: #fff; */
   border: 1px solid #ff834f;
   color: #ff834f;
 }
