@@ -159,15 +159,15 @@ h1 {
   height: fit-content;
   padding: 60px 80px;
   box-sizing: border-box;
-  border: 1px solid #ff834f;
+  border: 1px solid #d6d6d6;
   border-radius: 8px;
 }
 form > div:first-child {
   display: flex;
   align-items: center;
   gap: 0;
-  padding-bottom: 32px;
-  border-bottom: 2px solid #d6d6d6;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #d6d6d6;
 }
 form > div:first-child a {
   display: block;
@@ -177,7 +177,7 @@ form > div:first-child a {
   background-color: transparent;
 }
 form > div:first-child img {
-  width: 24px;
+  width: 20px;
 }
 h2 {
   width: 100%;
@@ -186,12 +186,15 @@ h2 {
   font-weight: 500;
   line-height: 26px;
   margin-left: -8%;
+  font-family: "Aboreto", serif;
 }
 form h4 {
   margin-top: 32px;
-  margin-bottom: 12px;
   font-size: 16px;
   font-weight: 400;
+}
+form h4.agree {
+  margin-bottom: 10px;
 }
 form input {
   width: 70%;
@@ -213,8 +216,8 @@ form input:focus {
   width: fit-content;
   height: fit-content;
   font-size: 14px;
-  color: #ff834f;
-  border: 1px solid #ff834f;
+  color: #111;
+  border: 1px solid #d6d6d6;
   border-radius: 16px;
   padding: 6px 12px;
   margin: 10px 0;
@@ -256,8 +259,8 @@ label.error::after {
 @media (hover: hover) {
   .chk1:hover,
   .chk2:hover {
-    background-color: #ff834f;
-    color: #fff;
+    color: #ff834f;
+    border: 1px solid #ff834f;
   }
 }
 .terms {
@@ -293,20 +296,25 @@ label.error::after {
 .sign {
   width: 100%;
   height: fit-content;
-  color: #fff;
+  color: #111;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 20px;
   text-align: center;
   margin: 64px auto 0;
-  background-color: #ff834f;
+  background-color: transparent;
   padding: 16px 0;
-  border-radius: 8px;
+  border-radius: 100px;
   box-sizing: border-box;
   cursor: pointer;
   transition: 0.3s;
+  border: 1px solid #d6d6d6;
 }
 .sign:hover {
-  opacity: 0.5;
+  /* background-color: #ff844f;
+  filter: grayscale(0.1);
+  color: #fff; */
+  border: 1px solid #ff834f;
+  color: #ff834f;
 }
 
 /* 반응형 */

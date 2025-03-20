@@ -139,7 +139,7 @@ h1 {
 .login {
   width: 30%;
   height: auto;
-  border: 1px solid #ff834f;
+  border: 1px solid #d6d6d6;
   border-radius: 8px;
   padding: 60px 80px;
   box-sizing: border-box;
@@ -207,37 +207,52 @@ h2 {
 .btn {
   width: 90%;
   height: fit-content;
-  color: #fff;
+  color: #111;
   font-size: 16px;
   line-height: 28px;
   text-align: center;
   margin: 20px auto 0;
-  background-color: #ff834f;
+  background-color: transparent;
   padding: 10px 0;
-  border-radius: 8px;
+  border-radius: 100px;
   box-sizing: border-box;
   cursor: pointer;
   transition: 0.3s;
 }
+.btn.user {
+  border: 1px solid #d6d6d6;
+}
+.btn.user:hover {
+  color: #ff844f;
+  background-color: transparent;
+  font-size: 16.8px;
+  font-weight: 400;
+  border: 1px solid #ff844f;
+}
 .btn.kakao {
-  background-color: #fae100;
+  border: 1px solid #d6d6d6;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
 }
+.btn.kakao:hover {
+  color: #ff844f;
+  background-color: transparent;
+  font-size: 16.8px;
+  font-weight: 400;
+  border: 1px solid #ff844f;
+}
+.btn.kakao:hover img {
+  filter: hue-rotate();
+}
 .btn.kakao img {
   width: 26px;
   height: 22px;
 }
-.btn:not(:hover) .btn {
-  opacity: 1;
-}
-.btn:hover {
-  opacity: 0.5;
-}
 .sing_up {
   width: fit-content;
+  width: 142px;
   height: fit-content;
   margin-top: 20px;
   margin-left: auto;
@@ -249,24 +264,27 @@ h2 {
   margin-bottom: 4px;
 }
 .sing_up h3 {
-  border: 1px solid transparent;
-  border-radius: 4px;
   padding: 0 6px;
   box-sizing: border-box;
   transition: 0.3s;
-  will-change: transition;
 }
 .sing_up h3 a {
-  font-size: 16px;
   font-weight: 600;
   color: #ff834f;
   line-height: 24px;
+  transition: 0.3s;
 }
-.sing_up h3:hover {
-  transform: scale(1.01);
-  border: 1px solid #ff834f;
-  border-radius: 4px;
-  /* opacity: 0.8; */
+.sing_up h3::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #ff844f;
+  transition: 0.3s;
+}
+
+.sing_up h3:hover::after {
+  width: 100%;
 }
 /* 서치바 */
 .search_bar {
