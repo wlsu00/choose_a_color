@@ -69,7 +69,7 @@ $(function () {
     },
     blur: function (e) {
       if ($(e.target).val().trim() === "") {
-        $(e.target).css("border", "1px solid red");
+        $(e.target).css("border", "1px solid #d82222");
         //에러메세지 뜨게하려했는데 중복확인버튼때문에 보류
         //$(e.target).parent("label").addClass("error");
       }
