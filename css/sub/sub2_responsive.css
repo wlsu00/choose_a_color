@@ -643,7 +643,8 @@
   /* 아래컨텐츠 */
   .card_wrap .card1 {
     width: calc(48% - 16px);
-    height: 55vh;
+    /* height: 55vh; */
+    height: fit-content;
     margin-bottom: 16px;
   }
   .card_wrap .card_img {
@@ -661,16 +662,16 @@
     width: 20px;
     height: 20px;
   }
-  .card_wrap p {
+  /* .card_wrap p {
     display: none;
-  }
+  } */
   .plus_icon {
     position: relative;
   }
   .plus_icon img {
     position: absolute;
-    top: -46px;
     right: 0px;
+    bottom: -6px;
   }
   /* footer */
   footer .con {
