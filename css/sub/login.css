@@ -252,7 +252,7 @@ h2 {
 }
 .sing_up {
   width: fit-content;
-  width: 142px;
+  /* width: 142px; */
   height: fit-content;
   margin-top: 20px;
   margin-left: auto;
