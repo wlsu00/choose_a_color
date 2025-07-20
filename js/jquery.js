@@ -93,12 +93,16 @@ $(function () {
     chkBox2.prop('checked',!chkBox2.prop('checked'))
   });
   //📌회원가입하기 누르면 완료창뜨기
-    $(".sign").on("click", function () {
+    $(".sign").on("click", function (e) {
+      e.preventDefault()
       $('.done').css('display','block')
       // $('form').css('display','none')
       $('main').css('display','none')
-  });
+          setTimeout(function () {
+      window.location.href = "./../index.html"; // 
+    }, 1800);
 
+  });
 
 
 });

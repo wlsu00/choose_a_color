@@ -331,8 +331,7 @@ label.error::after {
   transition: 0.3s;
   cursor: pointer;
 }
-.done > p > a{
-  display: block;
+.done > p {
   font-size: 18px;
   text-align: center;
   color: #fff;
