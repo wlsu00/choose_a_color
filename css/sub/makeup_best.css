@@ -478,7 +478,7 @@ h1 {
 .sm_img {
   transform: scale(1.04);
 }
-.f2{
+.up_img{
   transform: translateY(-100px);
 }
 @media (hover: hover) {

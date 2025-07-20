@@ -188,6 +188,9 @@ h2 {
   font-size: 14px;
   color: #4d4d4d;
 }
+.keep span{
+  cursor: pointer;
+}
 .search {
   display: flex;
   align-items: center;
@@ -278,7 +281,7 @@ h2 {
   content: "";
   display: block;
   width: 0%;
-  height: 2px;
+  height: 1px;
   background-color: #ff844f;
   transition: 0.3s;
 }

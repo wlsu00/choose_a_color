@@ -197,6 +197,9 @@ form h4 {
 form h4.agree {
   margin-bottom: 10px;
 }
+.terms span{
+  cursor: pointer;
+}
 form input {
   width: 70%;
   border: none;
@@ -314,7 +317,26 @@ label.error::after {
   border: 1px solid #ff834f;
   color: #ff834f;
 }
-
+.done{
+  width: 500px;
+  background-color: #ff834f;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: none;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.done > p > a{
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
 /* 반응형 */
 @media screen and (min-width: 320px) and (max-width: 767px) {
   /* 공통영역 */

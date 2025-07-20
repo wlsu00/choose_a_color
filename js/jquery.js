@@ -76,8 +76,29 @@ $(function () {
     },
   });
 
+  //📌아이디 저장 누르면 체크박스 토글
+    $(".keep span").on("click", function () {
+      const chkBox = $(".keep input")
+    chkBox.prop('checked',!chkBox.prop('checked'))
+  });
+
   //📌회원가입창에서 뒤로가기
   $(".back_arrow").on("click", function () {
     window.history.back();
   });
+
+  //📌약관 누르면 체크박스 토글
+    $(".terms1 span").on("click", function () {
+      const chkBox2 = $(".terms1 input")
+    chkBox2.prop('checked',!chkBox2.prop('checked'))
+  });
+  //📌회원가입하기 누르면 완료창뜨기
+    $(".sign").on("click", function () {
+      $('.done').css('display','block')
+      // $('form').css('display','none')
+      $('main').css('display','none')
+  });
+
+
+
 });

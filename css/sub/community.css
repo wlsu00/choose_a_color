@@ -338,7 +338,8 @@ h1 {
   transition: 0.3s;
 }
 .content1:hover h4 {
-  background-color: #f7ddbe;
+  /* background-color: #f7ddbe; */
+  background-color: #ffe1acb0;
 }
 #first_content1 {
   border-top: 2px solid #d6d6d6;

@@ -212,14 +212,18 @@
                 </label>
               </div>
               <h4 class="agree">필수약관 전체동의</h4>
-              <div class="terms">
-                <input type="checkbox" name="terms1" />
-                <label for="terms1">이용약관</label>
+              <div class="terms terms1">
+                <input type="checkbox" name="terms1" id="terms1" />
+                <label for="terms1" id="terms1">
+                  <span>이용약관</span>
+                </label>
                 <p>보기</p>
               </div>
               <div class="terms">
-                <input type="checkbox" name="terms2" />
-                <label for="terms2">개인정보 처리방침</label>
+                <input type="checkbox" name="terms2" id="terms2" />
+                <label for="terms2" id="terms2">
+                  <span>개인정보 처리방침</span>
+                </label>
                 <p>보기</p>
               </div>
             </div>
@@ -227,6 +231,13 @@
           </form>
         </div>
       </main>
+                <!-- 가입 완료 팝업 -->
+          <div class="done">
+            <p>
+              <a href="/">회원가입이 완료되었습니다</a>
+            </p>
+          </div>
+
     </div>
     <script src="../js/jquery.js"></script>
   </body>
