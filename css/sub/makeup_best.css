@@ -478,6 +478,9 @@ h1 {
 .sm_img {
   transform: scale(1.04);
 }
+.f2{
+  transform: translateY(-100px);
+}
 @media (hover: hover) {
   .card_wrap .card1:hover {
     border: 1px solid #ff834f;
