@@ -601,13 +601,13 @@ label.error::after {
   #gnb {
     display: block;
     height: 80px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
   }
   #gnb > ul {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 30px;
     margin: 27px 0;
     box-sizing: border-box;
     line-height: 25px;
@@ -617,7 +617,7 @@ label.error::after {
   }
   /* 2차메뉴 */
   #gnb .submenu li {
-    font-size: 12px;
+    font-size: 14px;
   }
   .icons {
     gap: 16px;
