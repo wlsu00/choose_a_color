@@ -69,6 +69,12 @@ section {
   padding: 8px 16px;
   border-radius: 24px;
 }
+.chips.on{
+    background-color: #fff;
+    border: 1px solid #ff834f;
+    color: #ff834f;
+    box-sizing: border-box;
+}
 .chips_seoson .chips {
   width: 64px;
 }

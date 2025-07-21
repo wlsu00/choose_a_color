@@ -515,12 +515,27 @@ h2 {
     width: 100%;
   }
   form .keep_text span {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
   }
   form .search span {
     font-size: 14px;
     font-weight: 400;
+  }
+  .search{
+    margin-top: 8px;
+  }
+  .search p{
+    font-size: 12px;
+  }
+  .btn{
+    font-size: 14px;
+  }
+  .btn.user:hover{
+    font-size: 14px;
+  }
+  .btn.kakao:hover{
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1919px) {

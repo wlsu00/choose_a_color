@@ -35,12 +35,14 @@ $(function () {
   //메이크업, 스타일링버튼
   $(".chips_con .chips").on("click", function (e) {
     $(".chips_con .chips").removeClass("main_chips");
+    $(".chips_con .chips").removeClass("on");
     $(e.target).addClass("main_chips");
   });
 
   //계절버튼
   $(".chips_seoson .chips").on("click", function (e) {
     $(".chips_seoson .chips").removeClass("main_chips");
+    $(".chips_seoson .chips").removeClass("on");
     $(e.target).addClass("main_chips");
   });
 
