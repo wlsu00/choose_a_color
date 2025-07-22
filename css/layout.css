@@ -8,7 +8,7 @@ body {
   color: #111;
   overflow-x: hidden;
 }
-/* 드래그했을 때
+/* 드래그했을 때 색상
 ::selection {
   background-color: #ff834f;
   color: #fff;
@@ -448,7 +448,6 @@ main {
 .card_img > img.sec_1_s4 {
   transform: translateY(-80px) scale(1.1);
 }
-
 .sec1 .card1_con {
   width: 100%;
   margin: 0 auto;
@@ -655,6 +654,7 @@ main {
   border-bottom: 2px solid #d6d6d6;
   margin-top: 28px;
 }
+
 /* 섹션3 - 이벤트 */
 .sec3 .coupon_wrap {
   width: max-content;
@@ -736,6 +736,7 @@ main {
 .swiper .swiper-pagination-bullet {
   background-color: #ff834f;
 }
+
 /* 섹션4 - 추천스타일링 */
 #sec4_summer,
 #sec4_fall,
@@ -794,7 +795,6 @@ main {
   top: 0;
   left: 0;
 }
-
 /* 카드앞면 이미지사이즈 */
 .card_front img {
   width: 100%;
@@ -802,7 +802,6 @@ main {
   object-fit: scale-down;
   transform: scale(0.9);
 }
-
 /* 카드뒷면 글씨 위치맞추기 */
 .sec4 .card_back {
   width: 100%;
@@ -866,7 +865,6 @@ main {
 #sec4_spring .circle3 > .circle:nth-child(3) {
   background-color: #6bac58;
 }
-
 /* 여름 컬러칩 */
 #sec4_summer .circle1 > .circle:nth-child(1) {
   background-color: #fff;
@@ -951,7 +949,6 @@ main {
 #sec4_winter .circle3 > .circle:nth-child(3) {
   background-color: #94046f;
 }
-
 .sec4 .maintext {
   font-size: 20px;
   font-weight: 500;
@@ -966,6 +963,7 @@ main {
 .card_back > div:nth-of-type(2) {
   margin: 0 auto;
 }
+
 /* 섹션5 - 추천메이크업 */
 #sec5_summer,
 #sec5_fall,
@@ -978,12 +976,6 @@ main {
   display: flex;
   justify-content: space-between;
 }
-/* .sec5 a {
-  display: block;
-  width: fit-content;
-  height: fit-content;
-  flex-grow: 1;
-} */
 .sec5 > .con > .con_wrap {
   display: flex;
   flex-wrap: wrap;
@@ -1080,7 +1072,6 @@ main {
   position: absolute;
   display: none;
 }
-
 /* top버튼 */
 .top_btn {
   width: 60px;
