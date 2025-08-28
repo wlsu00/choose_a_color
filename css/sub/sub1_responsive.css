@@ -251,6 +251,7 @@
     object-fit: scale-down;
     filter: grayscale(0);
     transition: none;
+    transform: translateY(-50px);
   }
   .card_wrap p {
     display: none;
